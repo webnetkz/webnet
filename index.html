@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebNet Studio</title>
+
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <style>
+        .start-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100vh;
+            background: var(--gradient);
+        }
+        .start-section > h1 {
+            color: var(--white);
+            font-size: 80px;
+            text-align: center;
+        }
+        .start-section .promo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: var(--radius);
+            background: var(--halfWhite);
+            width: 90vw;
+            min-height: 150px;
+        }
+        .start-section .promo p {
+            color: var(--white);
+            font-size: 1.5rem;
+            max-width: 50%;
+        }
+        button {
+            background: var(--yellow);
+            border-radius: var(--halfRadius);
+            color: var(--black);
+            border: none;
+            padding: 5px 30px;
+            font-size: 1.2rem;
+        }
+        button:hover {
+            box-shadow: 0 0 10px var(--yellow);
+            color: var(--white);
+        }
+    </style>
+    <div class="start-section">
+
+        <h1>This is test message!</h1>
+
+        <div class="promo">
+            <p>This is test message! This is test message! This is test message!</p>
+            <button>Консультация</button>
+        </div>
+
+    </div>
+
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+
+    <script src="./public/js/main.js"></script>
+
+    <div class="t-container_100 "><div class="t-width t-width_100 ">
+    </div> </div>
+
+
+
+    <script>
+        document.body.innerHTML += '<div class="cursor-dot-outline"></div>';
+document.body.innerHTML += '<div class="cursor-dot"></div>';
+
+var cursor = {
+  delay: 1,
+  _x: 0,
+  _y: 0,
+  endX: window.innerWidth / 2,
+  endY: window.innerHeight / 2,
+  cursorVisible: true,
+  cursorEnlarged: false,
+  dot: document.querySelector('.cursor-dot'),
+  outline: document.querySelector('.cursor-dot-outline'),
+
+  init: function () {
+    this.dotSize = this.dot.offsetWidth;
+    this.outlineSize = this.outline.offsetWidth;
+
+    this.setupEventListeners();
+    this.animateDotOutline();
+  },
+
+  setupEventListeners: function () {
+    var self = this;
+
+    document.querySelectorAll('a').forEach(function (el) {
+      el.addEventListener('mouseover', function () {
+        self.cursorEnlarged = true;
+        self.toggleCursorSize();
+      });
+      el.addEventListener('mouseout', function () {
+        self.cursorEnlarged = false;
+        self.toggleCursorSize();
+      });
+    });
+
+    document.addEventListener('mousedown', function () {
+      self.cursorEnlarged = true;
+      self.toggleCursorSize();
+    });
+    document.addEventListener('mouseup', function () {
+      self.cursorEnlarged = false;
+      self.toggleCursorSize();
+    });
+
+    document.addEventListener('mousemove', function (e) {
+      self.cursorVisible = true;
+      self.toggleCursorVisibility();
+
+      self.endX = e.clientX;
+      self.endY = e.clientY;
+      self.dot.style.top = self.endY + 'px';
+      self.dot.style.left = self.endX + 'px';
+    });
+
+    document.addEventListener('mouseenter', function (e) {
+      self.cursorVisible = true;
+      self.toggleCursorVisibility();
+      self.dot.style.opacity = 1;
+      self.outline.style.opacity = 1;
+    });
+
+    document.addEventListener('mouseleave', function (e) {
+      self.cursorVisible = true;
+      self.toggleCursorVisibility();
+      self.dot.style.opacity = 0;
+      self.outline.style.opacity = 0;
+    });
+  },
+
+  animateDotOutline: function () {
+    var self = this;
+
+    self._x += (self.endX - self._x) / self.delay;
+    self._y += (self.endY - self._y) / self.delay;
+    self.outline.style.top = self._y + 'px';
+    self.outline.style.left = self._x + 'px';
+
+    requestAnimationFrame(self.animateDotOutline.bind(self));
+  },
+
+  toggleCursorSize: function () {
+    var self = this;
+
+    if (self.cursorEnlarged) {
+      self.dot.style.transform = 'translate(-50%, -50%) scale(4.00)';
+      self.outline.style.transform = 'translate(-50%, -50%) scale(0)';
+    } else {
+      self.dot.style.transform = 'translate(-50%, -50%) scale(1)';
+      self.outline.style.transform = 'translate(-50%, -50%) scale(1)';
+    }
+  },
+
+  toggleCursorVisibility: function () {
+    var self = this;
+
+    if (self.cursorVisible) {
+      self.dot.style.opacity = 1;
+      self.outline.style.opacity = 1;
+    } else {
+      self.dot.style.opacity = 0;
+      self.outline.style.opacity = 0;
+    }
+  },
+};
+
+cursor.init();
+
+    </script>
+</body>
+</html>

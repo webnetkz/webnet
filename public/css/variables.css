@@ -1,0 +1,11 @@
+:root {
+    --white: white;
+    --black: black;
+    --blue: rgb(37, 0, 255);
+    --halfWhite: rgba(255, 255, 255, 0.1);
+    --yellow: #ffdd33;
+    --gradient: linear-gradient(0deg, rgb(152, 207, 195), rgb(88, 82, 182), rgb(37, 0, 255));
+
+    --halfRadius: 5px;
+    --radius: 10px;
+}
