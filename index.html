@@ -3,53 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebNet Studio</title>
+    <title>WebNet</title>
 
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-    <style>
-        .start-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            height: 100vh;
-            background: var(--gradient);
-        }
-        .start-section > h1 {
-            color: var(--white);
-            font-size: 80px;
-            text-align: center;
-        }
-        .start-section .promo {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border-radius: var(--radius);
-            background: var(--halfWhite);
-            width: 90vw;
-            min-height: 150px;
-        }
-        .start-section .promo p {
-            color: var(--white);
-            font-size: 1.5rem;
-            max-width: 50%;
-        }
-        button {
-            background: var(--yellow);
-            border-radius: var(--halfRadius);
-            color: var(--black);
-            border: none;
-            padding: 5px 30px;
-            font-size: 1.2rem;
-        }
-        button:hover {
-            box-shadow: 0 0 10px var(--yellow);
-            color: var(--white);
-        }
-    </style>
-    <div class="start-section">
+    <div class="logo" style="background-image: url(./public/img/logo.png); background-size: 50%;"></div>
+
+	<section class="layers">
+		<div class="layers__container">
+			<div class="layers__item layer-1" style="background-image: url(./public/img/layer-1.jpg);"></div>
+			<div class="layers__item layer-2" style="background-image: url(./public/img/layer-2.png);"></div>
+			<div class="layers__item layer-3">
+				<div class="hero-content">
+					<h1>Ваше воображение <span>цифравая реальность</span></h1>
+					<div class="hero-content__p">WEB, IOS, MacOS, Android, Windows, Linux</div>
+					<button class="button-start">Заказать звонок</button>
+				</div>
+			</div>
+			<div class="layers__item layer-4">
+				<canvas class="rain"></canvas>
+			</div>
+			<div class="layers__item layer-5" style="background-image: url(./public/img/layer-5.png);"></div>
+			<div class="layers__item layer-6" style="background-image: url(./public/img/layer-6.png);"></div>
+		</div>
+	</section>
+
+
+
+    <div class="second-section">
 
         <h1>This is test message!</h1>
 
@@ -60,27 +42,12 @@
 
     </div>
 
-    <pre>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </pre>
-
-    <script src="./public/js/main.js"></script>
-    <script src="./public/js/cursor.js"></script>
+    <script src="./public/js/cursor.js" defer></script>
+    <script src="./public/js/main.js" defer></script>
+    <script src="./public/js/3d.js" defer></script>
+	<script src="./public/js/rain.js" defer></script>
 </body>
 </html>
