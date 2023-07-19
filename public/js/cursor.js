@@ -2,7 +2,7 @@ document.body.innerHTML += '<div class="cursor-dot-outline"></div>';
 document.body.innerHTML += '<div class="cursor-dot"></div>';
 
 let cursor = {
-    delay: 1,
+    delay: 2,
     _x: 0,
     _y: 0,
     endX: window.innerWidth / 2,
@@ -76,12 +76,27 @@ let cursor = {
             self.dot.style.opacity = 0;
             self.outline.style.opacity = 0;
         });
-    },
 
+        document.querySelectorAll('button').forEach(function (el)
+        {
+            el.addEventListener('mouseover', function()
+            {
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function()
+            {
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
+        
+    },
+    
     animateDotOutline: function()
     {
         let self = this;
-
+        
         self._x += (self.endX - self._x) / self.delay;
         self._y += (self.endY - self._y) / self.delay;
         self.outline.style.top = self._y + 'px';
@@ -96,11 +111,12 @@ let cursor = {
 
         if (self.cursorEnlarged)
         {
-            self.dot.style.transform = 'translate(-50%, -50%) scale(4.00)';
-            self.outline.style.transform = 'translate(-50%, -50%) scale(0)';
+            self.dot.style.transform = 'translate(-50%, -50%) scale(2.00)';
+            self.outline.style.transform = 'translate(-50%, -50%) scale(0)';           self.dot.style.boxShadow = '0 0 10px black';
         }
         else
         {
+            self.dot.style.boxShadow = 'none!important';
             self.dot.style.transform = 'translate(-50%, -50%) scale(1)';
             self.outline.style.transform = 'translate(-50%, -50%) scale(1)';
         }

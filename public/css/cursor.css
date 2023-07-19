@@ -23,8 +23,8 @@ body * {
 }
 .cursor-dot {
     z-index:99999999;
-    width: 16.0px;
-    height: 16.0px;
+    width: 7px;
+    height: 7px;
     background-color: var(--yellow);
     border: solid;
     border-radius: 50%;
