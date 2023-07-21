@@ -17,8 +17,8 @@
 
 	<section class="layers">
 		<div class="layers__container">
-			<div class="layers__item layer-1" style="background-image: url(./public/img/layer-1.jpg);"></div>
-			<div class="layers__item layer-2" style="background-image: url(./public/img/layer-2.png);"></div>
+			<div class="layers__item layer-1" style="background-image: url(./public/img/layer-1.webp);"></div>
+			<div class="layers__item layer-2" style="background-image: url(./public/img/layer-2.webp);"></div>
 			<div class="layers__item layer-3">
 				<div class="hero-content">
 					<h1>Ваше воображение <span>цифровое воплощение!</span></h1>
@@ -29,8 +29,8 @@
 			<div class="layers__item layer-4">
 				<canvas class="rain"></canvas>
 			</div>
-			<div class="layers__item layer-5" style="background-image: url(./public/img/layer-5.png);"></div>
-			<div class="layers__item layer-6" style="background-image: url(./public/img/layer-6.png);"></div>
+			<div class="layers__item layer-5" style="background-image: url(./public/img/layer-5.webp);"></div>
+			<div class="layers__item layer-6" style="background-image: url(./public/img/layer-6.webp);"></div>
 		</div>
 	</section>
 
@@ -38,7 +38,30 @@
 
     <div class="second-section">
 
-        <h1>Высокое качество цифровых продуктов</h1>
+		<style>
+			.partners-block {
+				display: flex;
+				flex-wrap: wrap;
+				position: absolute;
+				z-index: -1;
+			}
+			.partners-block img {
+				height: 100px;
+			}
+		</style>
+		<div class="partners-block">
+			<img src="./public/img/logos/as.png" alt="logotype">
+			<img src="./public/img/logos/atamura.png" alt="logotype">
+			<img src="./public/img/logos/halyk.svg" alt="logotype">
+			<img src="./public/img/logos/ip.png" alt="logotype">
+			<img src="./public/img/logos/jusan.webp" alt="logotype">
+			<img src="./public/img/logos/kaspi.svg" alt="logotype">
+			<img src="./public/img/logos/kazu.svg" alt="logotype">
+			<img src="./public/img/logos/logo.svg" alt="logotype">
+			<img src="./public/img/logos/uchet.svg" alt="logotype">
+		</div>
+
+        <h1>Партнеры</h1>
 
         <div class="promo">
             <p>Прохождение всех тестов от <b>GOOGLE Lighthouse!</b></p>
@@ -58,18 +81,17 @@
 	<script>
 		if('serviceWorker' in navigator)
 		{
-			window.addEventListener('load', function()
-			{
-				navigator.serviceWorker.register('/sw.js').then(function(registration)
-				{
-				// Registration was successful
-				console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				}, function(err)
-				{
-					// registration failed :(
-					console.log('ServiceWorker registration failed: ', err);
-				});
-			});
+			// window.addEventListener('load', function()
+			// {
+			// 	navigator.serviceWorker.register('/sw.js').then(function(registration)
+			// 	{
+			// 		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+			// 	}, function(err)
+			// 	{
+			// 		// registration failed :(
+			// 		console.log('ServiceWorker registration failed: ', err);
+			// 	});
+			// });
 		}
 
 	</script>

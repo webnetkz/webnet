@@ -4,10 +4,10 @@ self.addEventListener('install', event => {
       return cache.addAll([
         '/',
         '/index.html',
-        '/public/img/layer-1.jpg',
-        '/public/img/layer-2.png',
-        '/public/img/layer-5.png',
-        '/public/img/layer-6.png',
+        '/public/img/layer-1.webp',
+        '/public/img/layer-2.webp',
+        '/public/img/layer-5.webp',
+        '/public/img/layer-6.webp',
       ]);
     })
   );
