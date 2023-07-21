@@ -43,9 +43,11 @@
 }
 .layer-5 {
 	transform: translateZ(300px) scale(.9);
+	animation: moveLayers 12s infinite;
 }
 .layer-6 {
 	transform: translateZ(380px);
+	animation: moveLayers 10s infinite;
 }
 .hero-content {
 	font-size: calc(var(--index) * 2.9);
@@ -81,4 +83,9 @@
 }
 .layer-4, .layer-5, .layer-6 {
 	pointer-events: none;
+}
+@keyframes moveLayers {
+	50% {
+		transform: translateZ(300px) scale(.7);
+	}
 }
