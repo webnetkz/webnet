@@ -24,6 +24,7 @@ body {
   min-width: 100vw;
   overflow-x: hidden;
   color: var(--white);
+  background: var(--black);
 }
 .second-section {
   display: flex;
@@ -31,7 +32,6 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-  background: var(--gradient);
 }
 .second-section > h1 {
   color: var(--white);

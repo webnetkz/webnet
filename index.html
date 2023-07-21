@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="WebNet smart internet">
+	<link rel="icon" type="image/png" href="./public/img/logo.png">
+	<link rel="manifest" href="./manifest.json">
+	<meta name="#000">
+
     <title>WebNet</title>
 
     <link rel="stylesheet" href="./public/css/style.css">
@@ -33,11 +38,11 @@
 
     <div class="second-section">
 
-        <h1>This is test message!</h1>
+        <h1>Высокое качество цифровых продуктов</h1>
 
         <div class="promo">
-            <p>This is test message! This is test message! This is test message!</p>
-            <button>Консультация</button>
+            <p>Прохождение всех тестов от <b>GOOGLE Lighthouse!</b></p>
+            <button>Подробнее</button>
         </div>
 
     </div>
@@ -49,5 +54,24 @@
     <script src="./public/js/main.js" defer></script>
     <script src="./public/js/3d.js" defer></script>
 	<script src="./public/js/rain.js" defer></script>
+
+	<script>
+		if('serviceWorker' in navigator)
+		{
+			window.addEventListener('load', function()
+			{
+				navigator.serviceWorker.register('/sw.js').then(function(registration)
+				{
+				// Registration was successful
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err)
+				{
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+
+	</script>
 </body>
 </html>
