@@ -6,7 +6,7 @@
 	<meta name="description" content="WebNet smart internet">
 	<link rel="icon" type="image/png" href="./public/img/icon.png">
 	<link rel="manifest" href="./manifest.json">
-	<meta name="#000">
+	<meta name="theme-color" content="#000"/>
 
     <title>WebNet</title>
 
@@ -121,25 +121,25 @@
 
 
 
-    <script src="./public/js/cursor.js" defer></script>
-    <script src="./public/js/main.js" defer></script>
-    <script src="./public/js/3d.js" defer></script>
-	<script src="./public/js/rain.js" defer></script>
+    <script src="./public/js/cursor.js"></script>
+    <script src="./public/js/main.js"></script>
+    <script src="./public/js/3d.js"></script>
+	<script src="./public/js/rain.js"></script>
 
 	<script>
 		if('serviceWorker' in navigator)
 		{
-			// window.addEventListener('load', function()
-			// {
-			// 	navigator.serviceWorker.register('/sw.js').then(function(registration)
-			// 	{
-			// 		console.log('ServiceWorker registration successful with scope: ', registration.scope);
-			// 	}, function(err)
-			// 	{
-			// 		// registration failed :(
-			// 		console.log('ServiceWorker registration failed: ', err);
-			// 	});
-			// });
+			window.addEventListener('load', function()
+			{
+				navigator.serviceWorker.register('/sw.js').then(function(registration)
+				{
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err)
+				{
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
 		}
 
 	</script>

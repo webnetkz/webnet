@@ -2,14 +2,14 @@
     "name": "WebNet",
     "short_name": "WebNet",
     "description": "Разработка цифровых продуктов",
-    "start_url": "/",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#000",
     "theme_color": "#000",
     "icons": [
       {
         "src": "./public/img/logo.png",
-        "sizes": "512x512",
+        "sizes": "574x314",
         "type": "image/png"
       }
     ]
