@@ -14,7 +14,7 @@
 	perspective: 1000px;
 	overflow: hidden;
 }
-.layers__container
+.layers-container
 {
 	height: 100vh;
 	min-height: 500px;
@@ -23,7 +23,7 @@
 	will-change: transform;
 	transition: transform var(--transition);
 }
-.layers__item
+.layers-item
 {
 	position: absolute;
 	inset: -5vw;
@@ -72,7 +72,7 @@
 {
 	display: block;
 }
-.hero-content__p
+.hero-content-p
 {
 	text-transform: none;
 	font-family: merriweather-italic-3d;

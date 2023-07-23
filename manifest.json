@@ -11,7 +11,7 @@
         "src": "./public/img/logo.png",
         "sizes": "512x512",
         "type": "image/png"
-      }
+      },
       {
         "src": "./public/img/icon.png",
         "sizes": "64x64",
