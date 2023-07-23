@@ -59,17 +59,23 @@ body
   font-size: 1.5rem;
   max-width: 50%;
 }
-button
+.button
+{
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .71);
+	letter-spacing: -.02vw;
+	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+	background-color: transparent;
+	color: var(--white);
+	border-radius: 10em;
+	border: rgb(255 255 255 / .4) 3px solid;
+	outline: none;
+	margin-top: calc(var(--index) * 2.5);
+	font-size: 1.1rem;
+}
+.button:hover
 {
   background: var(--yellow);
-  border-radius: var(--halfRadius);
-  color: var(--black);
-  border: none;
-  padding: 5px 30px;
-  font-size: 1.2rem;
-}
-button:hover
-{
-  box-shadow: 0 0 10px var(--yellow);
-  color: var(--white);
+  color: var(--balck);
 }
