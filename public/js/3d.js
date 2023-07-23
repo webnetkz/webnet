@@ -17,17 +17,15 @@ document.addEventListener('mousemove', e =>
 
 		window.addEventListener("deviceorientation", function(event)
 		{
-
-			let beta = (Math.round(event.beta) / 180) * 6;
-			let gamma = (Math.round(event.gamma) / 90) * 3;
-
-			Object.assign(document.documentElement, 
-			{
-				style: `
-					--move-x: ${(beta - window.innerWidth / 2) * -.005}deg;
-					--move-y: ${(gamma - window.innerHeight / 2) * .01}deg;
-				`
-			})
+		  let container = document.querySelector('section.layers');
+		  let beta = (Math.round(event.beta) / 180) * 6;
+		  let gamma = (Math.round(event.gamma) / 90) * 3;
+  
+		  const maxRotation = 30;
+		  beta *= maxRotation;
+		  gamma *= maxRotation;
+  
+		  container.style.transform = 'rotateX(' + -beta + 'deg) rotateY(' + gamma + 'deg)';
 		}, true);
 
 
