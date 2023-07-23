@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-    <div class="logo" style="background-image: url(./public/img/logo.png); background-size: 50%;"></div>
+    <!-- <div class="logo" style="background-image: url(./public/img/logo.png); background-size: 50%;"></div> -->
 
 	<section class="layers">
 		<div class="layers__container">
-			<div class="layers__item layer-1" style="background-image: url(./public/img/layer-1.webp);"></div>
-			<div class="layers__item layer-2" style="background-image: url(./public/img/layer-2.webp);"></div>
+			<div class="layers__item layer-1""></div>
+			<div class="layers__item layer-2""></div>
 			<div class="layers__item layer-3">
 				<div class="hero-content">
 					<h1>Ваше воображение <span>цифровое воплощение!</span></h1>
@@ -30,11 +30,10 @@
 			<div class="layers__item layer-4">
 				<canvas class="rain"></canvas>
 			</div>
-			<div class="layers__item layer-5" style="background-image: url(./public/img/layer-5.webp);"></div>
-			<div class="layers__item layer-6" style="background-image: url(./public/img/layer-6.webp);"></div>
+			<div class="layers__item layer-5"></div>
+			<div class="layers__item layer-6"></div>
 		</div>
 	</section>
-
 
 
     <!-- <div class="second-section">
@@ -121,11 +120,27 @@
 
 
 
+	<script>
 
-    <script src="./public/js/cursor.js"></script>
-    <script src="./public/js/main.js"></script>
-    <script src="./public/js/3d.js"></script>
-	<script src="./public/js/rain.js"></script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const classes = ['layer-1', 'layer-2', 'layer-5', 'layer-6'];
+			const images = ['./public/img/layer-1.webp', './public/img/layer-2.webp', './public/img/layer-5.webp', './public/img/layer-6.webp'];
+
+			classes.forEach((className, index) => {
+				const elements = document.getElementsByClassName(className);
+				for (let i = 0; i < elements.length; i++) {
+					elements[i].style.backgroundImage = `url(${images[index]})`;
+				}
+			});
+		});
+
+	</script>
+
+
+    <script src="./public/js/cursor.js" async></script>
+    <script src="./public/js/main.js" async></script>
+    <script src="./public/js/3d.js" async></script>
+	<script src="./public/js/rain.js" async></script>
 
 	<script>
 		if('serviceWorker' in navigator)
