@@ -3,8 +3,10 @@
 @import url(animations.css);
 @import url(cursor.css);
 @import url(3d.css);
+@import url(mobile.css);
 
-* {
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,29 +17,34 @@
   font-family: 'Ubuntu', sans-serif;
   scroll-behavior: smooth;
 }
-html {
+html
+{
     scroll-behavior: smooth;
 }  
-body {
+body
+{
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
   color: var(--white);
   background: var(--black);
 }
-.second-section {
+.second-section
+{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 100vh;
 }
-.second-section > h1 {
+.second-section > h1
+{
   color: var(--white);
   font-size: 80px;
   text-align: center;
 }
-.second-section .promo {
+.second-section .promo
+{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,12 +53,14 @@ body {
   width: 90vw;
   min-height: 150px;
 }
-.second-section .promo p {
+.second-section .promo p
+{
   color: var(--white);
   font-size: 1.5rem;
   max-width: 50%;
 }
-button {
+button
+{
   background: var(--yellow);
   border-radius: var(--halfRadius);
   color: var(--black);
@@ -59,7 +68,8 @@ button {
   padding: 5px 30px;
   font-size: 1.2rem;
 }
-button:hover {
+button:hover
+{
   box-shadow: 0 0 10px var(--yellow);
   color: var(--white);
 }
