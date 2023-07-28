@@ -36,93 +36,23 @@
 	</section>
 
 
-    <!-- <div class="second-section">
+    <div class="utp-section">
 
-		<style>
-			.partners-block {
-				display: flex;
-				flex-wrap: wrap;
-				position: absolute;
-				z-index: -1;
-			}
-			.partners-block img {
-				height: 100px;
-				position: absolute;
-			}
-			.partners-block img:nth-child(1) {
-				height: 30px;
-				top: 33px;
-				left: -400px;
-			}
-			.partners-block img:nth-child(2) {
-				border-radius: 3px;
-				height: 30px;
-				top: -100px;
-				left: 500px;
-			}
-			.partners-block img:nth-child(3) {
-				height: 70px;
-				top: -300px;
-				left: -300px;
-			}
-			.partners-block img:nth-child(4) {
-				height: 12ß0px;
-				top: -340px;
-			}
-			.partners-block img:nth-child(5) {
-				height: 120px;
-				left: 200px;
-			}
-			.partners-block img:nth-child(6) {
-				height: 120px;
-				background: var(--halfWhite);
-				padding: 5px;
-				border-radius: 3px;
-				left: -400px;
-				top: -120px;
-			}
-			.partners-block img:nth-child(7) {
-				height: 100px;
-				left: 300px;
-				top: -120px;
-			}
-			.partners-block img:nth-child(8) {
-				height: 90px;
-				left: 250px;
-				top: -270px;
-			}
-			.partners-block img:nth-child(9) {
-				height: 90px;
-				left: -490px;
-				top: -240px;
-			}
-		</style>
-		<div class="partners-block">
-			<img src="./public/img/logos/as.webp" alt="logotype">
-			<img src="./public/img/logos/atamura.webp" alt="logotype">
-			<img src="./public/img/logos/halyk.webp" alt="logotype">
-			<img src="./public/img/logos/ip.webp" alt="logotype">
-			<img src="./public/img/logos/jusan.webp" alt="logotype">
-			<img src="./public/img/logos/kaspi.webp" alt="logotype">
-			<img src="./public/img/logos/kazu.webp" alt="logotype">
-			<img src="./public/img/logos/logo.webp" alt="logotype">
-			<img src="./public/img/logos/uchet.webp" alt="logotype">
-		</div>
-
-        <h1>Партнеры</h1>
+        <h1>Уникальное предложение</h1>
 
         <div class="promo">
             <p>Прохождение всех тестов от <b>GOOGLE Lighthouse!</b></p>
-            <button>Подробнее</button>
+            <button class="button">Подробнее</button>
         </div>
 
-    </div> -->
+    </div>
 
 
     <script src="./public/js/cursor.js" async></script>
     <script src="./public/js/main.js" async></script>
     <script src="./public/js/3d.js" async></script>
 	<script src="./public/js/rain.js" async></script>
+	<script src="./public/js/scroll.js" async></script>
 
 
 	<!-- Google tag (gtag.js) -->
@@ -135,20 +65,20 @@
 	gtag('config', 'G-NXX9RKVMT0');
 	</script>
 	<script>
-		if('serviceWorker' in navigator)
-		{
-			window.addEventListener('load', function()
-			{
-				navigator.serviceWorker.register('/sw.js').then(function(registration)
-				{
-					console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				}, function(err)
-				{
-					// registration failed :(
-					console.log('ServiceWorker registration failed: ', err);
-				});
-			});
-		}
+		// if('serviceWorker' in navigator)
+		// {
+		// 	window.addEventListener('load', function()
+		// 	{
+		// 		navigator.serviceWorker.register('/sw.js').then(function(registration)
+		// 		{
+		// 			console.log('ServiceWorker registration successful with scope: ', registration.scope);
+		// 		}, function(err)
+		// 		{
+		// 			// registration failed :(
+		// 			console.log('ServiceWorker registration failed: ', err);
+		// 		});
+		// 	});
+		// }
 
 	</script>
 </body>
