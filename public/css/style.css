@@ -49,7 +49,6 @@ a
 	border-radius: 10em;
 	border: rgb(255 255 255 / .4) 3px solid;
 	outline: none;
-	margin-top: calc(var(--index) * 2.5);
 	font-size: 1.1rem;
 }
 .button:hover

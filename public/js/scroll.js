@@ -21,6 +21,10 @@ async function trackScrolling()
             h2.style.marginLeft = `${scrollY}px`;
             button.style.marginRight = `${scrollY}px`;
         }
+        else
+        {
+            h1.style.transform = `scale(1)`;
+        }
     }
 }
 
