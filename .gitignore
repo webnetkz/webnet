@@ -1,0 +1,7 @@
+.vscode/sftp.json
+*.zip
+.DS_Store
+/node_modules
+robot.txt
+sitemap.xml
+webpack.fonfig.js
