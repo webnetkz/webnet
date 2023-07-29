@@ -1,3 +1,4 @@
+import '../css/style.css';
 document.addEventListener('DOMContentLoaded', () =>
 {
     const classes = ['layer-1', 'layer-2', 'layer-5', 'layer-6'];

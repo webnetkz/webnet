@@ -4,4 +4,6 @@
 /node_modules
 robot.txt
 sitemap.xml
-webpack.fonfig.js
+webpack.config.js
+package.json
+package-lock.json
