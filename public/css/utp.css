@@ -33,7 +33,7 @@
 {
   color: var(--white);
   font-size: 1.5rem;
-  max-width: 50%;
+  max-width: 70%;
 }
 .wrapper {
   position: relative;
@@ -62,9 +62,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   transform: translateX(-0.02em);
-  color: var(--red);
   position: relative;
   animation: dropBottom 25s infinite;
+  color: red;
 }
 @keyframes dropBottom {
   50%
