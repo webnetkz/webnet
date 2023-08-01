@@ -2,6 +2,8 @@ document.querySelector("#feedback form").addEventListener("submit", function(eve
 {
     event.preventDefault();
 
+    console.log(event);
+
     let name = document.querySelector("input[name='name']").value;
     let phone = document.querySelector("input[name='phone']").value;
 

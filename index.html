@@ -69,13 +69,13 @@
 	<div id="feedback">
 		<div class="login-box">
 			<h2>Оставить заявку</h2>
-			<form action="./app/form.php" method="POST">
+			<form method="POST">
 				<div class="user-box">
 				<input type="text" name="name" required>
 				<label>Имя</label>
 				</div>
 				<div class="user-box">
-				<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="XXX-XX-XXX" required>
+				<input type="tel" name="phone" required>
 				<label>Номер телефона</label>
 				</div>
 				<button class="hover-button" type="submit">
@@ -93,6 +93,7 @@
 
 
 	<script src="./dist/min.js" async></script>
+	<script src="./public/send_form.js"></script>
 
 
 
