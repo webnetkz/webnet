@@ -2,8 +2,6 @@ document.querySelector("#feedback form").addEventListener("submit", function(eve
 {
     event.preventDefault();
 
-    console.log(event);
-
     let name = document.querySelector("input[name='name']").value;
     let phone = document.querySelector("input[name='phone']").value;
 
@@ -17,7 +15,7 @@ document.querySelector("#feedback form").addEventListener("submit", function(eve
     {
         if (xhr.status === 200)
         {
-            console.log(xhr.responseText); // Вывод ответа в консоль (для отладки)
+            console.log(xhr.responseText);
             document.body.innerHTML += `<div class="mini-message">
             Заявка принята, наш менеджер скоро свяжится с вами.
             </div>`;
