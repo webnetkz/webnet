@@ -1,3 +1,9 @@
+<?php
+
+require_once './app/telegram/visit_telegram.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,9 +96,11 @@
 	</div>
 
 
-	<footer>
-		
-	</footer>
+	<?php
+
+	require_once './components/footer.php';
+
+	?>
 
 
 
