@@ -2,6 +2,7 @@
 {
     width: 100vw;
     height: 50vh;
+    margin-top: 10vh;
     position: relative;
     margin-bottom: 7vh;
 }
@@ -66,7 +67,7 @@
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: var(--black);
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -75,6 +76,7 @@
   margin-top: 40px;
   letter-spacing: 4px;
   border: none;
+  border-radius: 10rem;
 }
 .login-box button.hover-button:hover
 {

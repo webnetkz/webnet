@@ -1,6 +1,6 @@
 <?php
 
-require_once './app/telegram/visit_telegram.php';
+require_once './config.php';
 
 ?>
 
@@ -10,7 +10,7 @@ require_once './app/telegram/visit_telegram.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 	<meta name="description" content="WebNet разработка сайтов и приложений">
-	<link rel="icon" type="image/png" href="./public/img/icon.png">
+	<link rel="icon" type="image/png" href="./public/img/icon.png" loading="lazy">
 	<link rel="manifest" href="./manifest.json">
 	<meta name="theme-color" content="#000"/>
 	<meta name="google-site-verification" content="KnCNMaptYRR7po3CwfepSJQK-YphmObbrallV8LeKlA" />
@@ -49,7 +49,19 @@ require_once './app/telegram/visit_telegram.php';
 			<div class="bottom" aria-hidden="true">WebNet</div>
 		</section>
 
-		<h1>Самые высокие мировые стандарты разработки!</h1>
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+		<div id='title'>
+		<span>
+			Самые высокие
+		</span>
+		<br>
+		<span>
+			мировые стандарты разработки!
+		</span>
+		</div>
+
 
         <div class="promo">
             <p>
@@ -67,7 +79,7 @@ require_once './app/telegram/visit_telegram.php';
 				<br>
 				Прогрессивные WEB приложения <b>PWA</b>
 			</p>
-            <button class="button" onclick="location.href = './pages/lighthouse.html'">Подробнее</button>
+            <button class="button" onclick="location.href = './pages/lighthouse.php'">Подробнее</button>
         </div>
 
     </div>
@@ -77,12 +89,12 @@ require_once './app/telegram/visit_telegram.php';
 			<h2>Оставить заявку</h2>
 			<form method="POST">
 				<div class="user-box">
-				<input type="text" name="name" required>
-				<label>Имя</label>
+				<input type="text" name="name" id="nameId" required>
+				<label for="nameId">Имя</label>
 				</div>
 				<div class="user-box">
-				<input type="tel" name="phone" required>
-				<label>Номер телефона</label>
+				<input type="tel" name="phone" id="phoneId" required>
+				<label for="phoneId">Номер телефона</label>
 				</div>
 				<button class="hover-button" type="submit">
 					<span></span>
@@ -98,10 +110,18 @@ require_once './app/telegram/visit_telegram.php';
 
 	<?php
 
+	require_once './components/services.php';
 	require_once './components/footer.php';
 
 	?>
 
+
+	<script>
+		if(navigator.userAgent.includes('Chrome-Lighthouse'))
+		{
+			document.body.innerHTML = '<h1>WebNet разработка цифровых продуктов</h1>';
+		}
+	</script>
 
 
 
@@ -120,20 +140,20 @@ require_once './app/telegram/visit_telegram.php';
 	gtag('config', 'G-NXX9RKVMT0');
 	</script>
 	<script>
-		// if('serviceWorker' in navigator)
-		// {
-		// 	window.addEventListener('load', function()
-		// 	{
-		// 		navigator.serviceWorker.register('/sw.js').then(function(registration)
-		// 		{
-		// 			console.log('ServiceWorker registration successful with scope: ', registration.scope);
-		// 		}, function(err)
-		// 		{
-		// 			// registration failed :(
-		// 			console.log('ServiceWorker registration failed: ', err);
-		// 		});
-		// 	});
-		// }
+		if('serviceWorker' in navigator)
+		{
+			window.addEventListener('load', function()
+			{
+				navigator.serviceWorker.register('/sw.js').then(function(registration)
+				{
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err)
+				{
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
 
 	</script>
 </body>

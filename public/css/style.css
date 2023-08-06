@@ -7,7 +7,6 @@
 @import url(utp.css);
 @import url(form.css);
 @import url(mini_message.css);
-@import url(footer.css);
 
 
 @import url(mobile.css);
@@ -36,6 +35,8 @@ body
   overflow-x: hidden;
   color: var(--white);
   background: var(--black);
+  position: relative;
+  left: 35px;
 }
 a
 {
