@@ -36,7 +36,7 @@ body
   color: var(--white);
   background: var(--black);
   position: relative;
-  left: 35px;
+  left: 0;
 }
 a
 {

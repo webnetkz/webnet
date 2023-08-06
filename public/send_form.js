@@ -1,4 +1,4 @@
-document.querySelector("#feedback form").addEventListener("submit", function(event)
+function isSendForm(event)
 {
     event.preventDefault();
 
@@ -36,4 +36,4 @@ document.querySelector("#feedback form").addEventListener("submit", function(eve
     };
 
     xhr.send("name=" + encodeURIComponent(name) + "&phone=" + encodeURIComponent(phone));
-});
+}

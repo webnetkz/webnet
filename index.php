@@ -87,7 +87,7 @@ require_once './config.php';
 	<div id="feedback">
 		<div class="login-box">
 			<h2>Оставить заявку</h2>
-			<form method="POST">
+			<form method="POST" onsubmit="isSendForm(event)">
 				<div class="user-box">
 				<input type="text" name="name" id="nameId" required>
 				<label for="nameId">Имя</label>
