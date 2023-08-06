@@ -15,14 +15,19 @@ function isSendForm(event)
     {
         if (xhr.status === 200)
         {
-            console.log(xhr.responseText);
+            let messageBlock = document.querySelector('.mini-message');
+
             document.body.innerHTML += `<div class="mini-message">
             Заявка принята, наш менеджер скоро свяжится с вами.
             </div>`;
 
+            messageBlock.addEventListener('click', () => {
+                messageBlock.remove();
+            });
+
             setTimeout(() => {
-                document.querySelector('.mini-message').remove();
-            }, 3000);
+                messageBlock.remove();
+            }, 7000);
         }
         else
         {
