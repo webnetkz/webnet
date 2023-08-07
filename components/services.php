@@ -3,7 +3,7 @@
     <div class="card">
         <div class="card-content">
         <div class="card-image">
-            <img src="./public/img/services/sites.png" alt="Разработка сайтов любой сложности">
+            <img src="./public/img/services/sites.webp" alt="Разработка сайтов любой сложности">
         </div>
         <div class="card-info-wrapper">
             <div class="card-info">
@@ -19,7 +19,7 @@
     <div class="card">
         <div class="card-content">
         <div class="card-image">
-            <img src="./public/img/services/bots.png" alt="Разработка ботов любой сложности">
+            <img src="./public/img/services/bots.webp" alt="Разработка ботов любой сложности">
         </div>
         <div class="card-info-wrapper">
             <div class="card-info">
@@ -35,7 +35,7 @@
     <div class="card">
         <div class="card-content">
         <div class="card-image">
-            <img src="./public/img/services/parsers.png" alt="Разработка парсеров, сборщиков данных любой сложности">
+            <img src="./public/img/services/parsers.webp" alt="Разработка парсеров, сборщиков данных любой сложности">
         </div>
         <div class="card-info-wrapper">
             <div class="card-info">
@@ -51,7 +51,7 @@
     <div class="card">
         <div class="card-content">
         <div class="card-image">
-            <img src="./public/img/services/mobile.png" alt="Разработка мобильных приложений любой сложности">
+            <img src="./public/img/services/mobile.webp" alt="Разработка мобильных приложений любой сложности">
         </div>
         <div class="card-info-wrapper">
             <div class="card-info">
@@ -67,7 +67,7 @@
     <div class="card">
         <div class="card-content">
         <div class="card-image">
-            <img src="./public/img/services/api.png" alt="Разработка интеграций api любой сложности">
+            <img src="./public/img/services/api.webp" alt="Разработка интеграций api любой сложности">
         </div>
         <div class="card-info-wrapper">
             <div class="card-info">
@@ -83,7 +83,7 @@
     <div class="card">
         <div class="card-content">
         <div class="card-image">
-            <img src="./public/img/services/pc.png" alt="Разработка нативных приложений любой сложности">
+            <img src="./public/img/services/pc.webp" alt="Разработка нативных приложений любой сложности">
         </div>
         <div class="card-info-wrapper">
             <div class="card-info">
