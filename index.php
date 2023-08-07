@@ -84,32 +84,9 @@ require_once './config.php';
 
     </div>
 
-	<div id="feedback">
-		<div class="login-box">
-			<h2>Оставить заявку</h2>
-			<form method="POST" onsubmit="isSendForm(event)">
-				<div class="user-box">
-				<input type="text" name="name" id="nameId" required>
-				<label for="nameId">Имя</label>
-				</div>
-				<div class="user-box">
-				<input type="tel" name="phone" id="phoneId" required>
-				<label for="phoneId">Номер телефона</label>
-				</div>
-				<button class="hover-button" type="submit">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					Отправить
-				</button>
-			</form>
-		</div>
-	</div>
-
-
 	<?php
 
+	require_once './components/form.php';
 	require_once './components/services.php';
 	require_once './components/footer.php';
 
