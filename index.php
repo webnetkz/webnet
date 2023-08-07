@@ -100,12 +100,8 @@ require_once './config.php';
 		}
 	</script>
 
-
-
 	<script src="./dist/min.js" async></script>
 	<script src="./public/send_form.js"></script>
-
-
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NXX9RKVMT0"></script>
