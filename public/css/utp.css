@@ -29,6 +29,9 @@
   background: var(--halfWhite);
   width: 90vw;
   min-height: 150px;
+  max-height: 500px;
+  padding-bottom: 20px;
+  margin-top: 200px;
 }
 .utp-section .promo p
 {
@@ -136,7 +139,7 @@
   font-weight: 300;
   font-size: 50px;
   letter-spacing: 10px;
-  margin-top: -60px;
+  margin-top: -250px;
   padding-left: 10px;
 }
 #title span {

@@ -258,3 +258,14 @@
     }
   }
 </style>
+
+<script>
+  if(isMobile())
+  {
+    const allBubbles = document.querySelector('.bubble:nth-child(2n)');
+
+    allBubbles.forEach((bubble) => {
+      bubble.remove();
+    });
+  }
+</script>
