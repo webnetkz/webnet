@@ -208,9 +208,8 @@ i {
   overflow: hidden;
 }
 
-.card-image > i {
-  font-size: 6em;
-  opacity: 0.25;
+.card-image > img {
+  width: 128px;
 }
 
 .card-info-wrapper {
