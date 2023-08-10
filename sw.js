@@ -3,7 +3,7 @@ self.addEventListener('install', event => {
     caches.open('my-cache').then(function(cache) {
       return cache.addAll([
         '/',
-        '/index.html',
+        '/index.php',
         '/public/img/layer-1.webp',
         '/public/img/layer-2.webp',
         '/public/img/layer-5.webp',

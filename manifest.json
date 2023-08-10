@@ -2,7 +2,7 @@
     "name": "WebNet",
     "short_name": "WebNet",
     "description": "Разработка цифровых продуктов, сайтов, приложений",
-    "start_url": "./index.html",
+    "start_url": "./index.php",
     "display": "standalone",
     "background_color": "#000",
     "theme_color": "#000",

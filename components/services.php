@@ -139,6 +139,10 @@
     position: relative;
     width: 300px;  
   }
+  .card:hover svg path {
+    fill: #F44; /* Новый цвет при ховере */
+  }
+
 
   .card:hover::before {
     opacity: 1;
