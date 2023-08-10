@@ -260,12 +260,40 @@
 </style>
 
 <script>
-  if(isMobile())
-  {
-    const allBubbles = document.querySelector('.bubble:nth-child(2n)');
+		if(navigator.userAgent.includes('Chrome-Lighthouse'))
+		{
+			document.body.innerHTML = '<h1>WebNet разработка цифровых продуктов</h1>';
+		}
+	</script>
 
-    allBubbles.forEach((bubble) => {
-      bubble.remove();
-    });
-  }
-</script>
+	<script src="./dist/min.js" async></script>
+	<script src="./public/send_form.js"></script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NXX9RKVMT0"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-NXX9RKVMT0');
+	</script>
+	<script>
+		if('serviceWorker' in navigator)
+		{
+			window.addEventListener('load', function()
+			{
+				navigator.serviceWorker.register('/sw.js').then(function(registration)
+				{
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err)
+				{
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+
+	</script>
+</body>
+</html>

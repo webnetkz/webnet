@@ -139,8 +139,4 @@ let cursor = {
     },
 };
 
-
-if(isMobile())
-{
-    cursor.init();
-}
+cursor.init();

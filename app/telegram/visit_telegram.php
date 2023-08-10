@@ -51,4 +51,4 @@ $message .= "Browser: $browser\n";
 $message .= "Page: $current_page";
 
 $url = "https://api.telegram.org/bot$bot_token/sendMessage?chat_id=643910578&text=" . urlencode($message);
-$result = file_get_contents($url);
+//$result = file_get_contents($url);

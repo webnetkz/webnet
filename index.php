@@ -20,6 +20,27 @@ require_once './config.php';
     <link rel="stylesheet" href="./dist/min.css">
 </head>
 <body>
+
+	<style>
+		header
+		{
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 55px;
+			z-index: var(--z-header);
+			filter: blur(7px);
+	
+		}
+	</style>
+
+	<header>
+		<menu>
+			<p>123</p>
+			<p>312</p>
+		</menu>
+	</header>
     <!-- <div class="logo" style="background-image: url(./public/img/logo.png); background-size: 50%;"></div> -->
 
 	<section class="layers">
@@ -91,43 +112,3 @@ require_once './config.php';
 	require_once './components/footer.php';
 
 	?>
-
-
-	<script>
-		if(navigator.userAgent.includes('Chrome-Lighthouse'))
-		{
-			document.body.innerHTML = '<h1>WebNet разработка цифровых продуктов</h1>';
-		}
-	</script>
-
-	<script src="./dist/min.js" async></script>
-	<script src="./public/send_form.js"></script>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NXX9RKVMT0"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-NXX9RKVMT0');
-	</script>
-	<script>
-		if('serviceWorker' in navigator)
-		{
-			window.addEventListener('load', function()
-			{
-				navigator.serviceWorker.register('/sw.js').then(function(registration)
-				{
-					console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				}, function(err)
-				{
-					// registration failed :(
-					console.log('ServiceWorker registration failed: ', err);
-				});
-			});
-		}
-
-	</script>
-</body>
-</html>
