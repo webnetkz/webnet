@@ -132,18 +132,16 @@
   .card {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    cursor: pointer;
     display: flex;
     height: 260px;
     flex-direction: column;
     position: relative;
     width: 300px;  
   }
-  .card:hover svg path {
-    fill: #F44; /* Новый цвет при ховере */
+  .card:hover
+  {
+    transform: scale(1.1) rotate(7deg);
   }
-
-
   .card:hover::before {
     opacity: 1;
   }
