@@ -141,6 +141,8 @@
   .card:hover
   {
     transform: scale(1.1) rotate(7deg);
+    z-index: 9999;
+    box-shadow: 0 0 200px white;
   }
   .card:hover::before {
     opacity: 1;
