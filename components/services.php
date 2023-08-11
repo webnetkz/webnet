@@ -213,7 +213,8 @@
   }
 
   .card-image > img {
-    width: 128px;
+    max-width: 128px;
+    min-width: 60px;
   }
 
   .card-info-wrapper {
@@ -275,17 +276,11 @@
       height: 80px;  
     }
     
-    .card-image > i {
-      font-size: 3em;
-    }
       
     .card-info-wrapper {
       padding: 0px 10px;
     }
     
-    .card-info > i { 
-      font-size: 0.8em; 
-    }
     
     .card-info-title > h3 {
       font-size: 0.9em;
@@ -300,6 +295,12 @@
   @media(max-width: 320px) {
     .card {
       width: 100%;
+    }
+  }
+
+  @media(max-width: 1200px) {
+    .cart-image > img {
+      width: 60px;
     }
   }
 

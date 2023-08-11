@@ -17,7 +17,7 @@ require_once './config.php';
 
     <title>WebNet</title>
 
-    <link rel="stylesheet" href="./dist/min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
 
