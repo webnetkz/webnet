@@ -25,7 +25,7 @@
 		<menu>
 			<a href="https://webnet.kz">Главная</a>
 			<a href="/index.php#services">Услуги</a>
-			<a href="#">Портфолио</a>
-			<a href="#feedback">Контакты</a>
+			<a href="/index.php">Портфолио</a>
+			<a href="/index.php#feedback">Контакты</a>
 		</menu>
 	</header>

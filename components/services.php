@@ -16,7 +16,7 @@
         </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href = '/pages/services/bots.php'">
         <div class="card-content">
         <div class="card-image">
             <img src="./public/img/services/bots.webp" alt="Разработка ботов любой сложности">
@@ -26,13 +26,13 @@
             <i class="fa-duotone fa-unicorn"></i>
             <div class="card-info-title">
                 <h3>Создание ботов</h3>  
-                <h4>Телеграм, автоматизация рутинных задач</h4>
+                <h4>Телеграм боты, автоматизация рутинных задач</h4>
             </div>    
             </div>  
         </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href = '/pages/services/parsers.php'">
         <div class="card-content">
         <div class="card-image">
             <img src="./public/img/services/parsers.webp" alt="Разработка парсеров, сборщиков данных любой сложности">
@@ -48,7 +48,7 @@
         </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href = '/pages/services/mobile.php'">
         <div class="card-content">
         <div class="card-image">
             <img src="./public/img/services/mobile.webp" alt="Разработка мобильных приложений любой сложности">
@@ -64,7 +64,7 @@
         </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href = '/pages/services/api.php'">
         <div class="card-content">
         <div class="card-image">
             <img src="./public/img/services/api.webp" alt="Разработка интеграций api любой сложности">
@@ -74,13 +74,13 @@
             <i class="fa-duotone fa-person-from-portal"></i>
             <div class="card-info-title">
                 <h3>Интеграции сервисов, API</h3>  
-                <h4>Внедрение и разработка обмена данными</h4>
+                <h4>Внедрение и разработка обмена данными между ПО</h4>
             </div>    
             </div>
         </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href = '/pages/services/pc.php'">
         <div class="card-content">
         <div class="card-image">
             <img src="./public/img/services/pc.webp" alt="Разработка нативных приложений любой сложности">
