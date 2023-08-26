@@ -1,5 +1,4 @@
-header
-{
+header {
     position: fixed;
     left: 0;
     top: 0;
@@ -9,17 +8,20 @@ header
     backdrop-filter: blur(4px);
     z-index: var(--z-header);
 }
+
 menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
 }
+
 menu a {
     text-transform: uppercase;
     color: var(--white);
     text-decoration: none;
 }
+
 menu a:hover {
     transform: scale(1.2);
 }

@@ -1,6 +1,5 @@
 function isMobile() {
-    if(window.innerWidth <= 1200)
-    {
+    if (window.innerWidth <= 1200) {
         return true;
     }
 

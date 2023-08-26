@@ -9,25 +9,25 @@
 @import url(mini_message.css);
 
 @import url(footer.css);
-*
-{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition-duration: 0.5s;
   font-family: sans-serif;
-  font-family: 'Bad Script', cursive!important;
-  font-family: 'Montserrat', sans-serif!important;
+  font-family: 'Bad Script', cursive !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-family: 'Ubuntu', sans-serif;
   scroll-behavior: smooth;
 }
-html
-{
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable;
-}  
-body
-{
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
@@ -36,31 +36,34 @@ body
   position: relative;
   left: 0;
 }
-a
-{
+
+a {
   text-decoration: none;
 }
-.button
-{
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: calc(var(--index) * .71);
-	letter-spacing: -.02vw;
-	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
-	background-color: transparent;
-	color: var(--white);
-	border-radius: 10em;
-	border: rgb(255 255 255 / .4) 3px solid;
-	outline: none;
-	font-size: 1.1rem;
+
+.button {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: calc(var(--index) * .71);
+  letter-spacing: -.02vw;
+  padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 10em;
+  border: rgb(255 255 255 / .4) 3px solid;
+  outline: none;
+  font-size: 1.1rem;
 }
-.button:hover
-{
+
+.button:hover {
   background: var(--yellow);
   color: var(--balck);
 }
+
 #content {
   width: 100vw;
   min-height: 80vh;
   padding: 1rem;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }

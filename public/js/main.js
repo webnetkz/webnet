@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () =>
-{
+document.addEventListener('DOMContentLoaded', () => {
     const classes = ['layer-1', 'layer-2', 'layer-5', 'layer-6'];
     const images = [
         './public/img/layer-1.webp',
@@ -8,11 +7,9 @@ document.addEventListener('DOMContentLoaded', () =>
         './public/img/layer-6.webp'
     ];
 
-    classes.forEach((className, index) =>
-    {
+    classes.forEach((className, index) => {
         const elements = document.getElementsByClassName(className);
-        for(let i = 0; i < elements.length; i++)
-        {
+        for (let i = 0; i < elements.length; i++) {
             elements[i].style.backgroundImage = `url(${images[index]})`;
         }
     });

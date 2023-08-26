@@ -1,5 +1,4 @@
-.mini-message
-{
+.mini-message {
     position: fixed;
     z-index: 999;
     bottom: 0;
@@ -14,11 +13,13 @@
     align-items: center;
     animation: showFromBottom 1s linear;
 }
+
 @keyframes showFromBottom {
     0% {
         opacity: 0;
         bottom: -100vh;
     }
+
     100% {
         opacity: 1;
         bottom: 0;

@@ -1,5 +1,4 @@
-:root
-{
+:root {
     --white: white;
     --halfWhite: rgba(255, 255, 255, 0.1);
     --black: black;
@@ -13,7 +12,7 @@
     --radius: 10px;
 
     --index: calc(1vw + 1vh);
-	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+    --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
 
     --z-upt-section-button: 1;
     --z-upt-section: 2;
