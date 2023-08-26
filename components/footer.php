@@ -137,7 +137,7 @@
         <a href="tel:+77076691424">+7707 669 14 24</a>
       </div>
     </div>
-    <div><a class="image" href="https://webnet.kz" target="_blank" style="background-image: url(&quot;./public/img/footer.svg&quot;)">.</a>
+    <div><a class="image" href="https://webnet.kz" target="_blank" style="background-image: url(&quot;/public/img/footer.svg&quot;)">.</a>
       <p>©2023 WebNet</p>
     </div>
   </div>
@@ -158,9 +158,9 @@
 		}
 	</script>
 
-	<script src="./dist/min.js" async></script>
+	<script src="/dist/min.js" async></script>
 
-	<script src="./public/send_form.js"></script>
+	<script src="/public/send_form.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXX9RKVMT0"></script>
     <script>

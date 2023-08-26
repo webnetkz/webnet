@@ -5,14 +5,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  z-index: 2;
+  z-index: var(--z-upt-section);
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 .utp-section button
 {
     position: relative;
-    z-index: 1;
+    z-index: var(--z-upt-section-button);
 }
 .utp-section > h1
 {

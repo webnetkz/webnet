@@ -1,6 +1,6 @@
 <div id="services">
     <div id="cards">
-    <div class="card">
+    <div class="card" onclick="location.href = '/pages/services/sites.php'">
         <div class="card-content">
         <div class="card-image">
             <img src="./public/img/services/sites.webp" alt="Разработка сайтов любой сложности">

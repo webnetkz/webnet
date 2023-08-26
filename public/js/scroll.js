@@ -11,11 +11,11 @@ async function trackScrolling()
 
         if(scrollY >= 3)
         {
-            
+            document.querySelector('header').style.height = '30px';
         }
         else
         {
-            
+            document.querySelector('header').style.height = '55px';
         }
     }
 }
