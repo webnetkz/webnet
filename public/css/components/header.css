@@ -1,0 +1,28 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  z-index: var(--z-header);
+  backdrop-filter: blur(4px);
+  z-index: var(--z-header);
+  border-bottom: 1px solid var(--orange);
+}
+
+menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+menu a {
+  text-transform: uppercase;
+  color: var(--orange);
+  text-decoration: none;
+}
+
+menu a:hover {
+  text-shadow: 0 0 5px var(--orange);
+}
