@@ -7,7 +7,7 @@ header {
   z-index: var(--z-header);
   backdrop-filter: blur(4px);
   z-index: var(--z-header);
-  border-bottom: 1px solid var(--orange);
+  background: rgba(122, 122, 122, 0.1);
 }
 
 menu {
@@ -19,7 +19,7 @@ menu {
 
 menu a {
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--white);
   text-decoration: none;
 }
 

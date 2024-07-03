@@ -7,3 +7,4 @@ sitemap.xml
 package.json
 package-lock.json
 /app/send_message_tel.php
+.vscode

@@ -1,5 +1,4 @@
 <div id="feedback">
-    <card-3d-x>
     <div class="login-box">
         <h2>Оставить заявку</h2>
         <form method="POST" onsubmit="isSendForm(event)">
@@ -20,16 +19,13 @@
             </button>
         </form>
     </div>
-  </card-3d-x>
 </div>
-
 
 <script>
     function isSendForm(event)
     {
         event.preventDefault();
 
-        // START MINI-MESSAGE
         let messageBlock = document.createElement('div');
             messageBlock.classList.add('mini-message');
             messageBlock.innerHTML = 'Заявка принята, наш менеджер скоро свяжится с вами.';
@@ -75,51 +71,4 @@
 
         xhr.send("name=" + encodeURIComponent(name) + "&phone=" + encodeURIComponent(phone));
     }
-</script>
-
-<script type="module">
-  export class Card3DXPWA extends HTMLElement
-{
-  constructor()
-  {
-    super();
-
-    this.addEventListener('mousemove', this.rotate);  
-    this.addEventListener('mouseout', this.stopRotate);      
-
-    // if(window.MOBILE.isMobile())
-    // {
-    //   window.addEventListener("deviceorientation", function(event)
-    //   {
-
-    //     let container = document.querySelector('.tmp');
-    //     let beta = (Math.round(event.beta) / 180) * 6;
-    //     let gamma = (Math.round(event.gamma) / 90) * 3;
-
-    //     const maxRotation = 30;
-    //     beta *= maxRotation;
-    //     gamma *= maxRotation;
-
-    //     container.style.transform = 'rotateX(' + -beta + 'deg) rotateY(' + gamma + 'deg)';
-    //   }, true);
-    // }
-  }
-
-  rotate(event)
-  {
-    const halfHeight = this.offsetHeight / 2;
-    const halfWidth = this.offsetWidth / 2;
-
-    this.style.transform = 'rotateX(' + -
-    ((event.offsetY - halfHeight) / 5 ) + 'deg) rotateY(' + 
-    ((event.offsetX - halfWidth) / 5 ) + 'deg)';    
-  }
-
-  stopRotate(event)
-  {
-    this.style.transform = 'rotate(0)';
-  }
-}
-
-customElements.define("card-3d-x", Card3DXPWA);
 </script>

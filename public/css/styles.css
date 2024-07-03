@@ -43,6 +43,10 @@ body {
   animation: gradient 15s ease infinite;
 }
 
+#page {
+  margin: 50px 10px;
+}
+
 a {
   text-decoration: none;
 }

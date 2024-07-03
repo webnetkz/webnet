@@ -6,7 +6,7 @@ require_once './components/cursor.php';
 ?>
 
 <div id="content">
-  
+  test SFTP
 </div>
 
 <?php

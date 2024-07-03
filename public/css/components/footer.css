@@ -25,7 +25,6 @@ body .footer .content p {
   text-decoration: none;
   padding: 3px 8px;
   border-radius: 7px;
-  border: 1px solid var(--black);
 }
 
 body .footer .content a:hover,

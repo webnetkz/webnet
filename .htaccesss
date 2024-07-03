@@ -1,10 +1,16 @@
 # Добавление кодировки по умолчанию
 AddDefaultCharset UTF-8
-# Запуск движка
-RewriteEngine on
-# Убераем у файлов расширение .php при помощи регулярного выржения
-RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
-RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
 
-RewriteRule .* - [L,R=404]
+# Запуск движка
+RewriteEngine On
+
+# Убираем у файлов расширение .php при помощи регулярного выражения
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^.?]+)$ $1.php [L]
+
+# Перенаправляем все запросы с явным указанием .php на страницу 404
+RewriteCond %{THE_REQUEST} \.php
+RewriteRule ^(.*)$ /404.html [L,R=404]
+
+# Определение страницы ошибки 404
 ErrorDocument 404 /404.html
