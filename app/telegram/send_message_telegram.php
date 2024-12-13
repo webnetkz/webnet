@@ -2,7 +2,7 @@
 
 if(isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['phone']) && !empty($_POST['phone']))
 {
-    $bot_token = "6230787025:AAG5mWVd77Nha5SREwoGbRG_z42Tvb3izqg";
+    $bot_token = "7771527324:AAHEzU2g8xy17IKz-wcEEMLe3I6qDgrngzY";
     
     $message = "*Имя:* \n{$_POST['name']}\n";
     $message .= "*Телефон:* \n{$_POST['phone']}";

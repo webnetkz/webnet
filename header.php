@@ -29,11 +29,11 @@ require_once 'config.php';
 <body>
 
 	<header>
-		<menu>
+<!--		<menu>
 			<a href="/index#">В начало</a>
 			<a href="/test.php">Предложения</a>
       <a href="/pages/shooter.php">shooter</a>
 			<a href="/test">Кейсы</a>
 			<a href="/index#feedback">Контакты</a>
-		</menu>
+		</menu> -->
 	</header>
