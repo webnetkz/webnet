@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
 
-        <title>SITE | Blog</title>
+        <title><?=$title;?></title>
 
         <meta
             name="viewport"
@@ -15,8 +15,7 @@
         <link
             rel="icon"
             type="image/x-icon"
-            sizes="192x192"
-            href="img/favicon.ico"
+            href="./img/favicon.ico"
         />
 
         <!-- libs css -->

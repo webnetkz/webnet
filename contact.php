@@ -1,4 +1,6 @@
 <?php
+  $title = 'Контакты WebNet.kz';
+
   require_once './header.php';
 ?>
 

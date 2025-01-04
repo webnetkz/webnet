@@ -1,4 +1,6 @@
 <?php
+  $title = 'Главная WebNet.kz';
+
   require_once './header.php';
 ?>
 

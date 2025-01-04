@@ -1,4 +1,6 @@
 <?php
+  $title = 'Наши работы WebNet.kz';
+
   require_once './header.php';
 ?>
 
@@ -110,7 +112,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >02.01.2025</span
                                             >
                                         </div>
                                     </div>
@@ -160,7 +162,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >19.06.2023</span
                                             >
                                         </div>
                                     </div>
@@ -210,7 +212,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >01.03.2022</span
                                             >
                                         </div>
                                     </div>
@@ -260,7 +262,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >12.05.2023</span
                                             >
                                         </div>
                                     </div>
@@ -310,7 +312,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >09.06.2019</span
                                             >
                                         </div>
                                     </div>
