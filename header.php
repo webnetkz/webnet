@@ -45,9 +45,10 @@
                     <div class="col-2 header__container-inner">
                         <a href="index.php" class="header__logo">
                             <img
-                                src="img/logo.svg"
+                                src="img/logo.png"
                                 alt="Logo"
                                 class="header__logo-img"
+                                style="width: 50px;"
                             />
                         </a>
 
@@ -75,8 +76,8 @@
                         data-da=".header, 960, 1"
                     >
                         <nav class="header__menu">
-                            <a href="about.html" class="header__menu-item _hul"
-                                >About us</a
+                            <a href="about.php" class="header__menu-item _hul"
+                                >О нас</a
                             >
                             <a
                                 href="services.html"
@@ -88,10 +89,10 @@
                                 class="header__menu-item _hul"
                                 >Pricing</a
                             >
-                            <a href="faq.html" class="header__menu-item _hul"
-                                >FAQ</a
+                            <a href="services.php" class="header__menu-item _hul"
+                                >Услуги</a
                             >
-                            <a href="blog.php" class="header__menu-item _hul"
+                            <a href="portfolio.php" class="header__menu-item _hul"
                                 >Работы</a
                             >
                             <a
@@ -103,14 +104,8 @@
                     </div>
 
                     <div class="col-2 header__btns">
-                        <a href="sign-up.html" class="header__btn btn _bd">
-                            <span class="btn__inner">Sign up</span>
-                        </a>
-                        <a
-                            href="log-in.html"
-                            class="header__btn btn _bg-accent"
-                        >
-                            <span class="btn__inner">Sign in</span>
+                        <a href="contact.php" class="header__btn btn _bd">
+                            <span class="btn__inner">Заказать звонок</span>
                         </a>
                     </div>
                 </div>
