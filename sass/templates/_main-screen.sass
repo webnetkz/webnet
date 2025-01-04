@@ -1,0 +1,73 @@
+.main
+	@include adaptive('padding-top', 186, 'desktop')
+	&__container
+		@include adaptive('border-radius', 15, 'desktop')
+		@include adaptive('padding', 80, 'desktop')
+		@include adaptive('height', 720, 'desktop')
+		background-color: $accent
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		&-inner
+			@include adaptive('gap', 30, 'desktop')
+			display: flex
+			flex-direction: column
+	&__overtitle
+		@include adaptive('font-size', 80, 'desktop')
+		font-weight: 400
+		letter-spacing: -0.04em
+		color: #fff
+	&__title
+		@include adaptive('font-size', 140, 'desktop')
+		line-height: 0.9
+		letter-spacing: -0.04em
+		font-weight: 400
+		color: #fff
+		&._less-fz
+			@include adaptive('font-size', 120, 'desktop')
+	&__text
+		@include adaptive('max-width', 350, 'desktop')
+		color: #fff
+	&__btns
+		display: none
+	&__btn
+		@include adaptive('bottom', 30, 'desktop')
+		@include adaptive('width', 280, 'desktop')
+		@include adaptive('height', 110, 'desktop')
+		@include adaptive('font-size', 32, 'desktop')
+		position: fixed
+		padding: 0
+		z-index: 7
+		&._left
+			@include adaptive('left', 70, 'desktop')
+		&._right
+			@include adaptive('right', 70, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.main
+		@include adaptive('padding-top', 171, 'mobile')
+		&__container
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('padding', 30, 'mobile')
+			@include adaptive('height', 350, 'mobile')
+			@include adaptive('gap', 20, 'mobile')
+			flex-direction: column
+			justify-content: flex-end
+			align-items: flex-start
+			&-inner
+				@include adaptive('gap', 10, 'mobile')
+		&__title
+			@include adaptive('font-size', 24, 'mobile')
+			font-weight: 500
+			line-height: 1
+		&__text br
+			display: none
+		&__btns
+			@include adaptive('gap', 5, 'mobile')
+			display: flex
+			flex-direction: column
+		&__btn
+			@include adaptive('height', 54, 'mobile')
+			@include adaptive('font-size', 16, 'mobile')
+			position: static
+			width: 100%

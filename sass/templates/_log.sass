@@ -1,0 +1,51 @@
+.log
+	background-color: #F4F6F8
+	min-height: 100vh
+	&__container
+		@include adaptive('border-radius', 10, 'desktop')
+		@include adaptive('max-width', 1600, 'desktop')
+		@include adaptive('min-height', 800, 'desktop')
+		margin: 0 auto
+		width: 100%
+		background-color: #fff
+		box-shadow: 0px 4px 100px rgba(0, 2, 26, 0.12)
+		display: flex
+		justify-content: space-between
+		&-wrapper
+			@include adaptive('padding', 20, 'desktop')
+			width: 50%
+		&-inner
+			@include adaptive('border-radius', 10, 'desktop')
+			@include adaptive('padding', 80, 'desktop')
+			height: 100%
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+			background-color: $accent
+			color: #fff
+	&__logo
+		display: flex
+		&-img
+			@include adaptive('width', 200, 'desktop')
+	&__heading
+		@include adaptive('font-size', 36, 'desktop')
+		line-height: 1
+		letter-spacing: -0.02em
+
+@media only screen and (max-width : 960px)
+	.log
+		&__container
+			@include adaptive('gap', 10, 'mobile')
+			flex-direction: column
+			background: none
+			box-shadow: none
+			&-wrapper
+				width: 100%
+			&-inner
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('padding', 30, 'mobile')
+				@include adaptive('gap', 30, 'mobile')
+		&__logo-img
+			@include adaptive('width', 90, 'mobile')
+		&__heading
+			@include adaptive('font-size', 16, 'mobile')

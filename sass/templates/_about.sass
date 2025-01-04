@@ -1,0 +1,50 @@
+.about
+	&__container
+		@include adaptive('padding-top', 150, 'desktop')
+		@include adaptive('padding-bottom', 150, 'desktop')
+		@include adaptive('padding-left', 80, 'desktop')
+		@include adaptive('padding-right', 80, 'desktop')
+		position: relative
+	&__overtitle
+		@include adaptive('margin-bottom', 30, 'desktop')
+		@include adaptive('font-size', 32, 'desktop')
+		color: $accent
+	&__title
+		@include adaptive('max-width', 1100, 'desktop')
+		@include adaptive('margin-bottom', 60, 'desktop')
+	&__text
+		@include adaptive('gap', 235, 'desktop')
+		display: flex
+		align-items: flex-start
+		color: $dark
+	&__image
+		@include adaptive('width', 664, 'desktop')
+		@include adaptive('right', -40, 'desktop')
+		@include adaptive('top', -20, 'desktop')
+		position: absolute
+		max-width: none
+		max-height: none
+
+@media only screen and (max-width : 960px)
+	.about
+		&__container
+			@include adaptive('padding-top', 40, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-bottom', 200, 'mobile')
+			@include adaptive('margin-bottom', 147, 'mobile')
+		&__overtitle
+			@include adaptive('margin-bottom', 20, 'mobile')
+			@include adaptive('font-size', 18, 'mobile')
+			@include adaptive('max-width', 200, 'mobile')
+		&__title
+			@include adaptive('margin-bottom', 40, 'mobile')
+		&__text
+			@include adaptive('gap', 10, 'mobile')
+			flex-direction: column
+			&-p br
+				display: none
+		&__image
+			@include adaptive('width', 230, 'mobile')
+			@include adaptive('bottom', -147, 'mobile')
+			@include adaptive('left', 43, 'mobile')

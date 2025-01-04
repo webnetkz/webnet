@@ -1,0 +1,585 @@
+.account
+	@include adaptive('padding-top', 20, 'desktop')
+	letter-spacing: -0.02em
+	&__container
+		display: flex
+	&-sidebar
+		@include adaptive('width', 720, 'desktop')
+		@include adaptive('min-height', 750, 'desktop')
+		@include adaptive('border-radius', 15, 'desktop')
+		@include adaptive('padding', 80, 'desktop')
+		flex: 0 0 auto
+		background-color: $accent
+		color: #fff
+		&__top
+			@include adaptive('padding-bottom', 20, 'desktop')
+			@include adaptive('margin-bottom', 80, 'desktop')
+			@include adaptive('border-bottom-width', 1, 'desktop')
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			border-color: rgba(255, 255, 255, 0.15)
+			border-style: solid
+		&__title
+			@include adaptive('font-size', 40, 'desktop')
+			letter-spacing: -0.06em
+			font-weight: 400
+		&__btn
+			position: relative
+			&:hover .account-sidebar__btn-icon
+				transform: scale(1.1)
+			&-icon
+				@include adaptive('width', 45, 'desktop')
+				@include adaptive('height', 45, 'desktop')
+				transition: .3s
+			&-data
+				@include adaptive('width', 20, 'desktop')
+				@include adaptive('height', 20, 'desktop')
+				@include adaptive('right', -10, 'desktop')
+				@include adaptive('top', -10, 'desktop')
+				@include adaptive('font-size', 12, 'desktop')
+				position: absolute
+				background-color: #FA515C
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+				border-radius: 50%
+				letter-spacing: -0.03em
+		&__list
+			@include adaptive('width', 270, 'desktop')
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			flex-direction: column
+			&-item
+				@include adaptive('border-width', 1, 'desktop')
+				@include adaptive('border-radius', 5, 'desktop')
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-right', 30, 'desktop')
+				@include adaptive('padding-left', 30, 'desktop')
+				border-color: #fff
+				border-style: solid
+				color: #fff
+				background: none
+				&::after
+					background-color: #fff
+				&:hover
+					color: $black
+				&.active
+					color: $black
+					background-color: #fff
+	&-main
+		@include adaptive('border-radius', 15, 'desktop')
+		@include adaptive('padding', 80, 'desktop')
+		@include adaptive('width', 1060, 'desktop')
+		flex: 0 0 auto
+		background-color: #fff
+		box-shadow: 0px 4px 100px 0px rgba(0, 2, 26, 0.12)
+		&__top
+			@include adaptive('padding-bottom', 15, 'desktop')
+			@include adaptive('margin-bottom', 80, 'desktop')
+			@include adaptive('border-bottom-width', 1, 'desktop')
+			border-color: #DCDCE9
+			border-style: solid
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+	&__btn
+		@include adaptive('padding-top', 18, 'desktop')
+		@include adaptive('padding-bottom', 18, 'desktop')
+		@include adaptive('padding-right', 32, 'desktop')
+		@include adaptive('padding-left', 32, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		@include adaptive('font-size', 16, 'desktop')
+	&__title
+		@include adaptive('font-size', 52, 'desktop')
+		font-weight: 400
+	&__form
+		@include adaptive('max-width', 580, 'desktop')
+	&-rate
+		&__wrapper
+			@include adaptive('margin-top', 150, 'desktop')
+			@include adaptive('gap', 20, 'desktop')
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&__text
+			font-weight: 500
+			letter-spacing: -0.02em
+			span
+				font-weight: 600
+		&__btn
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('padding-top', 18, 'desktop')
+			@include adaptive('padding-bottom', 18, 'desktop')
+			@include adaptive('padding-right', 30, 'desktop')
+			@include adaptive('padding-left', 30, 'desktop')
+			font-weight: 500
+		&__container
+			display: none
+		&__table
+			@include adaptive('margin-top', 30, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('border-width', 1, 'desktop')
+			border-color: $gray
+			border-style: solid
+			background-color: $second
+			overflow: hidden
+			display: flex
+			flex-direction: column
+			font-weight: 400
+			&-row
+				@include adaptive('border-bottom-width', 1, 'desktop')
+				border-color: $gray
+				border-style: solid
+				display: flex
+				&:last-child
+					border: none
+			&-head .account-rate__table-elem
+				font-weight: 600
+			&-elem
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-right', 20, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('border-right-width', 1, 'desktop')
+				@include adaptive('font-size', 16, 'desktop')
+				border-color: $gray
+				border-style: solid
+				letter-spacing: -0.02em
+				&:last-child
+					border: none
+			&-dest
+				@include adaptive('width', 515, 'desktop')
+			&-prefix, &-rate
+				@include adaptive('width', 200, 'desktop')
+			&-rate
+				font-weight: 500
+	&-stats
+		&__table
+			@include adaptive('margin-top', 30, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('border-width', 1, 'desktop')
+			border-color: $gray
+			border-style: solid
+			background-color: $second
+			overflow: hidden
+			display: flex
+			flex-direction: column
+			font-weight: 400
+			&-row
+				@include adaptive('border-bottom-width', 1, 'desktop')
+				border-color: $gray
+				border-style: solid
+				display: flex
+				&:last-child
+					border: none
+			&-head
+				font-weight: 600
+			&-elem
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-right', 20, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('border-right-width', 1, 'desktop')
+				@include adaptive('font-size', 14, 'desktop')
+				@include adaptive('width', 121, 'desktop')
+				border-color: $gray
+				border-style: solid
+				letter-spacing: -0.02em
+				&:last-child
+					border: none
+			&-number
+				@include adaptive('width', 51, 'desktop')
+	&-notify
+		display: flex
+		justify-content: space-between
+		&__container
+			@include adaptive('width', 560, 'desktop')
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			flex-direction: column
+		&__aside
+			@include adaptive('width', 300, 'desktop')
+		&__item
+			@include adaptive('padding', 30, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+			&-text
+				@include adaptive('width', 450, 'desktop')
+				@include adaptive('font-size', 18, 'desktop')
+				letter-spacing: -0.02em
+		&__delete
+			display: flex
+			flex: 0 0 auto
+			&-icon
+				@include adaptive('width', 24, 'desktop')
+	&-settings
+		display: flex
+		justify-content: space-between
+		&__container
+			@include adaptive('width', 500, 'desktop')
+			@include adaptive('gap', 20, 'desktop')
+			display: flex
+			flex-direction: column
+		&__item
+			width: 100%
+			&-heading
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('padding-right', 20, 'desktop')
+				@include adaptive('border-radius', 5, 'desktop')
+				@include adaptive('border-width', 1, 'desktop')
+				border-style: solid
+				border-color: $gray
+				background-color: $second
+				display: flex
+				justify-content: space-between
+				align-items: center
+				cursor: pointer
+				font-weight: 600
+				&.active
+					@include adaptive('border-bottom-right-radius', 0, 'desktop')
+					@include adaptive('border-bottom-left-radius', 0, 'desktop')
+					.account-settings__item-icon
+						transform: scale(1, -1)
+			&-icon
+				@include adaptive('width', 20, 'desktop')
+				transition: .3s
+			&-dropdown
+				display: none
+			&-row
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('padding-right', 70, 'desktop')
+				@include adaptive('border-width', 1, 'desktop')
+				@include adaptive('font-size', 16, 'desktop')
+				border-style: solid
+				border-color: $gray
+				border-top: 0
+				background-color: $second
+				display: flex
+				justify-content: space-between
+				align-items: center
+				position: relative
+			&-caption
+				font-weight: 500
+			&-data
+				font-weight: 400
+			&-btn
+				@include adaptive('width', 50, 'desktop')
+				@include adaptive('border-left-width', 1, 'desktop')
+				border-style: solid
+				border-color: $gray
+				position: absolute
+				right: 0
+				top: 0
+				bottom: 0
+				display: flex
+				justify-content: center
+				align-items: center
+			&-copy
+				@include adaptive('width', 20, 'desktop')
+			&-delete
+				@include adaptive('border-radius', 5, 'desktop')
+				@include adaptive('border-top-right-radius', 0, 'desktop')
+				@include adaptive('border-top-left-radius', 0, 'desktop')
+				@include adaptive('height', 50, 'desktop')
+				@include adaptive('padding', 15, 'desktop')
+				@include adaptive('font-size', 16, 'desktop')
+				width: 100%
+		&__aside
+			@include adaptive('width', 350, 'desktop')
+			@include adaptive('gap', 20, 'desktop')
+			display: flex
+			flex-direction: column
+		&__device
+			@include adaptive('font-size', 16, 'desktop')
+			display: flex
+			flex-direction: column
+			&-head
+				@include adaptive('border-radius', 5, 'desktop')
+				@include adaptive('border-bottom-right-radius', 0, 'desktop')
+				@include adaptive('border-bottom-left-radius', 0, 'desktop')
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('padding-right', 20, 'desktop')
+				font-weight: 600
+				display: flex
+				justify-content: space-between
+				align-items: center
+			&-btn
+				@include adaptive('border-radius', 5, 'desktop')
+				@include adaptive('border-top-right-radius', 0, 'desktop')
+				@include adaptive('border-top-left-radius', 0, 'desktop')
+				@include adaptive('height', 50, 'desktop')
+				padding: 0
+		&__info
+			&-heading, &-head
+				@include adaptive('border-radius', 5, 'desktop')
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('padding-right', 20, 'desktop')
+				@include adaptive('font-size', 16, 'desktop')
+				font-weight: 600
+			&-head
+				@include adaptive('border-bottom-right-radius', 0, 'desktop')
+				@include adaptive('border-bottom-left-radius', 0, 'desktop')
+			&-heading
+				display: flex
+				justify-content: space-between
+				align-items: center
+				cursor: pointer
+				&.active
+					@include adaptive('border-bottom-right-radius', 0, 'desktop')
+					@include adaptive('border-bottom-left-radius', 0, 'desktop')
+					.account-settings__info-icon
+						transform: scale(1, -1)
+			&-icon
+				@include adaptive('width', 20, 'desktop')
+				@include adaptive('margin-left', 20, 'desktop')
+				flex: 0 0 auto
+				transition: .3s
+			&-container, &-dropdown
+				@include adaptive('border-radius', 5, 'desktop')
+				@include adaptive('border-top-right-radius', 0, 'desktop')
+				@include adaptive('border-top-left-radius', 0, 'desktop')
+				@include adaptive('padding-top', 18, 'desktop')
+				@include adaptive('padding-bottom', 18, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('padding-right', 20, 'desktop')
+				border-top: none
+			&-dropdown
+				display: none
+			&-text
+				@include adaptive('font-size', 16, 'desktop')
+				@include adaptive('margin-bottom', 10, 'desktop')
+				font-weight: 400
+				color: $dark
+				&:last-child
+					margin-bottom: 0
+
+@media only screen and (max-width : 960px)
+	.account
+		&__container
+			@include adaptive('gap', 10, 'mobile')
+			flex-direction: column
+		&-sidebar
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('padding-top', 40, 'mobile')
+			@include adaptive('padding-bottom', 40, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			&__top
+				@include adaptive('padding-bottom', 10, 'mobile')
+				@include adaptive('margin-bottom', 40, 'mobile')
+				@include adaptive('border-bottom-width', 1, 'mobile')
+			&__title
+				@include adaptive('font-size', 24, 'mobile')
+			&__btn
+				&:hover .account-sidebar__btn-icon
+					transform: scale(1)
+				&-icon
+					@include adaptive('width', 25, 'mobile')
+					@include adaptive('height', 25, 'mobile')
+				&-data
+					@include adaptive('width', 15, 'mobile')
+					@include adaptive('height', 15, 'mobile')
+					@include adaptive('right', -7, 'mobile')
+					@include adaptive('top', -12, 'mobile')
+					@include adaptive('font-size', 10, 'mobile')
+			&__list
+				@include adaptive('gap', 5, 'mobile')
+				&-item
+					@include adaptive('border-width', 1, 'mobile')
+					@include adaptive('border-radius', 5, 'mobile')
+					@include adaptive('padding-top', 18, 'mobile')
+					@include adaptive('padding-bottom', 18, 'mobile')
+					@include adaptive('padding-right', 30, 'mobile')
+					@include adaptive('padding-left', 30, 'mobile')
+					font-weight: 500
+					&:hover
+						color: #fff
+					&.active:hover
+						color: $black
+		&-main
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('padding', 30, 'mobile')
+			&__top
+				@include adaptive('padding-bottom', 10, 'mobile')
+				@include adaptive('margin-bottom', 30, 'mobile')
+				@include adaptive('border-bottom-width', 1, 'mobile')
+		&__title
+			@include adaptive('font-size', 22, 'mobile')
+		&__btn
+			@include adaptive('padding', 22, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('font-size', 14, 'mobile')
+			width: 100%
+			&:hover
+				color: #fff
+		&-rate
+			&__wrapper
+				@include adaptive('gap', 20, 'mobile')
+			&__btn
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('padding-top', 18, 'mobile')
+				@include adaptive('padding-bottom', 18, 'mobile')
+				@include adaptive('padding-right', 30, 'mobile')
+				@include adaptive('padding-left', 30, 'mobile')
+				width: 100%
+				font-weight: 500
+				&:hover
+					color: #fff
+			&__table
+				@include adaptive('margin-top', 30, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('border-width', 1, 'mobile')
+				overflow-x: auto
+				&-row
+					@include adaptive('border-bottom-width', 1, 'mobile')
+					@include adaptive('width', 400, 'mobile')
+					flex: 0 0 auto
+				&-elem
+					@include adaptive('padding-top', 12, 'mobile')
+					@include adaptive('padding-bottom', 12, 'mobile')
+					@include adaptive('padding-right', 20, 'mobile')
+					@include adaptive('padding-left', 20, 'mobile')
+					@include adaptive('border-right-width', 1, 'mobile')
+					@include adaptive('font-size', 12, 'mobile')
+					flex: 0 0 auto
+				&-dest
+					@include adaptive('width', 200, 'mobile')
+				&-prefix, &-rate
+					@include adaptive('width', 100, 'mobile')
+		&-stats__table
+			@include adaptive('margin-top', 30, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('border-width', 1, 'mobile')
+			overflow-x: auto
+			&-row
+				@include adaptive('border-bottom-width', 1, 'mobile')
+				@include adaptive('width', 900, 'mobile')
+				flex: 0 0 auto
+			&-elem
+				@include adaptive('padding-top', 18, 'mobile')
+				@include adaptive('padding-bottom', 18, 'mobile')
+				@include adaptive('padding-right', 20, 'mobile')
+				@include adaptive('padding-left', 20, 'mobile')
+				@include adaptive('border-right-width', 1, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+				@include adaptive('width', 121, 'mobile')
+				flex: 0 0 auto
+			&-number
+				@include adaptive('width', 51, 'mobile')
+		&-notify
+			flex-direction: column
+			&__container
+				@include adaptive('gap', 10, 'mobile')
+			&__aside
+				@include adaptive('margin-bottom', 20, 'mobile')
+				order: -1
+			&__item
+				@include adaptive('padding', 15, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				&-text
+					@include adaptive('width', 190, 'mobile')
+					@include adaptive('font-size', 14, 'mobile')
+			&__delete-icon
+				@include adaptive('width', 20, 'mobile')
+		&-settings
+			@include adaptive('gap', 20, 'mobile')
+			flex-direction: column
+			&__container
+				@include adaptive('gap', 10, 'mobile')
+			&__item
+				&-heading
+					@include adaptive('padding-top', 18, 'mobile')
+					@include adaptive('padding-bottom', 18, 'mobile')
+					@include adaptive('padding-left', 20, 'mobile')
+					@include adaptive('padding-right', 20, 'mobile')
+					@include adaptive('border-radius', 5, 'mobile')
+					@include adaptive('border-width', 1, 'mobile')
+					&.active
+						@include adaptive('border-bottom-right-radius', 0, 'mobile')
+						@include adaptive('border-bottom-left-radius', 0, 'mobile')
+				&-icon
+					@include adaptive('width', 20, 'mobile')
+				&-row
+					@include adaptive('padding-top', 18, 'mobile')
+					@include adaptive('padding-bottom', 18, 'mobile')
+					@include adaptive('padding-left', 10, 'mobile')
+					@include adaptive('padding-right', 60, 'mobile')
+					@include adaptive('border-width', 1, 'mobile')
+					@include adaptive('font-size', 12, 'mobile')
+				&-btn
+					@include adaptive('width', 50, 'mobile')
+					@include adaptive('border-left-width', 1, 'mobile')
+				&-copy
+					@include adaptive('width', 20, 'mobile')
+				&-delete
+					@include adaptive('border-radius', 5, 'mobile')
+					@include adaptive('border-top-right-radius', 0, 'mobile')
+					@include adaptive('border-top-left-radius', 0, 'mobile')
+					@include adaptive('height', 50, 'mobile')
+					@include adaptive('padding', 15, 'mobile')
+					@include adaptive('font-size', 14, 'mobile')
+			&__aside
+				@include adaptive('gap', 10, 'mobile')
+			&__device
+				@include adaptive('font-size', 14, 'mobile')
+				&-head
+					@include adaptive('border-radius', 5, 'mobile')
+					@include adaptive('border-bottom-right-radius', 0, 'mobile')
+					@include adaptive('border-bottom-left-radius', 0, 'mobile')
+					@include adaptive('padding-top', 18, 'mobile')
+					@include adaptive('padding-bottom', 18, 'mobile')
+					@include adaptive('padding-left', 20, 'mobile')
+					@include adaptive('padding-right', 20, 'mobile')
+				&-btn
+					@include adaptive('border-radius', 5, 'mobile')
+					@include adaptive('border-top-right-radius', 0, 'mobile')
+					@include adaptive('border-top-left-radius', 0, 'mobile')
+					@include adaptive('height', 50, 'mobile')
+					padding: 0
+			&__info
+				&-heading, &-head
+					@include adaptive('border-radius', 5, 'mobile')
+					@include adaptive('padding-top', 18, 'mobile')
+					@include adaptive('padding-bottom', 18, 'mobile')
+					@include adaptive('padding-left', 20, 'mobile')
+					@include adaptive('padding-right', 20, 'mobile')
+					@include adaptive('font-size', 14, 'mobile')
+					font-weight: 600
+				&-head
+					@include adaptive('border-bottom-right-radius', 0, 'mobile')
+					@include adaptive('border-bottom-left-radius', 0, 'mobile')
+				&-heading.active
+					@include adaptive('border-bottom-right-radius', 0, 'mobile')
+					@include adaptive('border-bottom-left-radius', 0, 'mobile')
+				&-icon
+					@include adaptive('width', 20, 'mobile')
+					@include adaptive('margin-left', 10, 'mobile')
+				&-container, &-dropdown
+					@include adaptive('border-radius', 5, 'mobile')
+					@include adaptive('border-top-right-radius', 0, 'mobile')
+					@include adaptive('border-top-left-radius', 0, 'mobile')
+					@include adaptive('padding-top', 18, 'mobile')
+					@include adaptive('padding-bottom', 18, 'mobile')
+					@include adaptive('padding-left', 20, 'mobile')
+					@include adaptive('padding-right', 20, 'mobile')
+					border-top: none
+				&-dropdown
+					display: none
+				&-text
+					@include adaptive('font-size', 14, 'mobile')
+					@include adaptive('margin-bottom', 10, 'mobile')
+					&:last-child
+						margin-bottom: 0

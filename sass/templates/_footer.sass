@@ -1,0 +1,254 @@
+.footer
+	@include adaptive('padding-top', 100, 'desktop')
+	@include adaptive('padding-bottom', 70, 'desktop')
+	&__container
+		@include adaptive('padding', 50, 'desktop')
+		@include adaptive('border-radius', 15, 'desktop')
+		background-color: $accent
+		color: #fff
+	&__top
+		@include adaptive('margin-bottom', 100, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__logo
+		display: flex
+		&-img
+			@include adaptive('width', 140, 'desktop')
+	&__social
+		@include adaptive('gap', 10, 'desktop')
+		display: flex
+		&-item
+			@include adaptive('width', 195, 'desktop')
+			@include adaptive('height', 75, 'desktop')
+			@include adaptive('font-size', 20, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			font-weight: 400
+			padding: 0
+			background-color: #fff
+			color: $accent
+			.btn__inner
+				@include adaptive('gap', 12, 'desktop')
+				display: flex
+				justify-content: center
+				align-items: center
+			&:hover .footer__social-icon path
+				fill: #fff
+		&-icon
+			@include adaptive('height', 25, 'desktop')
+			flex: 0 0 auto
+			path
+				transition: .3s
+	&__middle
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__form
+		@include adaptive('width', 440, 'desktop')
+		display: flex
+		flex-direction: column
+		&-heading
+			@include adaptive('font-size', 36, 'desktop')
+			@include adaptive('margin-bottom', 40, 'desktop')
+			line-height: 0.9
+			letter-spacing: -0.02em
+		&-container
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+		&-input
+			@include adaptive('padding-right', 20, 'desktop')
+			@include adaptive('padding-left', 20, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('height', 60, 'desktop')
+			@include adaptive('font-size', 16, 'desktop')
+			width: 100%
+			padding-top: 0
+			padding-bottom: 0
+			background-color: $accent
+			color: #fff
+			border-color: rgba(255, 255, 255, 0.50)
+			&::placeholder
+				@include adaptive('font-size', 16, 'desktop')
+				color: $light
+		&-submit
+			@include adaptive('width', 60, 'desktop')
+			@include adaptive('height', 60, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			flex: 0 0 auto
+			background-color: #fff
+			padding: 0
+			&:hover .footer__form-icon path
+				fill: #fff
+		&-icon
+			@include adaptive('width', 24, 'desktop')
+			@include adaptive('height', 24, 'desktop')
+			path
+				transition: .3s
+	&__contacts
+		@include adaptive('width', 810, 'desktop')
+		display: flex
+		justify-content: space-between
+		&-item
+			@include adaptive('gap', 20, 'desktop')
+			display: flex
+			align-items: flex-start
+			line-height: 0.9
+		&-icon
+			@include adaptive('width', 42, 'desktop')
+			flex: 0 0 auto
+		&-wrapper
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-caption
+			@include adaptive('font-size', 16, 'desktop')
+			font-weight: 400
+		&-data
+			@include adaptive('font-size', 18, 'desktop')
+			letter-spacing: -0.06em
+	&__bottom
+		@include adaptive('margin-top', 30, 'desktop')
+		@include adaptive('padding-top', 30, 'desktop')
+		@include adaptive('border-top-width', 1, 'desktop')
+		border-color: rgba(255, 255, 255, 0.15)
+		border-style: solid
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__copyrights
+		@include adaptive('font-size', 14, 'desktop')
+		letter-spacing: -0.04em
+		font-weight: 400
+	&__btn
+		@include adaptive('border-width', 1, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		@include adaptive('width', 40, 'desktop')
+		@include adaptive('height', 40, 'desktop')
+		background-color: $accent
+		border-color: #fff
+		border-style: solid
+		padding: 0
+		&-icon
+			@include adaptive('width', 14, 'desktop')
+			@include adaptive('height', 14, 'desktop')
+			path
+				transition: .3s
+		&::after
+			background-color: #fff
+		&:hover .footer__btn-icon path
+			stroke: $black
+	&__payment
+		&-heading
+			@include adaptive('font-size', 36, 'desktop')
+			@include adaptive('margin-bottom', 40, 'desktop')
+			line-height: 0.9
+			letter-spacing: -0.02em
+		&-container
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+		&-item
+			@include adaptive('width', 70, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.footer
+		@include adaptive('padding-top', 40, 'mobile')
+		@include adaptive('padding-bottom', 30, 'mobile')
+		&__container
+			@include adaptive('padding-top', 40, 'mobile')
+			@include adaptive('padding-bottom', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+		&__top
+			@include adaptive('margin-bottom', 100, 'mobile')
+			@include adaptive('gap', 40, 'mobile')
+			flex-direction: column
+			align-items: stretch
+		&__logo-img
+			@include adaptive('width', 90, 'mobile')
+		&__social
+			@include adaptive('gap', 5, 'mobile')
+			flex-direction: column
+			&-item
+				@include adaptive('height', 50, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				width: 100%
+				.btn__inner
+					@include adaptive('gap', 10, 'mobile')
+				&:hover
+					color: $accent
+					.footer__social-icon path
+						fill: $accent
+			&-icon
+				@include adaptive('height', 15, 'mobile')
+		&__middle
+			flex-direction: column
+			align-items: stretch
+		&__form
+			display: flex
+			flex-direction: column
+			&-heading
+				@include adaptive('font-size', 20, 'mobile')
+				@include adaptive('margin-bottom', 20, 'mobile')
+				br
+					display: none
+			&-container
+				@include adaptive('gap', 5, 'mobile')
+			&-input
+				@include adaptive('padding-right', 20, 'mobile')
+				@include adaptive('padding-left', 20, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('height', 55, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+				&::placeholder
+					@include adaptive('font-size', 16, 'mobile')
+			&-submit
+				@include adaptive('width', 55, 'mobile')
+				@include adaptive('height', 55, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				&:hover .footer__form-icon path
+					fill: $accent
+			&-icon
+				@include adaptive('width', 24, 'mobile')
+				@include adaptive('height', 24, 'mobile')
+		&__contacts
+			@include adaptive('gap', 20, 'mobile')
+			flex-direction: column
+			align-items: flex-start
+			&-item
+				@include adaptive('gap', 20, 'mobile')
+			&-icon
+				@include adaptive('width', 35, 'mobile')
+			&-wrapper
+				@include adaptive('gap', 10, 'mobile')
+			&-caption
+				@include adaptive('font-size', 14, 'mobile')
+			&-data
+				@include adaptive('font-size', 16, 'mobile')
+		&__bottom
+			@include adaptive('margin-top', 20, 'mobile')
+			@include adaptive('padding-top', 10, 'mobile')
+			@include adaptive('border-top-width', 1, 'mobile')
+		&__copyrights
+			@include adaptive('font-size', 14, 'mobile')
+		&__btn
+			@include adaptive('border-width', 1, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('width', 30, 'mobile')
+			@include adaptive('height', 30, 'mobile')
+			&-icon
+				@include adaptive('width', 14, 'mobile')
+				@include adaptive('height', 14, 'mobile')
+			&:hover .footer__btn-icon path
+				stroke: #fff
+		&__payment
+			&-heading
+				@include adaptive('font-size', 20, 'mobile')
+				@include adaptive('margin-bottom', 20, 'mobile')
+			&-container
+				@include adaptive('gap', 5, 'mobile')
+				flex-wrap: wrap
+			&-item
+				@include adaptive('width', 60, 'mobile')

@@ -1,0 +1,23 @@
+@mixin adaptive($property, $size, $device)
+
+	@if $device == "desktop"
+
+		$maxWidth: 1920
+		$minWidth: 961
+
+		@media only screen and (min-width : 961px)
+
+			$adpSize: calc($size / 2)
+			$addSize: $size - $adpSize
+
+			#{$property}: calc(#{$adpSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth - $minWidth}))
+
+	@if $device == "mobile"
+
+		$maxWidth: 960
+		$minWidth: 375
+
+		$adpSize: $size * 2.5
+		$addSize: $adpSize - $size
+
+		#{$property}: calc(#{$size + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth - $minWidth}))

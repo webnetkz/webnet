@@ -1,0 +1,16 @@
+.container
+	@include adaptive('padding-right', 70, 'desktop')
+	@include adaptive('padding-left', 70, 'desktop')
+	@include adaptive('padding-right', 30, 'mobile')
+	@include adaptive('padding-left', 30, 'mobile')
+	width: 100%
+
+.col
+	&-1
+		@include adaptive('width', 279, 'desktop')
+	&-2
+		@include adaptive('width', 579, 'desktop')
+	&-3
+		@include adaptive('width', 880, 'desktop')
+	&-4
+		@include adaptive('width', 1179, 'desktop')

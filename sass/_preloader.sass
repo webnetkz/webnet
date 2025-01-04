@@ -1,0 +1,15 @@
+.preloader
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	z-index: 15
+	background-color: $accent
+	display: flex
+	align-items: center
+	justify-content: center
+	&__logo
+		@include adaptive('width', 400, 'desktop')
+		@include adaptive('width', 150, 'mobile')
+		transition: 1s

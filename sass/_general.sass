@@ -1,0 +1,44 @@
+body
+	@include adaptive('font-size', 18, 'desktop')
+	@include adaptive('font-size', 16, 'mobile')
+	min-width: 320px
+	position: relative
+	line-height: 1.1
+	font-weight: 500
+	font-family: $default-font
+	color: $black
+	background-color: #fff
+	scrollbar-width: 0px
+	&::-webkit-scrollbar-track
+		background: #fff
+	&::-webkit-scrollbar
+		width: 0px
+	&.scroll-disabled
+		overflow: hidden
+
+section
+	@include adaptive('padding-top', 100, 'desktop')
+	@include adaptive('padding-bottom', 100, 'desktop')
+	@include adaptive('padding-top', 40, 'mobile')
+	@include adaptive('padding-bottom', 40, 'mobile')
+
+.overflow-hidden
+	overflow: hidden
+	&._bg-account
+		background-color: #ffffff
+
+.title
+	@include adaptive('font-size', 100, 'desktop')
+	@include adaptive('font-size', 24, 'mobile')
+	letter-spacing: -0.04em
+
+	line-height: 0.9
+
+.box-style
+	@include adaptive('border-width', 1, 'desktop')
+	@include adaptive('border-width', 1, 'mobile')
+	@include adaptive('border-radius', 15, 'desktop')
+	@include adaptive('border-radius', 5, 'mobile')
+	border-style: solid
+	border-color: $gray
+	background-color: $second

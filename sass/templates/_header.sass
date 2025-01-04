@@ -1,0 +1,200 @@
+.header
+	@include adaptive('padding-top', 30, 'desktop')
+	@include adaptive('padding-bottom', 30, 'desktop')
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+	&._pos-static
+		position: static
+	&-account
+		@include adaptive('padding-top', 30, 'desktop')
+		@include adaptive('padding-bottom', 30, 'desktop')
+		&__container
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__logo
+			display: flex
+			&-img
+				@include adaptive('width', 140, 'desktop')
+		&__wrapper
+			@include adaptive('gap', 15, 'desktop')
+			display: flex
+		&__btn
+			@include adaptive('padding-top', 20, 'desktop')
+			@include adaptive('padding-bottom', 20, 'desktop')
+			@include adaptive('padding-right', 35, 'desktop')
+			@include adaptive('padding-left', 35, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('font-size', 16, 'desktop')
+			background-color: $black
+			color: #fff
+			&::after
+				background-color: $accent
+	&__container
+		@include adaptive('padding-top', 30, 'desktop')
+		@include adaptive('padding-bottom', 30, 'desktop')
+		@include adaptive('padding-right', 40, 'desktop')
+		@include adaptive('padding-left', 40, 'desktop')
+		@include adaptive('border-radius', 15, 'desktop')
+		background-color: $light
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		position: relative
+	&__logo
+		display: flex
+		&-img
+			@include adaptive('width', 140, 'desktop')
+	&__menu
+		@include adaptive('gap', 35, 'desktop')
+		display: flex
+		justify-content: center
+		align-items: center
+		&-wrapper
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+		&-item
+			letter-spacing: -0.02em
+	&__btns
+		@include adaptive('gap', 10, 'desktop')
+		display: flex
+		justify-content: flex-end
+	&__btn
+		@include adaptive('border-radius', 5, 'desktop')
+		@include adaptive('padding-top', 22, 'desktop')
+		@include adaptive('padding-bottom', 22, 'desktop')
+		@include adaptive('padding-left', 40, 'desktop')
+		@include adaptive('padding-right', 40, 'desktop')
+	&__balance
+		@include adaptive('padding-top', 22, 'desktop')
+		@include adaptive('padding-bottom', 22, 'desktop')
+		@include adaptive('padding-left', 40, 'desktop')
+		@include adaptive('padding-right', 40, 'desktop')
+		@include adaptive('gap', 15, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		background-color: $accent
+		color: #fff
+		display: flex
+		justify-content: center
+		align-items: center
+		&-value
+			font-weight: 600
+	&__hamburger
+		display: none
+
+@media only screen and (max-width : 960px)
+	.header
+		@include adaptive('padding-top', 20, 'mobile')
+		@include adaptive('padding-bottom', 30, 'mobile')
+		&-account
+			@include adaptive('padding-top', 20, 'mobile')
+			@include adaptive('padding-bottom', 20, 'mobile')
+			&__logo-img
+				@include adaptive('width', 72, 'mobile')
+			&__wrapper
+				@include adaptive('gap', 5, 'mobile')
+			&__btn
+				@include adaptive('padding-top', 18, 'mobile')
+				@include adaptive('padding-bottom', 18, 'mobile')
+				@include adaptive('padding-right', 35, 'mobile')
+				@include adaptive('padding-left', 35, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+				&:hover
+					color: #fff
+		&__container
+			flex-direction: column
+			align-items: stretch
+			background: none
+			position: relative
+			z-index: 10
+			&-inner
+				@include adaptive('padding', 20, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				display: flex
+				justify-content: space-between
+				align-items: center
+				background-color: $light
+		&__logo-img
+			@include adaptive('width', 72, 'mobile')
+		&__menu
+			@include adaptive('gap', 20, 'mobile')
+			@include adaptive('padding-top', 60, 'mobile')
+			@include adaptive('padding-bottom', 60, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			justify-content: flex-start
+			align-items: flex-start
+			flex-direction: column
+			background-color: $accent
+			position: static
+			&-wrapper
+				@include adaptive('padding-left', 30, 'mobile')
+				@include adaptive('padding-right', 30, 'mobile')
+				@include adaptive('padding-top', 165, 'mobile')
+				position: fixed
+				left: 0
+				top: 0
+				right: 0
+				background-color: #fff
+				z-index: 9
+				display: none
+				transform: none
+				height: 100vh
+				overflow-y: auto
+			&-item
+				@include adaptive('font-size', 24, 'mobile')
+				letter-spacing: -0.02em
+				color: #fff
+				&:hover
+					color: #fff
+		&__btns
+			@include adaptive('margin-top', 5, 'mobile')
+			@include adaptive('gap', 5, 'mobile')
+			justify-content: space-between
+		&__btn
+			@include adaptive('padding', 12, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('font-size', 14, 'mobile')
+			@include adaptive('padding-top', 15, 'mobile')
+			@include adaptive('padding-bottom', 15, 'mobile')
+			width: 50%
+			&:hover
+				color: #fff
+		&__balance
+			@include adaptive('width', 155, 'mobile')
+			@include adaptive('padding', 12, 'mobile')
+			@include adaptive('gap', 5, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('font-size', 14, 'mobile')
+		&__hamburger
+			@include adaptive('width', 30, 'mobile')
+			@include adaptive('height', 30, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: $accent
+			position: relative
+			&-icon
+				@include adaptive('width', 16, 'mobile')
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				transition: .5s
+			.icon-close
+				opacity: 0
+			&.active
+				.icon
+					&-close
+						opacity: 1
+					&-open
+						opacity: 0

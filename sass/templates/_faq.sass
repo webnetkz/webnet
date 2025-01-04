@@ -1,0 +1,64 @@
+.faq
+	&__container
+		@include adaptive('column-gap', 20, 'desktop')
+		@include adaptive('row-gap', 10, 'desktop')
+		display: flex
+		flex-wrap: wrap
+	&__item
+		@include adaptive('width', 879, 'desktop')
+		&-heading
+			@include adaptive('padding-top', 30, 'desktop')
+			@include adaptive('padding-bottom', 30, 'desktop')
+			@include adaptive('padding-right', 40, 'desktop')
+			@include adaptive('padding-left', 40, 'desktop')
+			@include adaptive('font-size', 20, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			display: flex
+			justify-content: space-between
+			align-items: center
+			line-height: 1
+			letter-spacing: -0.02em
+			cursor: pointer
+			&.active .faq__item-icon
+				transform: scale(1, -1)
+		&-icon
+			@include adaptive('width', 24, 'desktop')
+			@include adaptive('margin-left', 20, 'desktop')
+			flex: 0 0 auto
+			transition: .3s
+		&-dropdown
+			@include adaptive('border-radius', 5, 'desktop')
+			@include adaptive('padding-top', 30, 'desktop')
+			@include adaptive('padding-bottom', 30, 'desktop')
+			@include adaptive('padding-right', 40, 'desktop')
+			@include adaptive('padding-left', 40, 'desktop')
+			display: none
+			font-weight: 400
+			line-height: 1.2
+
+@media only screen and (max-width : 960px)
+	.faq
+		&__container
+			@include adaptive('column-gap', 20, 'mobile')
+			@include adaptive('row-gap', 10, 'mobile')
+			display: flex
+			flex-wrap: wrap
+		&__item
+			&-heading
+				@include adaptive('padding-top', 20, 'mobile')
+				@include adaptive('padding-bottom', 20, 'mobile')
+				@include adaptive('padding-right', 30, 'mobile')
+				@include adaptive('padding-left', 30, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+			&-icon
+				@include adaptive('width', 24, 'mobile')
+				@include adaptive('margin-left', 10, 'mobile')
+			&-dropdown
+				@include adaptive('border-radius', 5, 'mobile')
+				@include adaptive('padding-top', 20, 'mobile')
+				@include adaptive('padding-bottom', 20, 'mobile')
+				@include adaptive('padding-right', 30, 'mobile')
+				@include adaptive('padding-left', 30, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+				line-height: 1.1

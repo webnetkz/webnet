@@ -1,0 +1,138 @@
+.plans
+	&__title
+		text-align: center
+	&__container
+		@include adaptive('margin-top', 120, 'desktop')
+		display: flex
+		justify-content: space-between
+
+.plan
+	@include adaptive('height', 700, 'desktop')
+	@include adaptive('padding-top', 60, 'desktop')
+	@include adaptive('padding-bottom', 40, 'desktop')
+	@include adaptive('padding-left', 40, 'desktop')
+	@include adaptive('padding-right', 40, 'desktop')
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	position: relative
+	&._accent
+		background-color: $accent
+		border-color: $accent
+		color: #fff
+		.plan
+			&__title, &__subtitle
+				color: #fff
+			&__list
+				border-color: rgba(255, 255, 255, 0.40)
+			&__btn
+				background-color: #fff
+				color: $black
+				&:hover
+					color: #fff
+	&__label
+		@include adaptive('padding-top', 10, 'desktop')
+		@include adaptive('padding-bottom', 10, 'desktop')
+		@include adaptive('padding-left', 30, 'desktop')
+		@include adaptive('padding-right', 30, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		@include adaptive('font-size', 16, 'desktop')
+		@include adaptive('border-width', 1, 'desktop')
+		border-color: $accent
+		border-style: solid
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translate(-50%, -50%)
+		background-color: #fff
+		color: $black
+		text-transform: uppercase
+		line-height: 0.9
+		letter-spacing: -0.04em
+		white-space: nowrap
+	&__inner
+		@include adaptive('gap', 30, 'desktop')
+		display: flex
+		flex-direction: column
+	&__overtitle
+		@include adaptive('font-size', 32, 'desktop')
+		text-align: center
+		line-height: 0.9
+		letter-spacing: -0.03em
+	&__title
+		@include adaptive('font-size', 100, 'desktop')
+		font-weight: 600
+		text-align: center
+		line-height: 0.9
+		letter-spacing: -0.06em
+		color: $accent
+	&__subtitle
+		text-align: center
+		line-height: 1
+		letter-spacing: -0.04em
+		color: $dark
+	&__list
+		@include adaptive('padding-top', 20, 'desktop')
+		@include adaptive('gap', 5, 'desktop')
+		@include adaptive('border-top-width', 1, 'desktop')
+		@include adaptive('font-size', 22, 'desktop')
+		border-color: $gray
+		border-style: solid
+		line-height: 1
+		display: flex
+		flex-direction: column
+		letter-spacing: -0.04em
+		&-item
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&-icon
+			@include adaptive('margin-left', 20, 'desktop')
+			@include adaptive('width', 30, 'desktop')
+			flex: 0 0 auto
+	&__btn
+		@include adaptive('font-size', 28, 'desktop')
+
+@media only screen and (max-width : 960px)
+	.plans
+		&__container
+			@include adaptive('margin-top', 30, 'mobile')
+			@include adaptive('gap', 30, 'mobile')
+			flex-direction: column
+
+	.plan
+		@include adaptive('min-height', 400, 'mobile')
+		@include adaptive('padding-top', 40, 'mobile')
+		@include adaptive('padding-bottom', 30, 'mobile')
+		@include adaptive('padding-left', 30, 'mobile')
+		@include adaptive('padding-right', 30, 'mobile')
+		&__label
+			@include adaptive('padding-top', 10, 'mobile')
+			@include adaptive('padding-bottom', 10, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('font-size', 16, 'mobile')
+			@include adaptive('border-width', 1, 'mobile')
+		&__overtitle
+			@include adaptive('margin-bottom', 20, 'mobile')
+			@include adaptive('font-size', 20, 'mobile')
+		&__title
+			@include adaptive('margin-bottom', 10, 'mobile')
+			@include adaptive('font-size', 32, 'mobile')
+		&__subtitle
+			@include adaptive('margin-bottom', 30, 'mobile')
+		&__list
+			@include adaptive('padding-top', 20, 'mobile')
+			@include adaptive('gap', 7, 'mobile')
+			@include adaptive('border-top-width', 1, 'mobile')
+			@include adaptive('font-size', 16, 'mobile')
+			@include adaptive('margin-bottom', 30, 'mobile')
+			&-icon
+				@include adaptive('margin-left', 20, 'mobile')
+				@include adaptive('width', 20, 'mobile')
+				flex: 0 0 auto
+		&__btn
+			@include adaptive('padding', 20, 'mobile')
+			@include adaptive('font-size', 16, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')

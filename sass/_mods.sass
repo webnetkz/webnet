@@ -1,0 +1,32 @@
+._c-accent
+	color: $accent
+
+._fw-medium
+	font-weight: 500
+
+._hul
+	display: inline-block
+	position: relative
+	transition: .3s
+	&::before
+		@include adaptive('height', 2, 'desktop')
+		content: ''
+		width: 0
+		background-color: $accent
+		position: absolute
+		top: 100%
+		left: 0
+		opacity: 0
+		transition: .3s
+	&:hover
+		color: $accent
+		&::before
+			opacity: 1
+			width: 100%
+
+.hidden
+	display: none
+
+@media only screen and (max-width : 960px)
+	._hul::before
+		display: none

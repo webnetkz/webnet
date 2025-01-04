@@ -1,156 +1,147 @@
-<?php
-  require_once './header.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>SITE | Pricing</title>
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta name="format-detection" content="telephone=no" />
+
+        <!-- favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            sizes="192x192"
+            href="img/favicon.ico"
+        />
+
+        <!-- libs css -->
+        <link rel="stylesheet" href="libs/aos/aos.css" />
+
+        <!-- main css -->
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- libs js -->
+        <script defer src="libs/dynamic-adapt.js"></script>
+        <script defer src="libs/jquery.min.js"></script>
+        <script defer src="libs/jquery.inputmask.min.js"></script>
+        <script defer src="libs/gsap/gsap.min.js"></script>
+        <script defer src="libs/gsap/ScrollSmoother.min.js"></script>
+        <script defer src="libs/gsap/ScrollTrigger.min.js"></script>
+        <script defer src="libs/aos/aos.js"></script>
+
+        <!-- main js -->
+        <script defer src="js/main.js"></script>
+    </head>
+
+    <body>
+        <header class="header" data-aos="fade-down">
+            <div class="container">
+                <div class="header__container">
+                    <div class="col-2 header__container-inner">
+                        <a href="index.html" class="header__logo">
+                            <img
+                                src="img/logo.svg"
+                                alt="Logo"
+                                class="header__logo-img"
+                            />
+                        </a>
+
+                        <button
+                            type="button"
+                            class="header__hamburger"
+                            aria-label="Hamburger menu"
+                        >
+                            <img
+                                src="img/icons/hamburger.svg"
+                                alt="Icon"
+                                class="header__hamburger-icon icon-open"
+                            />
+
+                            <img
+                                src="img/icons/close.svg"
+                                alt="Icon"
+                                class="header__hamburger-icon icon-close"
+                            />
+                        </button>
+                    </div>
+
+                    <div
+                        class="col-2 header__menu-wrapper"
+                        data-da=".header, 960, 1"
+                    >
+                        <nav class="header__menu">
+                            <a href="about.html" class="header__menu-item _hul"
+                                >About us</a
+                            >
+                            <a
+                                href="services.html"
+                                class="header__menu-item _hul"
+                                >Services</a
+                            >
+                            <a
+                                href="pricing.html"
+                                class="header__menu-item _hul"
+                                >Pricing</a
+                            >
+                            <a href="faq.html" class="header__menu-item _hul"
+                                >FAQ</a
+                            >
+                            <a href="blog.html" class="header__menu-item _hul"
+                                >Blog</a
+                            >
+                            <a
+                                href="contact.html"
+                                class="header__menu-item _hul"
+                                >Contacts</a
+                            >
+                        </nav>
+                    </div>
+
+                    <div class="col-2 header__btns">
+                        <a href="sign-up.html" class="header__btn btn _bd">
+                            <span class="btn__inner">Sign up</span>
+                        </a>
+                        <a
+                            href="log-in.html"
+                            class="header__btn btn _bg-accent"
+                        >
+                            <span class="btn__inner">Sign in</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <div class="overflow-hidden">
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <section class="main">
                         <div class="container">
-                            <div
-                                class="main__container"
-                                data-aos="fade-up"
-                                data-aos-delay="2000"
-                            >
-                                <h1 class="main__title">
-                                    SITE: Your simple <br />
-                                    and reliable telephony
-                                </h1>
-                            </div>
-                        </div>
-                    </section>
+                            <div class="main__container" data-aos="fade-up">
+                                <div class="main__container-inner">
+                                    <p class="main__overtitle">
+                                        Pricing in SITE:
+                                    </p>
 
-                    <section class="about">
-                        <div class="container">
-                            <div
-                                class="about__container box-style"
-                                data-aos="fade-up"
-                            >
-                                <p class="about__overtitle">
-                                    It does not require complex verification
+                                    <h1 class="main__title">
+                                        Affordability for <br />
+                                        your business
+                                    </h1>
+                                </div>
+
+                                <p class="main__text">
+                                    Effective pricing is a key aspect of a
+                                    <br />
+                                    successful business. That's why we <br />
+                                    offer reliable and affordable tariffs <br />
+                                    that allow you to make calls without <br />
+                                    incurring unnecessary costs.
                                 </p>
-                                <h2 class="about__title title">
-                                    <span class="_c-accent">SITE</span> is a
-                                    phone system that is simple and
-                                    <span class="_c-accent">accessible</span> to
-                                    everyone
-                                </h2>
-
-                                <div class="about__text">
-                                    <p class="about__text-p">
-                                        We've created a user-friendly account
-                                        <br />
-                                        and even a chatbot on Telegram to help
-                                        <br />
-                                        you easily manage your account.
-                                    </p>
-
-                                    <p class="about__text-p">
-                                        And for maximum comfort, we <br />
-                                        offer anonymous deposits using <br />
-                                        various cryptocurrencies.
-                                    </p>
-                                </div>
-
-                                <img
-                                    src="img/bot-image.png"
-                                    alt="Image"
-                                    class="about__image"
-                                    data-aos="zoom-in"
-                                    data-aos-delay="500"
-                                />
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="info">
-                        <div class="container">
-                            <div class="info__container">
-                                <div
-                                    class="info__container-box col-3"
-                                    data-aos="fade-right"
-                                >
-                                    <p class="info__overtitle">
-                                        Why choose us?
-                                    </p>
-                                    <h2 class="info__title title">
-                                        What is our advantage?
-                                    </h2>
-                                </div>
-
-                                <div class="info__container-inner col-3">
-                                    <div
-                                        class="info__item box-style"
-                                        data-aos="fade-left"
-                                    >
-                                        <div class="info__item-number">01</div>
-                                        <h3 class="info__item-heading">
-                                            Global <br />
-                                            capabilities
-                                        </h3>
-                                        <p class="info__item-text">
-                                            Our rates are available worldwide.
-                                            We don't ask questions about the
-                                            subject matter of the calls, so
-                                            you're free to do what your business
-                                            needs.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="info__item box-style"
-                                        data-aos="fade-left"
-                                        data-aos-delay="300"
-                                    >
-                                        <div class="info__item-number">02</div>
-                                        <h3 class="info__item-heading">
-                                            Quality and <br />
-                                            support 24/7
-                                        </h3>
-                                        <p class="info__item-text">
-                                            We guarantee reliable communication
-                                            and technical support 24/7. Our team
-                                            is always ready to help you solve
-                                            any questions or problems.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="info__item box-style"
-                                        data-aos="fade-left"
-                                    >
-                                        <div class="info__item-number">03</div>
-                                        <h3 class="info__item-heading">
-                                            Easy CRM <br />
-                                            implementation
-                                        </h3>
-                                        <p class="info__item-text">
-                                            Optimize your customer experience
-                                            with CRM integration that increases
-                                            customer engagement through
-                                            integrated telephony solutions.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="info__item box-style"
-                                        data-aos="fade-left"
-                                        data-aos-delay="300"
-                                    >
-                                        <div class="info__item-number">04</div>
-                                        <h3 class="info__item-heading">
-                                            Variety <br />
-                                            of Routes
-                                        </h3>
-                                        <p class="info__item-text">
-                                            We offer a variety of route types
-                                            including TDM, nCLI, CLI, and GSM to
-                                            ensure that you get the best
-                                            possible call quality for your
-                                            business.
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </section>

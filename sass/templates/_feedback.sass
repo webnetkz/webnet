@@ -1,0 +1,77 @@
+.feedback
+	&__container
+		display: flex
+		justify-content: space-between
+		&-box
+			@include adaptive('padding', 80, 'desktop')
+	&__title
+		@include adaptive('font-size', 90, 'desktop')
+		@include adaptive('margin-bottom', 30, 'desktop')
+	&__subtitle
+		@include adaptive('font-size', 24, 'desktop')
+		color: $dark
+		line-height: 1
+		letter-spacing: -0.03em
+	&__form
+		@include adaptive('gap', 40, 'desktop')
+		display: flex
+		flex-direction: column
+		&-inputs
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			flex-direction: column
+		&-input, &-textarea
+			@include adaptive('font-size', 18, 'desktop')
+			@include adaptive('font-size', 16, 'mobile')
+
+			@include adaptive('padding-top', 30, 'desktop')
+			@include adaptive('padding-bottom', 30, 'desktop')
+			@include adaptive('padding-left', 40, 'desktop')
+			@include adaptive('padding-right', 40, 'desktop')
+
+			@include adaptive('padding-top', 20, 'mobile')
+			@include adaptive('padding-bottom', 20, 'mobile')
+			@include adaptive('padding-left', 30, 'mobile')
+			@include adaptive('padding-right', 30, 'mobile')
+
+			@include adaptive('border-radius', 10, 'desktop')
+			@include adaptive('border-radius', 5, 'mobile')
+
+			@include adaptive('border-width', 1, 'desktop')
+			@include adaptive('border-width', 1, 'mobile')
+			font-weight: 500
+			&::placeholder
+				@include adaptive('font-size', 18, 'desktop')
+				@include adaptive('font-size', 16, 'mobile')
+				font-weight: 500
+		&-textarea
+			@include adaptive('height', 200, 'desktop')
+		&-submit
+			@include adaptive('font-size', 36, 'desktop')
+			@include adaptive('height', 120, 'desktop')
+			width: 100%
+
+@media only screen and (max-width : 960px)
+	.feedback
+		&__container
+			@include adaptive('gap', 10, 'mobile')
+			flex-direction: column
+			&-box
+				@include adaptive('padding-top', 40, 'mobile')
+				@include adaptive('padding-bottom', 40, 'mobile')
+				@include adaptive('padding-left', 30, 'mobile')
+				@include adaptive('padding-right', 30, 'mobile')
+		&__title
+			@include adaptive('font-size', 24, 'mobile')
+			@include adaptive('margin-bottom', 10, 'mobile')
+		&__subtitle
+			@include adaptive('font-size', 18, 'mobile')
+		&__form
+			@include adaptive('gap', 20, 'mobile')
+			&-inputs
+				@include adaptive('gap', 10, 'mobile')
+			&-textarea
+				@include adaptive('height', 120, 'mobile')
+			&-submit
+				@include adaptive('font-size', 18, 'mobile')
+				@include adaptive('height', 56, 'mobile')

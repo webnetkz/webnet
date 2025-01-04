@@ -1,0 +1,62 @@
+.dashboard
+	@include adaptive('padding-top', 30, 'desktop')
+	@include adaptive('padding-bottom', 50, 'desktop')
+	&__container
+		@include adaptive('padding', 80, 'desktop')
+		@include adaptive('border-radius', 15, 'desktop')
+		@include adaptive('gap', 20, 'desktop')
+		background-color: #fff
+		box-shadow: 0px 4px 100px 0px rgba(0, 2, 26, 0.12)
+		display: flex
+		flex-wrap: wrap
+	&__item
+		@include adaptive('width', 799, 'desktop')
+		@include adaptive('padding', 60, 'desktop')
+		@include adaptive('gap', 40, 'desktop')
+		display: flex
+		align-items: center
+		transition: .3s
+		&:hover
+			border-color: $accent
+		&-icon
+			@include adaptive('width', 100, 'desktop')
+			flex: 0 0 auto
+		&-inner
+			@include adaptive('gap', 15, 'desktop')
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&-title
+			@include adaptive('font-size', 36, 'desktop')
+			font-weight: 600
+			line-height: 1
+			letter-spacing: -0.02em
+		&-subtitle
+			color: $dark
+			letter-spacing: -0.02em
+			._c-accent
+				font-weight: 600
+
+@media only screen and (max-width : 960px)
+	.dashboard
+		@include adaptive('padding-top', 0, 'mobile')
+		@include adaptive('padding-bottom', 20, 'mobile')
+		&__container
+			@include adaptive('padding', 30, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('gap', 10, 'mobile')
+			flex-direction: column
+		&__item
+			@include adaptive('padding-top', 15, 'mobile')
+			@include adaptive('padding-bottom', 15, 'mobile')
+			@include adaptive('padding-left', 20, 'mobile')
+			@include adaptive('padding-right', 20, 'mobile')
+			@include adaptive('gap', 15, 'mobile')
+			&:hover
+				border-color: $gray
+			&-icon
+				@include adaptive('width', 40, 'mobile')
+			&-title
+				@include adaptive('font-size', 16, 'mobile')
+			&-subtitle
+				display: none

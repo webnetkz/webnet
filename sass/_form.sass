@@ -1,0 +1,281 @@
+input, textarea
+	@include adaptive('font-size', 16, 'desktop')
+	@include adaptive('font-size', 14, 'mobile')
+
+	@include adaptive('padding-top', 18, 'desktop')
+	@include adaptive('padding-bottom', 18, 'desktop')
+	@include adaptive('padding-left', 20, 'desktop')
+	@include adaptive('padding-right', 20, 'desktop')
+
+	@include adaptive('padding-top', 18, 'mobile')
+	@include adaptive('padding-bottom', 18, 'mobile')
+	@include adaptive('padding-left', 20, 'mobile')
+	@include adaptive('padding-right', 20, 'mobile')
+
+	@include adaptive('border-radius', 5, 'desktop')
+	@include adaptive('border-radius', 5, 'mobile')
+
+	@include adaptive('border-width', 1, 'desktop')
+	@include adaptive('border-width', 1, 'mobile')
+	background: $second
+	border-color: $gray
+	border-style: solid
+	color: $black
+	width: 100%
+	letter-spacing: -0.02em
+	line-height: 1.3
+	font-weight: 400
+
+::placeholder
+	@include adaptive('font-size', 16, 'desktop')
+	@include adaptive('font-size', 14, 'mobile')
+	color: #7D7D9C
+	letter-spacing: -0.02em
+	line-height: 1.3
+	font-weight: 400
+	font-family: $default-font
+
+.form
+	@include adaptive('padding-top', 70, 'desktop')
+	@include adaptive('padding-bottom', 70, 'desktop')
+	@include adaptive('padding-left', 80, 'desktop')
+	@include adaptive('padding-right', 100, 'desktop')
+	display: flex
+	flex-direction: column
+	&__top
+		@include adaptive('margin-bottom', 80, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__title
+		@include adaptive('font-size', 56, 'desktop')
+		font-weight: 500
+		letter-spacing: -0.04em
+	&__caption
+		@include adaptive('font-size', 14, 'desktop')
+		font-weight: 400
+		line-height: 1.2
+		letter-spacing: -0.02em
+		text-align: right
+	&__link
+		@include adaptive('margin-top', 3, 'desktop')
+		color: $accent
+		font-weight: 600
+		display: inline-block
+	&__items
+		@include adaptive('gap', 20, 'desktop')
+		@include adaptive('margin-bottom', 10, 'desktop')
+		display: flex
+		flex-direction: column
+	&__item
+		&-inner
+			position: relative
+			display: block
+		&-heading
+			@include adaptive('margin-bottom', 10, 'desktop')
+			@include adaptive('font-size', 16, 'desktop')
+			line-height: 1.35
+			font-weight: 500
+			letter-spacing: -0.02em
+			display: block
+		&-input
+			display: block
+			transition: border-color .3s
+			&[type="password"]
+				@include adaptive('padding-right', 50, 'desktop')
+			&:focus
+				border-color: $accent
+			&.payment-input
+				@include adaptive('padding-right', 80, 'desktop')
+		&-toggle
+			@include adaptive('width', 20, 'desktop')
+			@include adaptive('height', 20, 'desktop')
+			@include adaptive('right', 20, 'desktop')
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			display: flex
+			&::before, &::after
+				@include adaptive('width', 20, 'desktop')
+				@include adaptive('height', 20, 'desktop')
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				background-size: contain
+				background-size: contain
+				background-position: center
+				background-repeat: no-repeat
+				transition: .3s
+			&::before
+				background-image: url('../img/icons/password-show.svg')
+			&::after
+				background-image: url('../img/icons/password-hide.svg')
+				opacity: 0
+			&.active
+				&::before
+					opacity: 0
+				&::after
+					opacity: 1
+		&-icon
+			@include adaptive('width', 59, 'desktop')
+			@include adaptive('font-size', 20, 'desktop')
+			@include adaptive('border-left-width', 1, 'desktop')
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			border-color: $gray
+			border-style: solid
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 0
+			color: $accent
+			font-weight: 500
+			transition: .3s
+		&-row
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			.form__item-inner
+				@include adaptive('width', 285, 'desktop')
+	&__privacy
+		@include adaptive('font-size', 14, 'desktop')
+		color: #AAAABF
+		font-weight: 400
+		&-link
+			font-weight: 500
+	&__forgot
+		@include adaptive('font-size', 14, 'desktop')
+		text-align: right
+		font-weight: 500
+		color: #7D7D9C
+	&__submit
+		@include adaptive('margin-top', 30, 'desktop')
+		@include adaptive('padding', 22, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		@include adaptive('height', 68, 'desktop')
+		width: 100%
+	&__options
+		@include adaptive('gap', 10, 'desktop')
+		display: flex
+	&__option
+		@include adaptive('padding-top', 18, 'desktop')
+		@include adaptive('padding-bottom', 18, 'desktop')
+		@include adaptive('padding-left', 20, 'desktop')
+		@include adaptive('padding-right', 20, 'desktop')
+		@include adaptive('border-radius', 5, 'desktop')
+		@include adaptive('gap', 8, 'desktop')
+		cursor: pointer
+		width: 50%
+		display: flex
+		align-items: center
+		&-input
+			@include adaptive('width', 20, 'desktop')
+			@include adaptive('height', 20, 'desktop')
+			padding: 0
+			appearance: none
+			border: none
+			background: none
+			position: relative
+			cursor: pointer
+			&::before, &::after
+				@include adaptive('width', 20, 'desktop')
+				@include adaptive('height', 20, 'desktop')
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				background-size: contain
+				background-position: center
+				background-repeat: no-repeat
+				transition: .3s
+			&::before
+				background-image: url('../img/icons/checkbox.svg')
+			&::after
+				background-image: url('../img/icons/checkbox-checked.svg')
+				opacity: 0
+				z-index: 2
+			&:checked
+				&::before
+					opacity: 0
+				&::after
+					opacity: 1
+		&-caption
+			font-weight: 400
+			letter-spacing: -0.02em
+			line-height: 1.3
+
+@media only screen and (max-width : 960px)
+	.form
+		@include adaptive('border-radius', 5, 'mobile')
+		@include adaptive('padding', 30, 'mobile')
+		background-color: #fff
+		box-shadow: 0px 4px 100px rgba(0, 2, 26, 0.12)
+		&__top
+			@include adaptive('margin-bottom', 30, 'mobile')
+			align-items: flex-start
+			flex-direction: column
+		&__title
+			@include adaptive('font-size', 24, 'mobile')
+			@include adaptive('margin-bottom', 20, 'mobile')
+		&__caption
+			@include adaptive('font-size', 14, 'mobile')
+			text-align: left
+		&__link
+			@include adaptive('margin-top', 3, 'mobile')
+		&__items
+			@include adaptive('gap', 20, 'mobile')
+			@include adaptive('margin-bottom', 10, 'mobile')
+		&__item
+			&-heading
+				@include adaptive('margin-bottom', 10, 'mobile')
+				@include adaptive('font-size', 16, 'mobile')
+			&-toggle
+				@include adaptive('width', 20, 'mobile')
+				@include adaptive('height', 20, 'mobile')
+				@include adaptive('right', 20, 'mobile')
+				&::before, &::after
+					@include adaptive('width', 20, 'mobile')
+					@include adaptive('height', 20, 'mobile')
+			&-input.payment-input
+				@include adaptive('padding-right', 75, 'mobile')
+			&-icon
+				@include adaptive('width', 55, 'mobile')
+				@include adaptive('font-size', 20, 'mobile')
+				@include adaptive('border-left-width', 1, 'mobile')
+			&-row
+				@include adaptive('gap', 5, 'mobile')
+				flex-direction: column
+		&__privacy
+			@include adaptive('font-size', 11, 'mobile')
+			br
+				display: none
+		&__forgot
+			@include adaptive('font-size', 12, 'mobile')
+		&__submit
+			@include adaptive('margin-top', 30, 'mobile')
+			@include adaptive('padding', 20, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('height', 60, 'mobile')
+			&:hover
+				color: #fff
+		&__options
+			@include adaptive('gap', 5, 'mobile')
+			flex-direction: column
+		&__option
+			@include adaptive('padding-top', 18, 'mobile')
+			@include adaptive('padding-bottom', 18, 'mobile')
+			@include adaptive('padding-left', 20, 'mobile')
+			@include adaptive('padding-right', 20, 'mobile')
+			@include adaptive('border-radius', 5, 'mobile')
+			@include adaptive('gap', 8, 'mobile')
+			width: 100%
+			&-input
+				@include adaptive('width', 20, 'mobile')
+				@include adaptive('height', 20, 'mobile')
+				&::before, &::after
+					@include adaptive('width', 20, 'mobile')
+					@include adaptive('height', 20, 'mobile')

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>SITE | Statistics</title>
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta name="format-detection" content="telephone=no" />
+
+        <!-- favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            sizes="192x192"
+            href="img/favicon.ico"
+        />
+
+        <!-- libs css -->
+        <link rel="stylesheet" href="libs/aos/aos.css" />
+        <link rel="stylesheet" href="libs/select2/select2.min.css" />
+        <link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+
+        <!-- main css -->
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- libs js -->
+        <script defer src="libs/dynamic-adapt.js"></script>
+        <script defer src="libs/jquery.min.js"></script>
+        <script defer src="libs/jquery.inputmask.min.js"></script>
+        <script defer src="libs/aos/aos.js"></script>
+        <script defer src="libs/select2/select2.min.js"></script>
+        <script defer src="libs/slick-carousel/slick.min.js"></script>
+
+        <!-- main js -->
+        <script defer src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="overflow-hidden _bg-account">
+            <header class="header _pos-static">
+                <div class="container">
+                    <div class="header__container">
+                        <div class="col-2 header__container-inner">
+                            <a href="index.html" class="header__logo">
+                                <img
+                                    src="img/logo.svg"
+                                    alt="Logo"
+                                    class="header__logo-img"
+                                />
+                            </a>
+
+                            <button
+                                type="button"
+                                class="header__hamburger"
+                                aria-label="Hamburger menu"
+                            >
+                                <img
+                                    src="img/icons/hamburger.svg"
+                                    alt="Icon"
+                                    class="header__hamburger-icon icon-open"
+                                />
+
+                                <img
+                                    src="img/icons/close.svg"
+                                    alt="Icon"
+                                    class="header__hamburger-icon icon-close"
+                                />
+                            </button>
+                        </div>
+
+                        <div
+                            class="col-2 header__menu-wrapper"
+                            data-da=".header, 960, 1"
+                        >
+                            <nav class="header__menu">
+                                <a
+                                    href="about.html"
+                                    class="header__menu-item _hul"
+                                    >About us</a
+                                >
+                                <a
+                                    href="services.html"
+                                    class="header__menu-item _hul"
+                                    >Services</a
+                                >
+                                <a
+                                    href="pricing.html"
+                                    class="header__menu-item _hul"
+                                    >Pricing</a
+                                >
+                                <a
+                                    href="faq.html"
+                                    class="header__menu-item _hul"
+                                    >FAQ</a
+                                >
+                                <a
+                                    href="blog.html"
+                                    class="header__menu-item _hul"
+                                    >Blog</a
+                                >
+                                <a
+                                    href="contact.html"
+                                    class="header__menu-item _hul"
+                                    >Contacts</a
+                                >
+                            </nav>
+                        </div>
+
+                        <div class="col-2 header__btns">
+                            <div class="header__balance">
+                                <span class="header__balance-caption"
+                                    >Balance:</span
+                                >
+                                <span class="header__balance-value">1000$</span>
+                            </div>
+
+                            <a
+                                href="index.html"
+                                class="header__btn header-account__btn btn"
+                            >
+                                <span class="btn__inner">Log out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="account">
+                <div class="container">
+                    <div class="account__container">
+                        <div class="account-sidebar">
+                            <div class="account-sidebar__top">
+                                <h2 class="account-sidebar__title">
+                                    John Smith
+                                </h2>
+
+                                <a
+                                    href="account-notifications.html"
+                                    class="account-sidebar__btn"
+                                >
+                                    <img
+                                        src="img/icons/notification.svg"
+                                        alt="Icon"
+                                        class="account-sidebar__btn-icon"
+                                    />
+
+                                    <span class="account-sidebar__btn-data"
+                                        >10</span
+                                    >
+                                </a>
+                            </div>
+
+                            <nav class="account-sidebar__list">
+                                <a
+                                    href="account-info.html"
+                                    class="account-sidebar__list-item btn"
+                                >
+                                    <span class="btn__inner"
+                                        >Personal information</span
+                                    >
+                                </a>
+
+                                <a
+                                    href="account-settings.html"
+                                    class="account-sidebar__list-item btn"
+                                >
+                                    <span class="btn__inner"
+                                        >SIP connection settings</span
+                                    >
+                                </a>
+
+                                <a
+                                    href="account-statistics.html"
+                                    class="account-sidebar__list-item btn active"
+                                >
+                                    <span class="btn__inner">Statistics</span>
+                                </a>
+
+                                <a
+                                    href="account-pricing.html"
+                                    class="account-sidebar__list-item btn"
+                                >
+                                    <span class="btn__inner">Pricing</span>
+                                </a>
+
+                                <a
+                                    href="account-payment.html"
+                                    class="account-sidebar__list-item btn"
+                                >
+                                    <span class="btn__inner">Payment</span>
+                                </a>
+                            </nav>
+                        </div>
+
+                        <div class="account-main">
+                            <div class="account-main__top">
+                                <h1 class="account__title title">
+                                    Calls statistics
+                                </h1>
+
+                                <button
+                                    type="button"
+                                    class="account__btn back-stats btn _bg-accent hidden"
+                                    aria-label="Back"
+                                    data-da=".account-main, 960, 1"
+                                >
+                                    <span class="btn__inner">Go back</span>
+                                </button>
+                            </div>
+
+                            <form class="account__form account__form-stats">
+                                <div class="form__items">
+                                    <div class="form__item">
+                                        <p class="form__item-heading">
+                                            Start date
+                                        </p>
+
+                                        <div class="form__item-row">
+                                            <label class="form__item-inner">
+                                                <input
+                                                    type="text"
+                                                    name="Calendar"
+                                                    placeholder="dd.mm.yyyy"
+                                                    class="form__item-input calendar-input"
+                                                    autocomplete="off"
+                                                />
+
+                                                <div class="form__item-icon">
+                                                    <img
+                                                        src="img/icons/calendar.svg"
+                                                        alt="Calendar"
+                                                    />
+                                                </div>
+                                            </label>
+
+                                            <label class="form__item-inner">
+                                                <input
+                                                    type="text"
+                                                    name="Time"
+                                                    placeholder="hh:mm"
+                                                    class="form__item-input time-input"
+                                                    autocomplete="off"
+                                                />
+
+                                                <div class="form__item-icon">
+                                                    <img
+                                                        src="img/icons/time.svg"
+                                                        alt="Time"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__item">
+                                        <p class="form__item-heading">
+                                            End date
+                                        </p>
+
+                                        <div class="form__item-row">
+                                            <label class="form__item-inner">
+                                                <input
+                                                    type="text"
+                                                    name="Calendar"
+                                                    placeholder="dd.mm.yyyy"
+                                                    class="form__item-input calendar-input"
+                                                    autocomplete="off"
+                                                />
+
+                                                <div class="form__item-icon">
+                                                    <img
+                                                        src="img/icons/calendar.svg"
+                                                        alt="Calendar"
+                                                    />
+                                                </div>
+                                            </label>
+
+                                            <label class="form__item-inner">
+                                                <input
+                                                    type="text"
+                                                    name="Time"
+                                                    placeholder="hh:mm"
+                                                    class="form__item-input time-input"
+                                                    autocomplete="off"
+                                                />
+
+                                                <div class="form__item-icon">
+                                                    <img
+                                                        src="img/icons/time.svg"
+                                                        alt="Time"
+                                                    />
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <label class="form__item">
+                                        <p class="form__item-heading">
+                                            Extensions
+                                        </p>
+
+                                        <select
+                                            name="Country"
+                                            class="form__item-select select2"
+                                        >
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                            <option value="All SIP">
+                                                All SIP
+                                            </option>
+                                        </select>
+                                    </label>
+
+                                    <label class="form__item">
+                                        <p class="form__item-heading">
+                                            Call type
+                                        </p>
+
+                                        <select
+                                            name="City"
+                                            class="form__item-select select2"
+                                        >
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <!-- <button type="submit" class="form__submit btn _bg-accent show-stats">
+									<span class="btn__inner">Show statistics</span>
+								</button> -->
+
+                                <button
+                                    type="button"
+                                    class="form__submit btn _bg-accent show-stats"
+                                >
+                                    <span class="btn__inner"
+                                        >Show statistics</span
+                                    >
+                                </button>
+                            </form>
+
+                            <div class="account-stats__container hidden">
+                                <div class="account-stats__table">
+                                    <div
+                                        class="account-stats__table-row account-stats__table-head"
+                                    >
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            #
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Price
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            1
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            2
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            3
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            4
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            5
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            6
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            7
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            8
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            9
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            10
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            11
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            12
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+
+                                    <div class="account-stats__table-row">
+                                        <div
+                                            class="account-stats__table-elem account-stats__table-number"
+                                        >
+                                            13
+                                        </div>
+
+                                        <div class="account-stats__table-elem">
+                                            In/Out
+                                        </div>
+                                        <div
+                                            class="account-stats__table-elem _fw-medium"
+                                        >
+                                            $ 0.2575
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Date/time
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            CallerID
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Destination
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            State
+                                        </div>
+                                        <div class="account-stats__table-elem">
+                                            Duration
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

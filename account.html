@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>SITE | Account</title>
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta name="format-detection" content="telephone=no" />
+
+        <!-- favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            sizes="192x192"
+            href="img/favicon.ico"
+        />
+
+        <!-- libs css -->
+        <link rel="stylesheet" href="libs/aos/aos.css" />
+        <link rel="stylesheet" href="libs/select2/select2.min.css" />
+        <link rel="stylesheet" href="libs/slick-carousel/slick.css" />
+
+        <!-- main css -->
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- libs js -->
+        <script defer src="libs/dynamic-adapt.js"></script>
+        <script defer src="libs/jquery.min.js"></script>
+        <script defer src="libs/jquery.inputmask.min.js"></script>
+        <script defer src="libs/aos/aos.js"></script>
+        <script defer src="libs/select2/select2.min.js"></script>
+        <script defer src="libs/slick-carousel/slick.min.js"></script>
+
+        <!-- main js -->
+        <script defer src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="overflow-hidden _bg-account">
+            <header class="header _pos-static">
+                <div class="container">
+                    <div class="header__container">
+                        <div class="col-2 header__container-inner">
+                            <a href="index.html" class="header__logo">
+                                <img
+                                    src="img/logo.svg"
+                                    alt="Logo"
+                                    class="header__logo-img"
+                                />
+                            </a>
+
+                            <button
+                                type="button"
+                                class="header__hamburger"
+                                aria-label="Hamburger menu"
+                            >
+                                <img
+                                    src="img/icons/hamburger.svg"
+                                    alt="Icon"
+                                    class="header__hamburger-icon icon-open"
+                                />
+
+                                <img
+                                    src="img/icons/close.svg"
+                                    alt="Icon"
+                                    class="header__hamburger-icon icon-close"
+                                />
+                            </button>
+                        </div>
+
+                        <div
+                            class="col-2 header__menu-wrapper"
+                            data-da=".header, 960, 1"
+                        >
+                            <nav class="header__menu">
+                                <a
+                                    href="about.html"
+                                    class="header__menu-item _hul"
+                                    >About us</a
+                                >
+                                <a
+                                    href="services.html"
+                                    class="header__menu-item _hul"
+                                    >Services</a
+                                >
+                                <a
+                                    href="pricing.html"
+                                    class="header__menu-item _hul"
+                                    >Pricing</a
+                                >
+                                <a
+                                    href="faq.html"
+                                    class="header__menu-item _hul"
+                                    >FAQ</a
+                                >
+                                <a
+                                    href="blog.html"
+                                    class="header__menu-item _hul"
+                                    >Blog</a
+                                >
+                                <a
+                                    href="contact.html"
+                                    class="header__menu-item _hul"
+                                    >Contacts</a
+                                >
+                            </nav>
+                        </div>
+
+                        <div class="col-2 header__btns">
+                            <div class="header__balance">
+                                <span class="header__balance-caption"
+                                    >Balance:</span
+                                >
+                                <span class="header__balance-value">1000$</span>
+                            </div>
+
+                            <a
+                                href="index.html"
+                                class="header__btn header-account__btn btn"
+                            >
+                                <span class="btn__inner">Log out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="dashboard">
+                <div class="container">
+                    <div class="dashboard__container">
+                        <a
+                            href="account-settings.html"
+                            class="dashboard__item box-style"
+                        >
+                            <img
+                                src="img/icons/settings.svg"
+                                alt="Icon"
+                                class="dashboard__item-icon"
+                            />
+
+                            <span class="dashboard__item-inner">
+                                <span class="dashboard__item-title"
+                                    >SIP connection settings</span
+                                >
+                                <span class="dashboard__item-subtitle">
+                                    SIP Device:
+                                    <span class="_c-accent">1376</span>
+                                </span>
+                            </span>
+                        </a>
+
+                        <a
+                            href="account-payment.html"
+                            class="dashboard__item box-style"
+                        >
+                            <img
+                                src="img/icons/wallet.svg"
+                                alt="Icon"
+                                class="dashboard__item-icon"
+                            />
+
+                            <span class="dashboard__item-inner">
+                                <span class="dashboard__item-title"
+                                    >Payment</span
+                                >
+                                <span class="dashboard__item-subtitle">
+                                    Your balance: <span class="_c-accent"
+                                        >$0.00</span
+                                    >
+                                </span>
+                            </span>
+                        </a>
+
+                        <a
+                            href="account-pricing.html"
+                            class="dashboard__item box-style"
+                        >
+                            <img
+                                src="img/icons/dolar.svg"
+                                alt="Icon"
+                                class="dashboard__item-icon"
+                            />
+
+                            <span class="dashboard__item-inner">
+                                <span class="dashboard__item-title">Price</span>
+                            </span>
+                        </a>
+
+                        <a
+                            href="account-statistics.html"
+                            class="dashboard__item box-style"
+                        >
+                            <img
+                                src="img/icons/stats.svg"
+                                alt="Icon"
+                                class="dashboard__item-icon"
+                            />
+
+                            <span class="dashboard__item-inner">
+                                <span class="dashboard__item-title"
+                                    >Statistics</span
+                                >
+                                <span class="dashboard__item-subtitle">
+                                    Today's outgoing calls:
+                                    <span class="_c-accent">100</span>
+                                </span>
+                            </span>
+                        </a>
+
+                        <a
+                            href="account-info.html"
+                            class="dashboard__item box-style"
+                        >
+                            <img
+                                src="img/icons/user.svg"
+                                alt="Icon"
+                                class="dashboard__item-icon"
+                            />
+
+                            <span class="dashboard__item-inner">
+                                <span class="dashboard__item-title"
+                                    >Personal information</span
+                                >
+                            </span>
+                        </a>
+
+                        <a href="#" class="dashboard__item box-style">
+                            <img
+                                src="img/icons/offers.svg"
+                                alt="Icon"
+                                class="dashboard__item-icon"
+                            />
+
+                            <span class="dashboard__item-inner">
+                                <span class="dashboard__item-title"
+                                    >Special offers</span
+                                >
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers">
+                <div class="container">
+                    <div class="offers__top">
+                        <h2 class="offers__title title">Special offers</h2>
+
+                        <div class="offers__nav">
+                            <button
+                                type="button"
+                                class="offers__btn offers__btn-prev btn _bg-accent"
+                                aria-label="Prev slid"
+                            >
+                                <svg
+                                    class="btn__inner offers__btn-icon"
+                                    width="36"
+                                    height="36"
+                                    viewBox="0 0 36 36"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g id="Iconly/Light/Arrow - Up 2">
+                                        <g id="Arrow - Up 2">
+                                            <path
+                                                id="Stroke 1"
+                                                d="M23.104 28.2096L12.8957 18.0013L23.104 7.79297"
+                                                stroke="white"
+                                                stroke-width="3.75"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="offers__btn offers__btn-next btn _bg-accent"
+                                aria-label="Prev slid"
+                            >
+                                <span class="btn__inner">
+                                    <svg
+                                        class="btn__inner offers__btn-icon"
+                                        width="36"
+                                        height="36"
+                                        viewBox="0 0 36 36"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g id="Iconly/Light/Arrow - Up 2">
+                                            <g id="Arrow - Up 2">
+                                                <path
+                                                    id="Stroke 1"
+                                                    d="M12.8965 7.79037L23.1048 17.9987L12.8965 28.207"
+                                                    stroke="white"
+                                                    stroke-width="3.75"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="offers__slider">
+                        <div class="offers__slider-item">
+                            <article class="blog-article col-2">
+                                <div
+                                    class="blog-article__image"
+                                    style="
+                                        background-image: url('img/blog-plug.jpg');
+                                    "
+                                >
+                                    <div class="blog-article__captions">
+                                        <div
+                                            class="blog-article__captions-item"
+                                        >
+                                            VOIP
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-article__inner box-style">
+                                    <h2 class="blog-article__title">
+                                        <span class="_c-accent"
+                                            >5 Most Common Types</span
+                                        >
+                                        of <br />
+                                        Call Centers for Businesses
+                                    </h2>
+                                    <p class="blog-article__text">
+                                        Using SITE's advanced VoIP and SIP
+                                        technologies, your internal call center
+                                        will optimize communication processes,
+                                        increase productivity, and improve
+                                        collaboration between departments.
+                                    </p>
+
+                                    <div class="blog-article__bottom">
+                                        <a
+                                            href="article.html"
+                                            class="blog-article__btn btn _bg-accent"
+                                        >
+                                            <span class="btn__inner"
+                                                >Read more</span
+                                            >
+                                        </a>
+
+                                        <span class="blog-article__date"
+                                            >19.03.2024</span
+                                        >
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="offers__slider-item">
+                            <article class="blog-article col-2">
+                                <div
+                                    class="blog-article__image"
+                                    style="
+                                        background-image: url('img/blog-plug.jpg');
+                                    "
+                                >
+                                    <div class="blog-article__captions">
+                                        <div
+                                            class="blog-article__captions-item"
+                                        >
+                                            VOIP
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-article__inner box-style">
+                                    <h2 class="blog-article__title">
+                                        <span class="_c-accent"
+                                            >5 Most Common Types</span
+                                        >
+                                        of <br />
+                                        Call Centers for Businesses
+                                    </h2>
+                                    <p class="blog-article__text">
+                                        Using SITE's advanced VoIP and SIP
+                                        technologies, your internal call center
+                                        will optimize communication processes,
+                                        increase productivity, and improve
+                                        collaboration between departments.
+                                    </p>
+
+                                    <div class="blog-article__bottom">
+                                        <a
+                                            href="article.html"
+                                            class="blog-article__btn btn _bg-accent"
+                                        >
+                                            <span class="btn__inner"
+                                                >Read more</span
+                                            >
+                                        </a>
+
+                                        <span class="blog-article__date"
+                                            >19.03.2024</span
+                                        >
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="offers__slider-item">
+                            <article class="blog-article col-2">
+                                <div
+                                    class="blog-article__image"
+                                    style="
+                                        background-image: url('img/blog-plug.jpg');
+                                    "
+                                >
+                                    <div class="blog-article__captions">
+                                        <div
+                                            class="blog-article__captions-item"
+                                        >
+                                            VOIP
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-article__inner box-style">
+                                    <h2 class="blog-article__title">
+                                        <span class="_c-accent"
+                                            >5 Most Common Types</span
+                                        >
+                                        of <br />
+                                        Call Centers for Businesses
+                                    </h2>
+                                    <p class="blog-article__text">
+                                        Using SITE's advanced VoIP and SIP
+                                        technologies, your internal call center
+                                        will optimize communication processes,
+                                        increase productivity, and improve
+                                        collaboration between departments.
+                                    </p>
+
+                                    <div class="blog-article__bottom">
+                                        <a
+                                            href="article.html"
+                                            class="blog-article__btn btn _bg-accent"
+                                        >
+                                            <span class="btn__inner"
+                                                >Read more</span
+                                            >
+                                        </a>
+
+                                        <span class="blog-article__date"
+                                            >19.03.2024</span
+                                        >
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="offers__slider-item">
+                            <article class="blog-article col-2">
+                                <div
+                                    class="blog-article__image"
+                                    style="
+                                        background-image: url('img/blog-plug.jpg');
+                                    "
+                                >
+                                    <div class="blog-article__captions">
+                                        <div
+                                            class="blog-article__captions-item"
+                                        >
+                                            VOIP
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-article__inner box-style">
+                                    <h2 class="blog-article__title">
+                                        <span class="_c-accent"
+                                            >5 Most Common Types</span
+                                        >
+                                        of <br />
+                                        Call Centers for Businesses
+                                    </h2>
+                                    <p class="blog-article__text">
+                                        Using SITE's advanced VoIP and SIP
+                                        technologies, your internal call center
+                                        will optimize communication processes,
+                                        increase productivity, and improve
+                                        collaboration between departments.
+                                    </p>
+
+                                    <div class="blog-article__bottom">
+                                        <a
+                                            href="article.html"
+                                            class="blog-article__btn btn _bg-accent"
+                                        >
+                                            <span class="btn__inner"
+                                                >Read more</span
+                                            >
+                                        </a>
+
+                                        <span class="blog-article__date"
+                                            >19.03.2024</span
+                                        >
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="offers__slider-item">
+                            <article class="blog-article col-2">
+                                <div
+                                    class="blog-article__image"
+                                    style="
+                                        background-image: url('img/blog-plug.jpg');
+                                    "
+                                >
+                                    <div class="blog-article__captions">
+                                        <div
+                                            class="blog-article__captions-item"
+                                        >
+                                            VOIP
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-article__inner box-style">
+                                    <h2 class="blog-article__title">
+                                        <span class="_c-accent"
+                                            >5 Most Common Types</span
+                                        >
+                                        of <br />
+                                        Call Centers for Businesses
+                                    </h2>
+                                    <p class="blog-article__text">
+                                        Using SITE's advanced VoIP and SIP
+                                        technologies, your internal call center
+                                        will optimize communication processes,
+                                        increase productivity, and improve
+                                        collaboration between departments.
+                                    </p>
+
+                                    <div class="blog-article__bottom">
+                                        <a
+                                            href="article.html"
+                                            class="blog-article__btn btn _bg-accent"
+                                        >
+                                            <span class="btn__inner"
+                                                >Read more</span
+                                            >
+                                        </a>
+
+                                        <span class="blog-article__date"
+                                            >19.03.2024</span
+                                        >
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="offers__slider-item">
+                            <article class="blog-article col-2">
+                                <div
+                                    class="blog-article__image"
+                                    style="
+                                        background-image: url('img/blog-plug.jpg');
+                                    "
+                                >
+                                    <div class="blog-article__captions">
+                                        <div
+                                            class="blog-article__captions-item"
+                                        >
+                                            VOIP
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-article__inner box-style">
+                                    <h2 class="blog-article__title">
+                                        <span class="_c-accent"
+                                            >5 Most Common Types</span
+                                        >
+                                        of <br />
+                                        Call Centers for Businesses
+                                    </h2>
+                                    <p class="blog-article__text">
+                                        Using SITE's advanced VoIP and SIP
+                                        technologies, your internal call center
+                                        will optimize communication processes,
+                                        increase productivity, and improve
+                                        collaboration between departments.
+                                    </p>
+
+                                    <div class="blog-article__bottom">
+                                        <a
+                                            href="article.html"
+                                            class="blog-article__btn btn _bg-accent"
+                                        >
+                                            <span class="btn__inner"
+                                                >Read more</span
+                                            >
+                                        </a>
+
+                                        <span class="blog-article__date"
+                                            >19.03.2024</span
+                                        >
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

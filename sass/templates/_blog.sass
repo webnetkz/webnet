@@ -1,0 +1,146 @@
+.blog
+	&__container
+		@include adaptive('column-gap', 20, 'desktop')
+		@include adaptive('row-gap', 80, 'desktop')
+		display: flex
+		flex-wrap: wrap
+	&-article
+		&__image
+			@include adaptive('border-width', 1, 'desktop')
+			@include adaptive('border-radius', 10, 'desktop')
+			@include adaptive('height', 410, 'desktop')
+			@include adaptive('padding', 25, 'desktop')
+			background-size: cover
+			background-position: center
+			border-color: $gray
+			border-style: solid
+		&__captions
+			@include adaptive('gap', 10, 'desktop')
+			display: flex
+			&-item
+				@include adaptive('padding-top', 15, 'desktop')
+				@include adaptive('padding-bottom', 15, 'desktop')
+				@include adaptive('padding-right', 20, 'desktop')
+				@include adaptive('padding-left', 20, 'desktop')
+				@include adaptive('border-radius', 10, 'desktop')
+				@include adaptive('border-width', 1, 'desktop')
+				@include adaptive('font-size', 14, 'desktop')
+				color: $accent
+				border-color: $accent
+				background-color: #fff
+				border-style: solid
+		&__inner
+			@include adaptive('padding', 35, 'desktop')
+			@include adaptive('border-radius', 10, 'desktop')
+		&__title
+			@include adaptive('margin-bottom', 15, 'desktop')
+			@include adaptive('font-size', 22, 'desktop')
+			font-weight: 600
+		&__text
+			@include adaptive('margin-bottom', 30, 'desktop')
+			@include adaptive('font-size', 16, 'desktop')
+			font-weight: 400
+			line-height: 1.2
+			color: $dark
+		&__bottom
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+		&__btn
+			@include adaptive('padding-top', 16, 'desktop')
+			@include adaptive('padding-bottom', 16, 'desktop')
+			@include adaptive('padding-right', 35, 'desktop')
+			@include adaptive('padding-left', 35, 'desktop')
+			@include adaptive('height', 56, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+		&__date
+			@include adaptive('font-size', 14, 'desktop')
+			color: $dark
+	&-pagination
+		@include adaptive('margin-top', 40, 'desktop')
+		@include adaptive('gap', 20, 'desktop')
+		display: flex
+		justify-content: center
+		align-items: center
+		&__container
+			@include adaptive('gap', 5, 'desktop')
+			display: flex
+			justify-content: center
+			align-items: center
+		&__btn
+			@include adaptive('width', 30, 'desktop')
+			@include adaptive('height', 30, 'desktop')
+			@include adaptive('border-radius', 5, 'desktop')
+			background-color: $accent
+			display: flex
+			justify-content: center
+			align-items: center
+			&.disabled
+				background-color: rgba(0, 7, 19, 0.05)
+			&-icon
+				@include adaptive('width', 14, 'desktop')
+			&-prev .blog-pagination__btn-icon
+				transform: rotate(180deg)
+		&__item, &__separator
+			color: $dark
+			&:hover
+				color: $dark
+			&.active
+				color: $black
+
+@media only screen and (max-width : 960px)
+	.blog
+		&__container
+			@include adaptive('gap', 20, 'mobile')
+			flex-direction: column
+		&-article
+			&__image
+				@include adaptive('border-width', 1, 'mobile')
+				@include adaptive('border-radius', 10, 'mobile')
+				@include adaptive('height', 220, 'mobile')
+				@include adaptive('padding', 25, 'mobile')
+			&__captions
+				@include adaptive('gap', 10, 'mobile')
+				&-item
+					@include adaptive('padding-top', 10, 'mobile')
+					@include adaptive('padding-bottom', 10, 'mobile')
+					@include adaptive('padding-right', 15, 'mobile')
+					@include adaptive('padding-left', 15, 'mobile')
+					@include adaptive('border-radius', 10, 'mobile')
+					@include adaptive('border-width', 1, 'mobile')
+					@include adaptive('font-size', 14, 'mobile')
+			&__inner
+				@include adaptive('padding-top', 35, 'mobile')
+				@include adaptive('padding-bottom', 35, 'mobile')
+				@include adaptive('padding-left', 30, 'mobile')
+				@include adaptive('padding-right', 30, 'mobile')
+				@include adaptive('border-radius', 10, 'mobile')
+			&__title
+				@include adaptive('margin-bottom', 15, 'mobile')
+				@include adaptive('font-size', 18, 'mobile')
+			&__text
+				@include adaptive('margin-bottom', 30, 'mobile')
+				@include adaptive('font-size', 14, 'mobile')
+			&__btn
+				@include adaptive('padding-top', 15, 'mobile')
+				@include adaptive('padding-bottom', 15, 'mobile')
+				@include adaptive('padding-right', 20, 'mobile')
+				@include adaptive('padding-left', 20, 'mobile')
+				@include adaptive('height', 51, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+		&-pagination
+			@include adaptive('margin-top', 30, 'mobile')
+			@include adaptive('gap', 20, 'mobile')
+			&__container
+				@include adaptive('gap', 5, 'mobile')
+				display: flex
+				justify-content: center
+				align-items: center
+			&__btn
+				@include adaptive('width', 45, 'mobile')
+				@include adaptive('height', 45, 'mobile')
+				@include adaptive('border-radius', 5, 'mobile')
+				&-icon
+					@include adaptive('width', 20, 'mobile')
+			&__item
+				@include adaptive('font-size', 18, 'mobile')

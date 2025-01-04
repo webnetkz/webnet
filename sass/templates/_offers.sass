@@ -1,0 +1,54 @@
+.offers
+	@include adaptive('padding-top', 50, 'desktop')
+	&__top
+		@include adaptive('margin-bottom', 50, 'desktop')
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__nav
+		@include adaptive('gap', 20, 'desktop')
+		display: flex
+	&__btn
+		@include adaptive('width', 100, 'desktop')
+		@include adaptive('height', 100, 'desktop')
+		padding: 0
+		&-icon
+			@include adaptive('width', 35, 'desktop')
+			@include adaptive('height', 35, 'desktop')
+			path
+				transition: .3s
+		&.slick-disabled
+			@include adaptive('border-width', 2.5, 'desktop')
+			background: none
+			border-color: $accent
+			border-style: solid
+			&::after
+				display: none
+			.offers__btn-icon
+				path
+					stroke: $accent
+	&__slider
+		.slick-track
+			@include adaptive('gap', 20, 'desktop')
+			display: flex
+
+@media only screen and (max-width : 960px)
+	.offers
+		@include adaptive('padding-top', 20, 'mobile')
+		&__top
+			@include adaptive('margin-bottom', 20, 'mobile')
+		&__nav
+			@include adaptive('gap', 5, 'mobile')
+		&__btn
+			@include adaptive('width', 35, 'mobile')
+			@include adaptive('height', 35, 'mobile')
+			&-icon
+				@include adaptive('width', 12, 'mobile')
+				@include adaptive('height', 12, 'mobile')
+			&.slick-disabled
+				@include adaptive('border-width', 1, 'mobile')
+		&__slider
+			&-item
+				@include adaptive('width', 315, 'mobile')
+			.slick-track
+				@include adaptive('gap', 20, 'mobile')
