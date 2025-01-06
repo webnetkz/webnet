@@ -78,16 +78,6 @@
                             <a href="about.php" class="header__menu-item _hul"
                                 >О нас</a
                             >
-                            <a
-                                href="services.html"
-                                class="header__menu-item _hul"
-                                >Services</a
-                            >
-                            <a
-                                href="pricing.html"
-                                class="header__menu-item _hul"
-                                >Pricing</a
-                            >
                             <a href="services.php" class="header__menu-item _hul"
                                 >Услуги</a
                             >
