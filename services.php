@@ -10,7 +10,7 @@
                     <section class="main">
                         <div class="container">
                             <div class="main__container" data-aos="fade-up">
-                                <h1 class="main__title">FAQ</h1>
+                                <h1 class="main__title">Наши услуги</h1>
                             </div>
                         </div>
                     </section>

@@ -42,14 +42,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -92,14 +85,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -142,14 +128,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -192,14 +171,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -242,14 +214,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -292,14 +257,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -342,14 +300,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -392,14 +343,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
@@ -442,14 +386,7 @@
                                             of <br />
                                             Call Centers for Businesses
                                         </h2>
-                                        <p class="blog-article__text">
-                                            Using SITE's advanced VoIP and SIP
-                                            technologies, your internal call
-                                            center will optimize communication
-                                            processes, increase productivity,
-                                            and improve collaboration between
-                                            departments.
-                                        </p>
+                                        
 
                                         <div class="blog-article__bottom">
                                             <a
