@@ -1,6 +1,8 @@
 <?php
   require_once './feedback.php';
 ?>
+
+<iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A55190b1feb2887b7e01735790db771620d82abaccd9c605babb532b9944cab8a&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 <footer class="footer" data-aos="fade-up">
   <div class="container">
       <div class="footer__container">
@@ -164,7 +166,7 @@
                     </a>
 
                     <a
-                        href="https://maps.app.goo.gl/AMfoEYkuL9mZ3yabA"
+                        href="https://www.google.com/maps/place/64%2F1,+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%90%D1%83%D1%8D%D0%B7%D0%BE%D0%B2%D0%B0+64%2F2,+%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B+050000/@43.2427518,76.9017311,17z/data=!3m1!4b1!4m6!3m5!1s0x388369399b2372ab:0xb619ec0091f690ce!8m2!3d43.2427518!4d76.904306!16s%2Fg%2F12hldx_vv?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
                         class="footer__contacts-item"
                         target="_blank"
                     >

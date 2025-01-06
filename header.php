@@ -75,17 +75,17 @@
                         data-da=".header, 960, 1"
                     >
                         <nav class="header__menu">
-                            <a href="about.php" class="header__menu-item _hul"
+                            <a href="about" class="header__menu-item _hul"
                                 >О нас</a
                             >
-                            <a href="services.php" class="header__menu-item _hul"
+                            <a href="services" class="header__menu-item _hul"
                                 >Услуги</a
                             >
-                            <a href="portfolio.php" class="header__menu-item _hul"
+                            <a href="portfolio" class="header__menu-item _hul"
                                 >Работы</a
                             >
                             <a
-                                href="contact.php"
+                                href="contact"
                                 class="header__menu-item _hul"
                                 >Контакты</a
                             >
@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="col-2 header__btns">
-                        <a href="contact.php" class="header__btn btn _bd">
+                        <a href="contact" class="header__btn btn _bd">
                             <span class="btn__inner">Заказать звонок</span>
                         </a>
                     </div>
