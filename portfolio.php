@@ -22,49 +22,6 @@
                                     <div
                                         class="blog-article__image"
                                         style="
-                                            background-image: url('img/portfolio/1.png');
-                                            "
-                                    >
-                                        <div class="blog-article__captions">
-                                            <div
-                                                class="blog-article__captions-item"
-                                            >
-                                              angarstroi.biz.ua
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="blog-article__inner box-style">
-                                        <h2 class="blog-article__title">
-                                            <span class="_c-accent"
-                                                >5 Most Common Types</span
-                                            >
-                                            of <br />
-                                            Call Centers for Businesses
-                                        </h2>
-                                        
-
-                                        <div class="blog-article__bottom">
-                                            <a
-                                                href="https://www.angarstroi.biz.ua/"
-                                                class="blog-article__btn btn _bg-accent"
-                                            >
-                                                <span class="btn__inner"
-                                                    >Перейти</span
-                                                >
-                                            </a>
-
-                                            <span class="blog-article__date"
-                                                >19.09.2024</span
-                                            >
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="blog-article col-2">
-                                    <div
-                                        class="blog-article__image"
-                                        style="
                                             background-image: url('img/portfolio/2.png');
                                         "
                                     >
@@ -99,6 +56,49 @@
 
                                             <span class="blog-article__date"
                                                 >02.01.2025</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/1.png');
+                                            "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              angarstroi.biz.ua
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                >5 Most Common Types</span
+                                            >
+                                            of <br />
+                                            Call Centers for Businesses
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://www.angarstroi.biz.ua/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >19.09.2024</span
                                             >
                                         </div>
                                     </div>
@@ -151,49 +151,6 @@
                                     <div
                                         class="blog-article__image"
                                         style="
-                                            background-image: url('img/portfolio/4.png');
-                                        "
-                                    >
-                                        <div class="blog-article__captions">
-                                            <div
-                                                class="blog-article__captions-item"
-                                            >
-                                              deprimo.com.ua/ua
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="blog-article__inner box-style">
-                                        <h2 class="blog-article__title">
-                                            <span class="_c-accent"
-                                                >5 Most Common Types</span
-                                            >
-                                            of <br />
-                                            Call Centers for Businesses
-                                        </h2>
-                                        
-
-                                        <div class="blog-article__bottom">
-                                            <a
-                                                href="https://deprimo.com.ua/ua"
-                                                class="blog-article__btn btn _bg-accent"
-                                            >
-                                                <span class="btn__inner"
-                                                    >Перейти</span
-                                                >
-                                            </a>
-
-                                            <span class="blog-article__date"
-                                                >01.03.2022</span
-                                            >
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="blog-article col-2">
-                                    <div
-                                        class="blog-article__image"
-                                        style="
                                             background-image: url('img/portfolio/5.png');
                                         "
                                     >
@@ -228,6 +185,49 @@
 
                                             <span class="blog-article__date"
                                                 >12.05.2023</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/4.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              deprimo.com.ua/ua
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                >5 Most Common Types</span
+                                            >
+                                            of <br />
+                                            Call Centers for Businesses
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://deprimo.com.ua/ua"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >01.03.2022</span
                                             >
                                         </div>
                                     </div>
@@ -313,7 +313,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >19.03.2019</span
                                             >
                                         </div>
                                     </div>
@@ -323,14 +323,14 @@
                                     <div
                                         class="blog-article__image"
                                         style="
-                                            background-image: url('img/portfolio/3.png');
+                                            background-image: url('img/portfolio/8.png');
                                         "
                                     >
                                         <div class="blog-article__captions">
                                             <div
                                                 class="blog-article__captions-item"
                                             >
-                                                VOIP
+                                                перила.kz
                                             </div>
                                         </div>
                                     </div>
@@ -347,7 +347,7 @@
 
                                         <div class="blog-article__bottom">
                                             <a
-                                                href="article.html"
+                                                href="https://перила.kz"
                                                 class="blog-article__btn btn _bg-accent"
                                             >
                                                 <span class="btn__inner"
@@ -356,7 +356,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >05.12.2018</span
                                             >
                                         </div>
                                     </div>
@@ -366,14 +366,14 @@
                                     <div
                                         class="blog-article__image"
                                         style="
-                                            background-image: url('img/portfolio/3.png');
+                                            background-image: url('img/portfolio/9.png');
                                         "
                                     >
                                         <div class="blog-article__captions">
                                             <div
                                                 class="blog-article__captions-item"
                                             >
-                                                VOIP
+                                                FKI.kz
                                             </div>
                                         </div>
                                     </div>
@@ -390,7 +390,7 @@
 
                                         <div class="blog-article__bottom">
                                             <a
-                                                href="article.html"
+                                                href="https://fki.kz"
                                                 class="blog-article__btn btn _bg-accent"
                                             >
                                                 <span class="btn__inner"
@@ -399,7 +399,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.03.2024</span
+                                                >19.05.2018</span
                                             >
                                         </div>
                                     </div>
