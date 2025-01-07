@@ -75,17 +75,17 @@
                         data-da=".header, 960, 1"
                     >
                         <nav class="header__menu">
-                            <a href="about" class="header__menu-item _hul"
+                            <a href="о нас" class="header__menu-item _hul"
                                 >О нас</a
                             >
-                            <a href="services" class="header__menu-item _hul"
+                            <a href="услуги" class="header__menu-item _hul"
                                 >Услуги</a
                             >
-                            <a href="portfolio" class="header__menu-item _hul"
+                            <a href="работы" class="header__menu-item _hul"
                                 >Работы</a
                             >
                             <a
-                                href="contact"
+                                href="контакты"
                                 class="header__menu-item _hul"
                                 >Контакты</a
                             >

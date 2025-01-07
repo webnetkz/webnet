@@ -37,10 +37,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -80,10 +78,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -123,10 +119,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -166,10 +160,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -209,10 +201,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -252,10 +242,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -295,10 +283,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -338,10 +324,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
@@ -381,10 +365,8 @@
                                     <div class="blog-article__inner box-style">
                                         <h2 class="blog-article__title">
                                             <span class="_c-accent"
-                                                >5 Most Common Types</span
+                                                ></span
                                             >
-                                            of <br />
-                                            Call Centers for Businesses
                                         </h2>
                                         
 
