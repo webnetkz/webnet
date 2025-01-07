@@ -1,5 +1,7 @@
 <?php
   $title = 'О нас WebNet.kz';
+  $keywords = 'разработка сайтов, создание сайтов, разработка интернет-магазинов, разработка порталов, создание лендингов, веб-разработка, создание приложений, мобильные приложения, Android разработка, iOS разработка, Mac приложения, Windows приложения, Linux приложения, автоматизация процессов, интеграция систем, корпоративные порталы, UI/UX дизайн, responsive дизайн, веб-программирование, фронтенд разработка, бэкенд разработка, CMS разработка, ecommerce решения, автоматизация бизнеса, создание приложений под заказ, разработка по ТЗ, информационные системы, корпоративные приложения, web-приложения, гибкая разработка, CI/CD, DevOps, cloud-разработка';
+  $description = 'Мы занимаемся разработкой сайтов, интернет-магазинов, порталов, лендингов и мобильных приложений для Android, iOS, Mac, Windows и Linux. Оказываем услуги по автоматизации бизнес-процессов, интеграции систем и созданию корпоративных приложений. Гибкий подход, качественная реализация и индивидуальные решения для вашего бизнеса.';
 
   require_once './header.php';
 ?>
@@ -10,14 +12,15 @@
                     <section class="main">
                         <div class="container">
                             <div class="main__container" data-aos="fade-up">
-                                <h1 class="main__title">Our goal</h1>
-
+                                <h1 class="main__title">О нас</h1>
+                                
                                 <p class="main__text">
-                                    To provide you with the <br />
-                                    best opportunities for <br />
-                                    effective communication <br />
-                                    and business development.
+                                  To provide you with the <br />
+                                  best opportunities for <br />
+                                  effective communication <br />
+                                  and business development.
                                 </p>
+                                <img src="./img/logo.png" alt="logo webnet.kz" class="slider-logo">
                             </div>
                         </div>
                     </section>
@@ -49,74 +52,6 @@
                                     <br />
                                     you can focus on its development.
                                 </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="info">
-                        <div class="container">
-                            <div class="info__container">
-                                <div
-                                    class="info__container-box col-3"
-                                    data-aos="fade-right"
-                                >
-                                    <p class="info__overtitle">
-                                        Why choose us?
-                                    </p>
-                                    <h2 class="info__title title">
-                                        What is our advantage?
-                                    </h2>
-                                </div>
-
-                                <div class="info__container-inner col-3">
-                                    <div
-                                        class="info__item box-style _full-w _less-h"
-                                        data-aos="fade-left"
-                                    >
-                                        <div class="info__item-number">01</div>
-                                        <h3 class="info__item-heading">
-                                            Reliability
-                                        </h3>
-                                        <p class="info__item-text">
-                                            Our services guarantee reliable
-                                            communication <br />
-                                            and 24/7 availability so that your
-                                            business is <br />
-                                            always in touch with your customers.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="info__item box-style _less-h"
-                                        data-aos="fade-left"
-                                    >
-                                        <div class="info__item-number">02</div>
-                                        <h3 class="info__item-heading">
-                                            Flexibility
-                                        </h3>
-                                        <p class="info__item-text">
-                                            We offer flexible rates and
-                                            solutions that meet your needs,
-                                            helping you grow and develop.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="info__item box-style _less-h"
-                                        data-aos="fade-left"
-                                        data-aos-delay="300"
-                                    >
-                                        <div class="info__item-number">03</div>
-                                        <h3 class="info__item-heading">
-                                            Professionalism
-                                        </h3>
-                                        <p class="info__item-text">
-                                            Our team of experts will provide you
-                                            with technical support and advice at
-                                            every stage of cooperation.
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </section>

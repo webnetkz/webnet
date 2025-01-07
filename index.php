@@ -1,5 +1,7 @@
 <?php
   $title = 'Главная WebNet.kz';
+  $keywords = 'разработка сайтов, создание сайтов, разработка интернет-магазинов, разработка порталов, создание лендингов, веб-разработка, создание приложений, мобильные приложения, Android разработка, iOS разработка, Mac приложения, Windows приложения, Linux приложения, автоматизация процессов, интеграция систем, корпоративные порталы, UI/UX дизайн, responsive дизайн, веб-программирование, фронтенд разработка, бэкенд разработка, CMS разработка, ecommerce решения, автоматизация бизнеса, создание приложений под заказ, разработка по ТЗ, информационные системы, корпоративные приложения, web-приложения, гибкая разработка, CI/CD, DevOps, cloud-разработка';
+  $description = 'Мы занимаемся разработкой сайтов, интернет-магазинов, порталов, лендингов и мобильных приложений для Android, iOS, Mac, Windows и Linux. Оказываем услуги по автоматизации бизнес-процессов, интеграции систем и созданию корпоративных приложений. Гибкий подход, качественная реализация и индивидуальные решения для вашего бизнеса.';
 
   require_once './header.php';
 ?>
@@ -19,6 +21,7 @@
                                   <br>
                                   WebNet.kz
                                 </h1>
+                                <img src="./img/logo.png" alt="logo webnet.kz" class="slider-logo">
                             </div>
                         </div>
                     </section>
@@ -30,28 +33,27 @@
                                 data-aos="fade-up"
                             >
                                 <p class="about__overtitle">
-                                    It does not require complex verification
+                                    Разработка с вниманием к деталям
                                 </p>
                                 <h2 class="about__title title">
-                                    <span class="_c-accent">SITE</span> is a
-                                    phone system that is simple and
-                                    <span class="_c-accent">accessible</span> to
-                                    everyone
+                                    <span class="_c-accent">ПО</span> которое решает вопросы бизнеса
+                                    <span class="_c-accent">и приносит</span> прибыль
                                 </h2>
 
                                 <div class="about__text">
                                     <p class="about__text-p">
-                                        We've created a user-friendly account
-                                        <br />
-                                        and even a chatbot on Telegram to help
-                                        <br />
-                                        you easily manage your account.
+                                      Нужен сайт, который будет работать на вас? <br>
+                                      Мы создаем профессиональные веб-ресурсы — <br>
+                                      от лендингов до крупных порталов и интернет-магазинов. <br>
+                                      Быстро, качественно и с учетом всех ваших потребностей. <br>
+                                      Пусть ваш бизнес онлайн будет успешным!
                                     </p>
 
                                     <p class="about__text-p">
-                                        And for maximum comfort, we <br />
-                                        offer anonymous deposits using <br />
-                                        various cryptocurrencies.
+                                      Ищете надежного партнера для разработки мобильных приложений? <br>
+                                      Мы разрабатываем приложения для Android, iOS, Mac, Windows и Linux, <br>
+                                      которые эффективно решают задачи вашего бизнеса. <br>
+                                      Мы сделаем ваши идеи реальностью, обеспечив высокое качество и результат.
                                     </p>
                                 </div>
 
@@ -61,6 +63,7 @@
                                     class="about__image"
                                     data-aos="zoom-in"
                                     data-aos-delay="500"
+                                    style="max-width: 300px"
                                 />
                             </div>
                         </div>
@@ -74,10 +77,10 @@
                                     data-aos="fade-right"
                                 >
                                     <p class="info__overtitle">
-                                        Why choose us?
+                                      Почему стоит выбрать нас?
                                     </p>
                                     <h2 class="info__title title">
-                                        What is our advantage?
+                                      В чем наше преимущество?
                                     </h2>
                                 </div>
 
@@ -88,15 +91,13 @@
                                     >
                                         <div class="info__item-number">01</div>
                                         <h3 class="info__item-heading">
-                                            Global <br />
-                                            capabilities
+                                            Глобальные <br />
+                                            возможности
                                         </h3>
                                         <p class="info__item-text">
-                                            Our rates are available worldwide.
-                                            We don't ask questions about the
-                                            subject matter of the calls, so
-                                            you're free to do what your business
-                                            needs.
+                                            Нацеленность на результат для бизнеса.
+                                            Применение мировых лучших практик в разработке.
+                                            PWA, Nuxt/Vue, Laravel, Django/Flask/FastAP, Redis и многие другие.
                                         </p>
                                     </div>
 
@@ -107,14 +108,14 @@
                                     >
                                         <div class="info__item-number">02</div>
                                         <h3 class="info__item-heading">
-                                            Quality and <br />
-                                            support 24/7
+                                          Качественная <br />
+                                          поддержка 24/7
                                         </h3>
                                         <p class="info__item-text">
-                                            We guarantee reliable communication
-                                            and technical support 24/7. Our team
-                                            is always ready to help you solve
-                                            any questions or problems.
+                                          Мы гарантируем надежную связь
+                                          и техническую поддержку 24/7. Наша команда
+                                          всегда готова помочь вам решить
+                                          любые вопросы или проблемы.
                                         </p>
                                     </div>
 
@@ -124,14 +125,13 @@
                                     >
                                         <div class="info__item-number">03</div>
                                         <h3 class="info__item-heading">
-                                            Easy CRM <br />
-                                            implementation
+                                            Уникальные <br />
+                                            проекты
                                         </h3>
                                         <p class="info__item-text">
-                                            Optimize your customer experience
-                                            with CRM integration that increases
-                                            customer engagement through
-                                            integrated telephony solutions.
+                                            Реализуем проекты индивидуально и большим вниманием
+                                            к деталям и всем пожеланиям заказчика.
+                                            Что позволяет достигать синергии и высоких результатов.
                                         </p>
                                     </div>
 
@@ -142,15 +142,13 @@
                                     >
                                         <div class="info__item-number">04</div>
                                         <h3 class="info__item-heading">
-                                            Variety <br />
-                                            of Routes
+                                            Закладываем <br />
+                                            маркетинговую состовляющую в проекты
                                         </h3>
                                         <p class="info__item-text">
-                                            We offer a variety of route types
-                                            including TDM, nCLI, CLI, and GSM to
-                                            ensure that you get the best
-                                            possible call quality for your
-                                            business.
+                                            Оптимальные настройки каждого проекта для SEO,
+                                            конкурентное преимущество на рынке за счет высокой загрузки.
+                                            Прохождения аудита от google lighthouse.
                                         </p>
                                     </div>
                                 </div>
@@ -161,10 +159,10 @@
                     <section class="plans">
                         <div class="container">
                             <h2 class="plans__title title" data-aos="fade-up">
-                                <span class="_c-accent">Start</span> saving time
-                                today <br />
-                                and choose your
-                                <span class="_c-accent">best plan</span>
+                              <span class="_c-accent">Начните</span> экономя время
+                                сегодня<br />
+                                и выберите Ваш
+                              <span class="_c-accent">лучший план</span>
                             </h2>
 
                             <div class="plans__container">
@@ -174,10 +172,10 @@
                                     data-aos-delay="300"
                                 >
                                     <div class="plan__inner">
-                                        <p class="plan__overtitle">Startup</p>
-                                        <p class="plan__title">Free</p>
+                                        <p class="plan__overtitle">Стартвый</p>
+                                        <p class="plan__title">$2 000</p>
                                         <p class="plan__subtitle">
-                                            Monthly / trial
+                                            Месяц / поддержки и гарантий
                                         </p>
 
                                         <ul class="plan__list">
@@ -209,12 +207,11 @@
                                     </div>
 
                                     <a
-                                        href="#"
+                                        href="#feedback"
                                         class="plan__btn btn _bg-accent"
                                     >
                                         <span class="btn__inner"
-                                            >Get Started</span
-                                        >
+                                          >Связаться</span>
                                     </a>
                                 </div>
 
@@ -223,16 +220,16 @@
                                     data-aos="fade-up"
                                 >
                                     <span class="plan__label"
-                                        >Most popular</span
+                                        >Самый популярный</span
                                     >
 
                                     <div class="plan__inner">
                                         <p class="plan__overtitle">
-                                            Intermediate
+                                            Базовый
                                         </p>
-                                        <p class="plan__title">$50</p>
+                                        <p class="plan__title">от $5 000</p>
                                         <p class="plan__subtitle">
-                                            Monthly / trial
+                                            3 месяца / поддержки и гарантий
                                         </p>
 
                                         <ul class="plan__list">
@@ -288,12 +285,11 @@
                                     </div>
 
                                     <a
-                                        href="#"
+                                        href="#feedback"
                                         class="plan__btn btn _bg-accent"
                                     >
                                         <span class="btn__inner"
-                                            >Get Started</span
-                                        >
+                                          >Связаться</span>
                                     </a>
                                 </div>
 
@@ -304,11 +300,11 @@
                                 >
                                     <div class="plan__inner">
                                         <p class="plan__overtitle">
-                                            Call Center
+                                            Продвинутый
                                         </p>
-                                        <p class="plan__title">$100</p>
+                                        <p class="plan__title">$10 000</p>
                                         <p class="plan__subtitle">
-                                            Monthly / trial
+                                          9 месяцев / поддержки и гарантий
                                         </p>
 
                                         <ul class="plan__list">
@@ -365,12 +361,11 @@
                                     </div>
 
                                     <a
-                                        href="#"
+                                        href="#feedback"
                                         class="plan__btn btn _bg-accent"
                                     >
                                         <span class="btn__inner"
-                                            >Get Started</span
-                                        >
+                                          >Связаться</span>
                                     </a>
                                 </div>
                             </div>

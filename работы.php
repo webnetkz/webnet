@@ -1,5 +1,7 @@
 <?php
   $title = 'Наши работы WebNet.kz';
+  $keywords = 'разработка сайтов, создание сайтов, разработка интернет-магазинов, разработка порталов, создание лендингов, веб-разработка, создание приложений, мобильные приложения, Android разработка, iOS разработка, Mac приложения, Windows приложения, Linux приложения, автоматизация процессов, интеграция систем, корпоративные порталы, UI/UX дизайн, responsive дизайн, веб-программирование, фронтенд разработка, бэкенд разработка, CMS разработка, ecommerce решения, автоматизация бизнеса, создание приложений под заказ, разработка по ТЗ, информационные системы, корпоративные приложения, web-приложения, гибкая разработка, CI/CD, DevOps, cloud-разработка';
+  $description = 'Мы занимаемся разработкой сайтов, интернет-магазинов, порталов, лендингов и мобильных приложений для Android, iOS, Mac, Windows и Linux. Оказываем услуги по автоматизации бизнес-процессов, интеграции систем и созданию корпоративных приложений. Гибкий подход, качественная реализация и индивидуальные решения для вашего бизнеса.';
 
   require_once './header.php';
 ?>
@@ -11,6 +13,7 @@
                         <div class="container">
                             <div class="main__container" data-aos="fade-up">
                                 <h1 class="main__title">Наши работы</h1>
+                                <img src="./img/logo.png" alt="logo webnet.kz" class="slider-logo">
                             </div>
                         </div>
                     </section>
@@ -222,6 +225,87 @@
                                         </div>
                                     </div>
                                 </article>
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/8.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                                перила.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://перила.kz"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >05.12.2021</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/9.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                                FKI.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://fki.kz"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >19.05.2021</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
 
                                 <article class="blog-article col-2">
                                     <div
@@ -300,88 +384,6 @@
 
                                             <span class="blog-article__date"
                                                 >19.03.2019</span
-                                            >
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="blog-article col-2">
-                                    <div
-                                        class="blog-article__image"
-                                        style="
-                                            background-image: url('img/portfolio/8.png');
-                                        "
-                                    >
-                                        <div class="blog-article__captions">
-                                            <div
-                                                class="blog-article__captions-item"
-                                            >
-                                                перила.kz
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="blog-article__inner box-style">
-                                        <h2 class="blog-article__title">
-                                            <span class="_c-accent"
-                                                ></span
-                                            >
-                                        </h2>
-                                        
-
-                                        <div class="blog-article__bottom">
-                                            <a
-                                                href="https://перила.kz"
-                                                class="blog-article__btn btn _bg-accent"
-                                            >
-                                                <span class="btn__inner"
-                                                    >Перейти</span
-                                                >
-                                            </a>
-
-                                            <span class="blog-article__date"
-                                                >05.12.2018</span
-                                            >
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="blog-article col-2">
-                                    <div
-                                        class="blog-article__image"
-                                        style="
-                                            background-image: url('img/portfolio/9.png');
-                                        "
-                                    >
-                                        <div class="blog-article__captions">
-                                            <div
-                                                class="blog-article__captions-item"
-                                            >
-                                                FKI.kz
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="blog-article__inner box-style">
-                                        <h2 class="blog-article__title">
-                                            <span class="_c-accent"
-                                                ></span
-                                            >
-                                        </h2>
-                                        
-
-                                        <div class="blog-article__bottom">
-                                            <a
-                                                href="https://fki.kz"
-                                                class="blog-article__btn btn _bg-accent"
-                                            >
-                                                <span class="btn__inner"
-                                                    >Перейти</span
-                                                >
-                                            </a>
-
-                                            <span class="blog-article__date"
-                                                >19.05.2018</span
                                             >
                                         </div>
                                     </div>

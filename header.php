@@ -11,6 +11,9 @@
         />
         <meta name="format-detection" content="telephone=no" />
 
+        <meta name="keywords" content="<?=$keywords;?>">
+        <meta name="description" content="<?=$description;?>">
+
         <!-- favicon -->
         <link
             rel="icon"
@@ -23,6 +26,7 @@
 
         <!-- main css -->
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/animation.css" />
 
         <!-- libs js -->
         <script defer src="libs/dynamic-adapt.js"></script>
@@ -42,7 +46,7 @@
             <div class="container">
                 <div class="header__container">
                     <div class="col-2 header__container-inner">
-                        <a href="index.php" class="header__logo">
+                        <a href="/" class="header__logo">
                             <img
                                 src="img/logo.png"
                                 alt="Logo"
@@ -75,6 +79,9 @@
                         data-da=".header, 960, 1"
                     >
                         <nav class="header__menu">
+                            <a href="/" class="header__menu-item _hul"
+                                >Главная</a
+                            >
                             <a href="о нас" class="header__menu-item _hul"
                                 >О нас</a
                             >
