@@ -66,6 +66,47 @@
                                     <div
                                         class="blog-article__image"
                                         style="
+                                            background-image: url('img/portfolio/10.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              neuroIMG.art
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://neuroimg.art/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >22.10.2024</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
                                             background-image: url('img/portfolio/1.png');
                                             "
                                     >
@@ -97,7 +138,7 @@
                                             </a>
 
                                             <span class="blog-article__date"
-                                                >19.09.2024</span
+                                                >19.07.2024</span
                                             >
                                         </div>
                                     </div>
