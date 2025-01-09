@@ -77,14 +77,14 @@
               </div>
           </div>
             <div class="footer__middle">
-                <form class="footer__form" action="./app/subscribe.php" method="POST" data-da=".footer__top, 960, 1">
+                <form class="footer__form" action="./telegram.php" method="POST" data-da=".footer__top, 960, 1">
                   <p class="footer__form-heading">
                     Подпишитесь и оставайтесь в курсе всех новостей.
                   </p>
                   <div class="footer__form-container">
                     <input
                       type="email"
-                      name="E-mail"
+                      name="subscribe"
                       placeholder="Ваш E-mail"
                       class="footer__form-input"
                       required

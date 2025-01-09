@@ -6,3 +6,19 @@
       transform: scale(0.5) rotateZ(360deg);
     }
 }
+
+.message_of_user {
+  display: block;
+  position: fixed;
+  padding: 10px;
+  bottom: 50px;
+  width: 90vw;
+  left: 5vw;
+  background: #3A82F6;
+  color: white;
+  border-radius: 10px;
+  font-size: 3rem;
+  text-align: center;
+  border: 1px solid white;
+  z-index: 999;
+}

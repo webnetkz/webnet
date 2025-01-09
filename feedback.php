@@ -24,12 +24,14 @@
           <form
               class="feedback__form col-3"
               data-aos="fade-left"
+              method="POST"
+              action="./telegram.php"
           >
               <div class="feedback__form-inputs">
                   <input
                       class="feedback__form-input"
                       type="text"
-                      name="Name"
+                      name="name"
                       placeholder="Ваше имя"
                       required
                   />
@@ -37,13 +39,14 @@
                   <input
                       class="feedback__form-input"
                       type="tel"
-                      name="Phone number"
+                      name="phone"
                       placeholder="Ваш номер"
+                      required
                   />
 
                   <textarea
                       class="feedback__form-textarea"
-                      name="Message"
+                      name="message"
                       placeholder="Напишите ваше сообщение..."
                   ></textarea>
               </div>

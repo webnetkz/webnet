@@ -15,10 +15,9 @@
                                 <h1 class="main__title">О нас</h1>
                                 
                                 <p class="main__text">
-                                  To provide you with the <br />
-                                  best opportunities for <br />
-                                  effective communication <br />
-                                  and business development.
+                                  Чтобы предоставить Вам наилучшие <br>
+                                  возможности для эффективного <br>
+                                  развития бизнеса.
                                 </p>
                                 <img src="./img/logo.png" alt="logo webnet.kz" class="slider-logo">
                             </div>
@@ -32,25 +31,23 @@
                                 data-aos="fade-up"
                             >
                                 <p class="info__overheading">
-                                    Choose SITE - choose success!
+                                  Выбирая WebNet - выбираешь успех!
                                 </p>
                                 <h2 class="info__heading title">
-                                    Entrust
+                                  Доверьте
                                     <span class="_c-accent"
-                                        >your <br />
-                                        business</span
+                                        >нам <br />
+                                        свой</span
                                     >
-                                    to us
+                                    бизнес
                                 </h2>
 
                                 <p class="info__text">
-                                    Let SITE become your reliable partner <br />
-                                    in the world of communications.
-                                    <br />
-                                    We are ready to provide you with the <br />
-                                    best solutions for your business so that
-                                    <br />
-                                    you can focus on its development.
+                                  WebNet станет вашим надежным партнером <br>
+                                  в мире информационных технологий. <br>
+                                  Мы готовы предоставить Вам лучшие <br>
+                                  решения для вашего бизнеса, <br>
+                                  чтобы вы могли сосредоточиться на его развитии.
                                 </p>
                             </div>
                         </div>

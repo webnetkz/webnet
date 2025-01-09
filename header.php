@@ -1,3 +1,19 @@
+<?php
+
+  if (isset($_GET['msg']) && !empty($_GET['msg'])) {
+    echo "<div class='message_of_user'>
+    {$_GET['msg']}
+    </div>
+    
+    <script>
+      setTimeout(() => {
+        document.querySelector('.message_of_user').remove();
+      }, 3000);
+    </script>
+    ";
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
