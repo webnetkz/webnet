@@ -102,9 +102,9 @@
                             <a href="о нас" class="header__menu-item _hul"
                                 >О нас</a
                             >
-                            <a href="услуги" class="header__menu-item _hul"
+                            <!-- <a href="услуги" class="header__menu-item _hul"
                                 >Услуги</a
-                            >
+                            > -->
                             <a href="работы" class="header__menu-item _hul"
                                 >Работы</a
                             >
