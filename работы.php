@@ -429,6 +429,294 @@
                                         </div>
                                     </div>
                                 </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/11.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              dentokind.uz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://dentokind.uz/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >10.01.2019</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/12.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              influcid.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://influcid.kz/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >22.12.2018</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/13.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              klimaktoplan.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://klimaktoplan.kz/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >02.10.2018</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/14.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              prospan.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://prospan.kz/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >03.9.2018</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/15.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              tonsilotren.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://tonsilotren.kz/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >02.8.2018</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/16.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              alpekid.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://alpekid.kz/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >27.6.2018</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-article col-2">
+                                    <div
+                                        class="blog-article__image"
+                                        style="
+                                            background-image: url('img/portfolio/17.png');
+                                        "
+                                    >
+                                        <div class="blog-article__captions">
+                                            <div
+                                                class="blog-article__captions-item"
+                                            >
+                                              umkalor.kz
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog-article__inner box-style">
+                                        <h2 class="blog-article__title">
+                                            <span class="_c-accent"
+                                                ></span
+                                            >
+                                        </h2>
+                                        
+
+                                        <div class="blog-article__bottom">
+                                            <a
+                                                href="https://umkalor.kz/"
+                                                class="blog-article__btn btn _bg-accent"
+                                            >
+                                                <span class="btn__inner"
+                                                    >Перейти</span
+                                                >
+                                            </a>
+
+                                            <span class="blog-article__date"
+                                                >13.5.2018</span
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                                
                             </div>
                         </div>
                     </section>

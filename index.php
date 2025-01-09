@@ -181,8 +181,18 @@
                                         <ul class="plan__list">
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >5 devices (5
-                                                    operators)</span
+                                                    >Месяц / поддержки и гарантий</span
+                                                >
+
+                                                <img
+                                                    src="img/icons/done-accent.svg"
+                                                    alt="Icon"
+                                                    class="plan__list-icon"
+                                                />
+                                            </li>
+                                            <li class="plan__list-item">
+                                                <span class="plan__list-text"
+                                                    >Наши сервера</span
                                                 >
 
                                                 <img
@@ -194,7 +204,7 @@
 
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >CallerID change</span
+                                                    >SEO оптимизация google/yandex</span
                                                 >
 
                                                 <img
@@ -235,7 +245,7 @@
                                         <ul class="plan__list">
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >20 devices</span
+                                                    >3 месяца / поддержки и гарантий</span
                                                 >
 
                                                 <img
@@ -247,7 +257,7 @@
 
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >CallerID change</span
+                                                    >Наши сервера</span
                                                 >
 
                                                 <img
@@ -259,8 +269,7 @@
 
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >Records on the server with
-                                                    emailing</span
+                                                    >SEO оптимизация google/yandex</span
                                                 >
 
                                                 <img
@@ -272,7 +281,7 @@
 
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >Spy on agents</span
+                                                    >Внесение правок</span
                                                 >
 
                                                 <img
@@ -308,10 +317,20 @@
                                         </p>
 
                                         <ul class="plan__list">
+                                        <li class="plan__list-item">
+                                                <span class="plan__list-text"
+                                                    >9 месяцев / поддержки и гарантий</span
+                                                >
+
+                                                <img
+                                                    src="img/icons/done-accent.svg"
+                                                    alt="Icon"
+                                                    class="plan__list-icon"
+                                                />
+                                            </li>
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >Everything in the
-                                                    "Intermediate" package</span
+                                                    >Наши сервера</span
                                                 >
 
                                                 <img
@@ -323,7 +342,7 @@
 
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >Unlimited devices</span
+                                                    >SEO оптимизация google/yandex</span
                                                 >
 
                                                 <img
@@ -332,10 +351,9 @@
                                                     class="plan__list-icon"
                                                 />
                                             </li>
-
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >Callback</span
+                                                    >Внесение правок</span
                                                 >
 
                                                 <img
@@ -344,11 +362,20 @@
                                                     class="plan__list-icon"
                                                 />
                                             </li>
-
                                             <li class="plan__list-item">
                                                 <span class="plan__list-text"
-                                                    >Many other PBX
-                                                    functions</span
+                                                    >Аналитика и рекомендации</span
+                                                >
+
+                                                <img
+                                                    src="img/icons/done-accent.svg"
+                                                    alt="Icon"
+                                                    class="plan__list-icon"
+                                                />
+                                            </li>
+                                            <li class="plan__list-item">
+                                                <span class="plan__list-text"
+                                                    >Приложение для Microsoft Store (Windows)</span
                                                 >
 
                                                 <img
