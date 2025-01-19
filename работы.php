@@ -21,7 +21,7 @@
                     <section class="blog" data-aos="fade-up">
                         <div class="container">
                             <div class="blog__container">
-                                <article class="blog-article col-2">
+                                <!-- <article class="blog-article col-2">
                                     <div
                                         class="blog-article__image"
                                         style="
@@ -60,7 +60,7 @@
                                             >
                                         </div>
                                     </div>
-                                </article>
+                                </article> -->
 
                                 <article class="blog-article col-2">
                                     <div
