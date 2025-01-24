@@ -43,6 +43,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/animation.css" />
+        <link rel="stylesheet" href="css/custom.css">
 
         <!-- libs js -->
         <script defer src="libs/dynamic-adapt.js"></script>

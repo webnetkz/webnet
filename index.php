@@ -172,8 +172,8 @@
                                     data-aos-delay="300"
                                 >
                                     <div class="plan__inner">
-                                        <p class="plan__overtitle">Стартвый</p>
-                                        <p class="plan__title">$2 000</p>
+                                        <p class="plan__overtitle">Стартовый</p>
+                                        <p class="plan__title">1 000 000 ₸</p>
                                         <p class="plan__subtitle">
                                             Месяц / поддержки и гарантий
                                         </p>
@@ -237,7 +237,7 @@
                                         <p class="plan__overtitle">
                                             Базовый
                                         </p>
-                                        <p class="plan__title">от $5 000</p>
+                                        <p class="plan__title">2 500 000 ₸</p>
                                         <p class="plan__subtitle">
                                             3 месяца / поддержки и гарантий
                                         </p>
@@ -311,7 +311,7 @@
                                         <p class="plan__overtitle">
                                             Продвинутый
                                         </p>
-                                        <p class="plan__title">$10 000</p>
+                                        <p class="plan__title">5 000 000 ₸</p>
                                         <p class="plan__subtitle">
                                           9 месяцев / поддержки и гарантий
                                         </p>
