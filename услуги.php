@@ -5,6 +5,7 @@
 
   require_once './header.php';
 ?>
+        <?php require_once "./components/plans.php";?>
 
         <div class="overflow-hidden">
             <div id="smooth-wrapper">
