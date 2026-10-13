@@ -336,14 +336,49 @@ function initFaq() {
 function initContactForm() {
   const form = document.querySelector('[data-contact-form]');
   if (!form) return;
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const data = new FormData(form);
+    const status = form.querySelector('.form-status');
+    const button = form.querySelector('button[type="submit"]');
     const subject = encodeURIComponent(`Заявка с сайта: ${data.get('service') || 'новый проект'}`);
     const body = encodeURIComponent(`Имя: ${data.get('name')}\nКонтакт: ${data.get('contact')}\n\nЗадача:\n${data.get('message')}`);
-    const status = form.querySelector('.form-status');
-    status.classList.add('visible');
-    status.innerHTML = `Заявка подготовлена. <a href="mailto:info@webnet.kz?subject=${subject}&body=${body}"><u>Открыть почту и отправить →</u></a>`;
+
+    button.disabled = true;
+    button.textContent = 'Отправляем…';
+    status.className = 'form-status visible';
+    status.textContent = 'Отправляем заявку в WebNet…';
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          name: data.get('name'),
+          contact: data.get('contact'),
+          service: data.get('service'),
+          message: data.get('message'),
+          consent: data.get('consent') === 'on',
+          website: data.get('website'),
+        }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) throw new Error(result.message || 'Ошибка отправки');
+
+      status.className = 'form-status visible';
+      status.textContent = result.message || 'Заявка отправлена. Мы свяжемся с вами.';
+      form.reset();
+    } catch (error) {
+      status.className = 'form-status visible error';
+      status.textContent = `${error instanceof Error ? error.message : 'Не удалось отправить заявку.'} `;
+      const fallback = document.createElement('a');
+      fallback.href = `mailto:info@webnet.kz?subject=${subject}&body=${body}`;
+      fallback.textContent = 'Отправить по email →';
+      status.append(fallback);
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Отправить заявку';
+    }
   });
 }
 

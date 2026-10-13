@@ -172,8 +172,8 @@
           </div>
           <form class="contact-form" data-contact-form>
             <div class="form-row">
-              <input class="field" name="name" type="text" placeholder="Ваше имя" autocomplete="name" required>
-              <input class="field" name="contact" type="text" placeholder="Телефон или email" required>
+              <input class="field" name="name" type="text" placeholder="Ваше имя" autocomplete="name" minlength="2" maxlength="80" required>
+              <input class="field" name="contact" type="text" placeholder="Телефон или email" minlength="3" maxlength="120" required>
             </div>
             <select class="field" name="service" aria-label="Интересующая услуга">
               <option value="">Выберите направление</option>
@@ -181,11 +181,12 @@
               <option>UI/UX-дизайн</option><option>Автоматизация</option><option>Решение с ИИ</option>
               <option>Бизнес-процессы</option><option>Продуктовый менеджмент</option><option>Другое</option>
             </select>
-            <textarea class="field" name="message" placeholder="Коротко о задаче" required></textarea>
+            <textarea class="field" name="message" placeholder="Коротко о задаче" minlength="5" maxlength="2000" required></textarea>
+            <input class="honeypot" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
             <label class="consent"><input type="checkbox" name="consent" required><span>Я согласен(на) с обработкой указанных данных согласно <a href="privacy.html" target="_blank">политике конфиденциальности</a>.</span></label>
-            <button class="btn btn-light btn-arrow" type="submit">Подготовить заявку</button>
+            <button class="btn btn-light btn-arrow" type="submit">Отправить заявку</button>
             <div class="form-status" role="status"></div>
-            <p class="form-note">Форма подготовит письмо для отправки через вашу почтовую программу.</p>
+            <p class="form-note">Заявка поступит напрямую в Telegram WebNet. Если отправка недоступна, предложим резервный email.</p>
           </form>
         </div>
       </div>
