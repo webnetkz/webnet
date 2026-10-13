@@ -2,7 +2,7 @@ document.body.innerHTML = `
   <header class="site-header">
     <nav class="nav-shell" aria-label="Основная навигация">
       <a class="brand" href="../index.html"><img src="../assets/logo.png" alt="Логотип WebNet"><span>webnet.kz</span></a>
-      <div class="nav-links"><a href="index.html">Услуги</a><a href="../index.html#approach">Подход</a><a href="../index.html#about">О компании</a><a class="btn btn-primary" href="../index.html#contact">Обсудить проект</a></div>
+      <div class="nav-links"><a href="index.html">Услуги</a><a href="../index.html#approach">Подход</a><a href="../index.html#about">О компании</a><a class="nav-phone" href="tel:+77078453424">+7 707 845 34 24</a><a class="btn btn-primary" href="../index.html#contact">Обсудить проект</a></div>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
     </nav>
   </header>
@@ -42,6 +42,6 @@ document.body.innerHTML = `
     <section class="section">
       <div class="container"><div class="section-head"><div><p class="eyebrow">Смежная экспертиза</p><h2>Можно усилить проект.</h2></div><p>Подключим нужных специалистов и сохраним единую ответственность за результат.</p></div><div class="next-services" data-related-services></div></div>
     </section>
-    <section class="section-compact"><div class="container contact-panel"><div class="contact-grid"><div class="contact-copy"><p class="eyebrow eyebrow-light">Следующий шаг</p><h2>Обсудим вашу задачу.</h2><p>Коротко опишите контекст — предложим формат первого этапа.</p></div><div style="display:flex;align-items:center;justify-content:center"><a class="btn btn-light btn-arrow" href="../index.html#contact">Оставить заявку</a></div></div></div></section>
+    <section class="section-compact"><div class="container contact-panel"><div class="contact-grid"><div class="contact-copy"><p class="eyebrow eyebrow-light">Следующий шаг</p><h2>Обсудим вашу задачу.</h2><p>Коротко опишите контекст — предложим формат первого этапа.</p><div class="contact-methods"><a class="contact-chip" href="tel:+77078453424">Телефон · +7 707 845 34 24</a><a class="contact-chip" href="https://wa.me/77078453424" target="_blank" rel="noopener">WhatsApp ↗</a></div></div><div style="display:flex;align-items:center;justify-content:center"><a class="btn btn-light btn-arrow" href="../index.html#contact">Оставить заявку</a></div></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container"><div class="footer-bottom"><span>© <span data-year></span> WebNet. Зарегистрирован в 2018 году.</span><a href="index.html">Все услуги ↑</a></div></div></footer>`;
+  <footer class="site-footer"><div class="container"><div class="footer-bottom"><span>© <span data-year></span> WebNet. Зарегистрирован в 2018 году.</span><span><a href="tel:+77078453424">+7 707 845 34 24</a> · <a href="https://wa.me/77078453424" target="_blank" rel="noopener">WhatsApp</a> · <a href="../privacy.html">Конфиденциальность</a></span></div></div></footer>`;

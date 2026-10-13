@@ -348,6 +348,10 @@ function initContactForm() {
 }
 
 function initReveal() {
+  document.querySelectorAll('.section-head, .proof-grid, .about-panel, .contact-panel, .faq-item, .legal-block').forEach((item) => item.classList.add('reveal'));
+  document.querySelectorAll('.services-grid, .value-cards, .process-grid, .solution-list, .deliverables, .service-steps').forEach((group) => {
+    [...group.children].forEach((item, index) => item.style.setProperty('--reveal-delay', `${Math.min(index * 70, 350)}ms`));
+  });
   const items = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {
     items.forEach((item) => item.classList.add('visible'));
@@ -364,6 +368,38 @@ function initReveal() {
   items.forEach((item) => observer.observe(item));
 }
 
+function initMotion() {
+  if (!document.querySelector('.scroll-progress')) {
+    const progress = document.createElement('div');
+    progress.className = 'scroll-progress';
+    progress.setAttribute('aria-hidden', 'true');
+    document.body.append(progress);
+  }
+  const progress = document.querySelector('.scroll-progress');
+  const update = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const ratio = max > 0 ? Math.min(scrollY / max, 1) : 0;
+    progress.style.width = `${ratio * 100}%`;
+    document.body.classList.toggle('scrolled', scrollY > 24);
+    document.documentElement.style.setProperty('--hero-scroll', `${Math.min(scrollY * .12, 72)}px`);
+  };
+  document.body.classList.add('motion-ready');
+  addEventListener('scroll', update, { passive: true });
+  update();
+}
+
+function initWhatsApp() {
+  if (document.querySelector('.whatsapp-float')) return;
+  const link = document.createElement('a');
+  link.className = 'whatsapp-float';
+  link.href = 'https://wa.me/77078453424';
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.setAttribute('aria-label', 'Написать WebNet в WhatsApp по номеру +7 707 845 34 24');
+  link.innerHTML = '<span>WhatsApp</span>';
+  document.body.append(link);
+}
+
 function setYear() {
   document.querySelectorAll('[data-year]').forEach((node) => { node.textContent = new Date().getFullYear(); });
 }
@@ -375,4 +411,6 @@ initMenu();
 initFaq();
 initContactForm();
 setYear();
+initMotion();
+initWhatsApp();
 requestAnimationFrame(initReveal);
