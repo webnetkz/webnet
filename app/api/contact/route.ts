@@ -46,8 +46,12 @@ export async function POST(request: Request) {
   const message = clean(input.message, 2_000);
   const consent = input.consent === true;
 
-  if (name.length < 2 || contact.length < 3 || message.length < 5 || !consent) {
+  if (name.length < 2 || message.length < 5 || !consent) {
     return json({ ok: false, message: "Проверьте обязательные поля и согласие." }, 400);
+  }
+
+  if (!/^\d{10,15}$/.test(contact)) {
+    return json({ ok: false, message: "Введите номер телефона: только 10–15 цифр." }, 400);
   }
 
   const token = env.TELEGRAM_BOT_TOKEN;
@@ -59,7 +63,7 @@ export async function POST(request: Request) {
     "🔔 Новая заявка с webnet.kz",
     "",
     `Имя: ${name}`,
-    `Контакт: ${contact}`,
+    `Телефон: ${contact}`,
     `Услуга: ${service}`,
     "",
     "Задача:",

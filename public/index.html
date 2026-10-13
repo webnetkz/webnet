@@ -8,7 +8,7 @@
   <title>WebNet — технологии для роста бизнеса</title>
   <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/site.js?v=20261013-services" defer></script>
+  <script src="assets/site.js?v=20261013-contact" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -173,7 +173,7 @@
           <form class="contact-form" data-contact-form>
             <div class="form-row">
               <input class="field" name="name" type="text" placeholder="Ваше имя" autocomplete="name" minlength="2" maxlength="80" required>
-              <input class="field" name="contact" type="text" placeholder="Телефон или email" minlength="3" maxlength="120" required>
+              <input class="field" name="contact" type="tel" inputmode="numeric" autocomplete="tel" pattern="[0-9]{10,15}" placeholder="Телефон — только цифры" minlength="10" maxlength="15" required>
             </div>
             <select class="field" name="service" aria-label="Интересующая услуга">
               <option value="">Выберите направление</option>

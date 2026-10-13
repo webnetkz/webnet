@@ -70,8 +70,12 @@ $service = clean($input['service'] ?? '', 100) ?: 'Не указано';
 $message = clean($input['message'] ?? '', 2000);
 $consent = ($input['consent'] ?? false) === true;
 
-if (strlen($name) < 2 || strlen($contact) < 3 || strlen($message) < 5 || !$consent) {
+if (strlen($name) < 2 || strlen($message) < 5 || !$consent) {
     respond(['ok' => false, 'message' => 'Проверьте обязательные поля и согласие.'], 400);
+}
+
+if (preg_match('/^\d{10,15}$/D', $contact) !== 1) {
+    respond(['ok' => false, 'message' => 'Введите номер телефона: только 10–15 цифр.'], 400);
 }
 
 $token = trim((string) getenv('TELEGRAM_BOT_TOKEN'));
@@ -90,7 +94,7 @@ $text = implode("\n", [
     '🔔 Новая заявка с webnet.kz',
     '',
     "Имя: {$name}",
-    "Контакт: {$contact}",
+    "Телефон: {$contact}",
     "Услуга: {$service}",
     '',
     'Задача:',

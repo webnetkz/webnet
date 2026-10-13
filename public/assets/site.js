@@ -396,13 +396,17 @@ function initFaq() {
 function initContactForm() {
   const form = document.querySelector('[data-contact-form]');
   if (!form) return;
+  const contactInput = form.querySelector('input[name="contact"]');
+  contactInput?.addEventListener('input', () => {
+    contactInput.value = contactInput.value.replace(/\D/g, '').slice(0, 15);
+  });
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const data = new FormData(form);
     const status = form.querySelector('.form-status');
     const button = form.querySelector('button[type="submit"]');
     const subject = encodeURIComponent(`Заявка с сайта: ${data.get('service') || 'новый проект'}`);
-    const body = encodeURIComponent(`Имя: ${data.get('name')}\nКонтакт: ${data.get('contact')}\n\nЗадача:\n${data.get('message')}`);
+    const body = encodeURIComponent(`Имя: ${data.get('name')}\nТелефон: ${data.get('contact')}\n\nЗадача:\n${data.get('message')}`);
 
     button.disabled = true;
     button.textContent = 'Отправляем…';
