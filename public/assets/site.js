@@ -499,6 +499,34 @@ function initWhatsApp() {
   document.body.append(link);
 }
 
+function initProgramPlatforms() {
+  const picker = document.querySelector('[data-platform-picker]');
+  if (!picker) return;
+  const buttons = [...picker.querySelectorAll('[data-platform]')];
+  const panels = [...document.querySelectorAll('[data-platform-panel]')];
+
+  const activate = (platform) => {
+    buttons.forEach((button) => {
+      const active = button.dataset.platform === platform;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-selected', String(active));
+      button.tabIndex = active ? 0 : -1;
+    });
+    panels.forEach((panel) => { panel.hidden = panel.dataset.platformPanel !== platform; });
+  };
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => activate(button.dataset.platform));
+    button.addEventListener('keydown', (event) => {
+      if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      event.preventDefault();
+      const next = event.key === 'ArrowRight' ? (index + 1) % buttons.length : (index - 1 + buttons.length) % buttons.length;
+      buttons[next].focus();
+      activate(buttons[next].dataset.platform);
+    });
+  });
+}
+
 function setYear() {
   document.querySelectorAll('[data-year]').forEach((node) => { node.textContent = new Date().getFullYear(); });
 }
@@ -512,4 +540,5 @@ initContactForm();
 setYear();
 initMotion();
 initWhatsApp();
+initProgramPlatforms();
 requestAnimationFrame(initReveal);

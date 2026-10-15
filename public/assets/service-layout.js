@@ -2,7 +2,7 @@ document.body.innerHTML = `
   <header class="site-header">
     <nav class="nav-shell" aria-label="Основная навигация">
       <a class="brand" href="../index.html"><img src="../assets/logo.png" alt="Логотип WebNet"><span>webnet.kz</span></a>
-      <div class="nav-links"><a href="index.html">Услуги</a><a href="../index.html#approach">Подход</a><a href="../index.html#about">О компании</a><a class="nav-phone" href="tel:+77078453424">+7 707 845 34 24</a><a class="btn btn-primary" href="../index.html#contact">Обсудить проект</a></div>
+      <div class="nav-links"><a href="index.html">Услуги</a><a href="../programs/index.html">Программы для бизнеса</a><a href="../index.html#approach">Подход</a><a href="../index.html#about">О компании</a><a class="nav-phone" href="tel:+77078453424">+7 707 845 34 24</a><a class="btn btn-primary" href="../index.html#contact">Обсудить проект</a></div>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
     </nav>
   </header>
