@@ -346,21 +346,20 @@ textarea.field { min-height: 125px; resize: vertical; }
   right: 22px;
   bottom: 22px;
   display: inline-flex;
-  min-height: 54px;
+  width: 58px;
+  height: 58px;
   align-items: center;
-  gap: 10px;
-  padding: 0 19px;
+  justify-content: center;
   border: 1px solid rgba(255,255,255,.5);
-  border-radius: 999px;
+  border-radius: 50%;
   background: #1fae66;
   color: #fff;
   box-shadow: 0 16px 34px rgba(18, 130, 74, .28);
-  font-size: 13px;
-  font-weight: 900;
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .whatsapp-float:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 20px 44px rgba(18, 130, 74, .35); }
-.whatsapp-float::before { display: grid; width: 27px; height: 27px; place-items: center; border: 1px solid rgba(255,255,255,.75); border-radius: 50%; content: "WA"; font-size: 9px; font-weight: 950; letter-spacing: -.03em; }
+.whatsapp-float:focus-visible { outline: 3px solid rgba(31,174,102,.35); outline-offset: 4px; }
+.whatsapp-float svg { width: 32px; height: 32px; }
 
 /* Business programs */
 .programs-hero {
@@ -573,8 +572,8 @@ textarea.field { min-height: 125px; resize: vertical; }
   .footer-main { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto; }
   .footer-bottom { flex-direction: column; }
-  .whatsapp-float { right: 14px; bottom: 14px; width: 54px; padding: 0; justify-content: center; }
-  .whatsapp-float span { display: none; }
+  .whatsapp-float { right: 14px; bottom: 14px; width: 54px; height: 54px; }
+  .whatsapp-float svg { width: 30px; height: 30px; }
   .legal-hero { padding: 140px 0 62px; }
   .legal-nav { grid-template-columns: 1fr; }
   .catalog-hero, .service-hero { padding: 140px 0 64px; }
