@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Программы WebNet для бизнеса на Windows, macOS, iOS и Android: тренажёр печати XTyping и история уведомлений Notifix.">
+  <meta name="description" content="Программы WebNet для бизнеса на Windows, macOS, iOS, Android, Chrome и Web: XTyping, Notifix и корпоративная CRM369.">
   <meta name="theme-color" content="#f4f9ff">
   <title>Программы для бизнеса — WebNet</title>
   <link rel="icon" href="../assets/logo.png" type="image/png">
-  <link rel="stylesheet" href="../assets/styles.css?v=20261015-social">
-  <script src="../assets/site.js?v=20261015-social" defer></script>
+  <link rel="stylesheet" href="../assets/styles.css?v=20261015-programs-web">
+  <script src="../assets/site.js?v=20261015-programs-web" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -51,6 +51,14 @@
             <span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m9.2 9-2.1-3.5 1.4-.8 2.2 3.6A11 11 0 0 1 16 7a11 11 0 0 1 5.3 1.3l2.2-3.6 1.4.8L22.8 9A9.5 9.5 0 0 1 27 16H5a9.5 9.5 0 0 1 4.2-7ZM10 12.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Zm12 0a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM5 17.5h22v8.2a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3v-8.2Z"/></svg></span>
             <span><strong>Android</strong><small>1 приложение</small></span>
           </button>
+          <button class="platform-option" type="button" role="tab" aria-selected="false" aria-controls="panel-chrome" tabindex="-1" data-platform="chrome">
+            <span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12.5" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="16" r="5"/><path d="M16 3.5v7.5M27 9.7l-6.5 3.8M5 9.7l6.5 3.8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+            <span><strong>Chrome</strong><small>Расширения · скоро</small></span>
+          </button>
+          <button class="platform-option" type="button" role="tab" aria-selected="false" aria-controls="panel-web" tabindex="-1" data-platform="web">
+            <span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><ellipse cx="16" cy="16" rx="5.5" ry="12" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M4 16h24M6.5 10h19M6.5 22h19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <span><strong>Web</strong><small>1 приложение</small></span>
+          </button>
         </div>
 
         <section class="platform-panel" id="panel-windows" role="tabpanel" data-platform-panel="windows">
@@ -77,6 +85,19 @@
                 <div class="app-copy"><span class="app-platform app-platform-android"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m9.2 9-2.1-3.5 1.4-.8 2.2 3.6A11 11 0 0 1 16 7a11 11 0 0 1 5.3 1.3l2.2-3.6 1.4.8L22.8 9A9.5 9.5 0 0 1 27 16H5a9.5 9.5 0 0 1 4.2-7ZM10 12.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Zm12 0a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM5 17.5h22v8.2a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3v-8.2Z"/></svg> Android</span><h2>Notifix</h2><p>Сохраняет уведомления в единой истории, помогает восстановить пропущенные сообщения и искать записи по тексту, приложению или дате.</p></div>
               </div>
               <div class="app-card-bottom"><span>История уведомлений</span><strong>Открыть в Google Play <i aria-hidden="true">↗</i></strong></div>
+            </a>
+          </div>
+        </section>
+        <section class="platform-panel platform-empty" id="panel-chrome" role="tabpanel" data-platform-panel="chrome" hidden><span>Расширения для Chrome</span><h2>Расширения скоро появятся.</h2><p>Мы готовим инструменты WebNet для работы прямо в браузере.</p></section>
+        <section class="platform-panel" id="panel-web" role="tabpanel" data-platform-panel="web" hidden>
+          <div class="programs-heading"><div><p class="eyebrow">Web-приложения</p><h2>Управляйте бизнесом в одной системе.</h2></div><p>CRM369 объединяет продажи, внутренние процессы и коммуникации команды в общем рабочем пространстве.</p></div>
+          <div class="apps-grid">
+            <a class="app-card app-card-web" href="https://github.com/webnetkz/crm369" target="_blank" rel="noopener" aria-label="CRM369 — открыть репозиторий на GitHub">
+              <div class="app-card-main">
+                <div class="app-icon crm369-icon" aria-hidden="true"><span>369</span></div>
+                <div class="app-copy"><span class="app-platform app-platform-web"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M4 16h24M16 4c4 4.1 5.6 8.1 5.6 12S20 23.9 16 28c-4-4.1-5.6-8.1-5.6-12S12 8.1 16 4Z" fill="none" stroke="currentColor" stroke-width="2.5"/></svg> Web</span><h2>CRM369</h2><p>Модульная корпоративная CRM для контактов и сделок, проектов и задач, чатов, бизнес-процессов, документов и интеграций с телефонией, мессенджерами и 1С.</p></div>
+              </div>
+              <div class="app-card-bottom"><span>Корпоративная CRM и рабочее пространство</span><strong>Открыть на GitHub <i aria-hidden="true">↗</i></strong></div>
             </a>
           </div>
         </section>

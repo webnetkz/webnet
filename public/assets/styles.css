@@ -380,7 +380,7 @@ textarea.field { min-height: 125px; resize: vertical; }
 .programs-hero-mark i { position: absolute; z-index: 3; right: 40px; bottom: 42px; width: 18px; height: 18px; border: 4px solid #fff; border-radius: 50%; background: var(--lime); box-shadow: 0 5px 14px rgba(49,103,26,.25); }
 
 .programs-section { background: #f7fbff; }
-.platform-picker { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 68px; }
+.platform-picker { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-bottom: 68px; }
 .platform-option { display: flex; min-width: 0; align-items: center; gap: 14px; padding: 16px; border: 1px solid var(--line); border-radius: 22px; background: #fff; cursor: pointer; text-align: left; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, background .2s ease; }
 .platform-option:hover { transform: translateY(-3px); border-color: rgba(47,127,247,.35); box-shadow: 0 14px 34px rgba(32,87,156,.09); }
 .platform-option.active { border-color: var(--ink); background: var(--ink); color: #fff; box-shadow: 0 18px 42px rgba(11,18,32,.16); }
@@ -401,12 +401,17 @@ textarea.field { min-height: 125px; resize: vertical; }
 .app-card:hover { transform: translateY(-7px); border-color: rgba(47,127,247,.36); box-shadow: var(--shadow); }
 .app-card:hover::before { transform: scale(1.1); }
 .app-card-android::before { background: radial-gradient(circle, rgba(52,211,153,.17), rgba(255,65,72,.035) 55%, transparent 69%); }
+.app-card-web::before { background: radial-gradient(circle, rgba(99,102,241,.2), rgba(47,127,247,.04) 55%, transparent 69%); }
 .app-card-main { position: relative; z-index: 1; display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 34px; align-items: center; }
 .app-icon { width: 190px; height: 190px; border-radius: 38px; object-fit: cover; box-shadow: 0 20px 42px rgba(5,16,13,.18); }
+.crm369-icon { position: relative; display: grid; overflow: hidden; place-items: center; background: linear-gradient(145deg, #101827, #2563eb 58%, #66a3ff); color: #fff; }
+.crm369-icon::before { position: absolute; width: 130px; height: 130px; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; content: ""; box-shadow: 0 0 0 26px rgba(255,255,255,.06); }
+.crm369-icon span { position: relative; z-index: 1; font-size: 55px; font-weight: 950; letter-spacing: -.1em; text-shadow: 0 8px 24px rgba(2,13,41,.35); }
 .app-platform { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 14px; color: var(--blue-strong); font-size: 12px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
 .app-platform i { width: 12px; height: 12px; background: linear-gradient(currentColor 0 0) 0 0 / 5px 5px, linear-gradient(currentColor 0 0) 7px 0 / 5px 5px, linear-gradient(currentColor 0 0) 0 7px / 5px 5px, linear-gradient(currentColor 0 0) 7px 7px / 5px 5px; background-repeat: no-repeat; }
 .app-platform svg { width: 16px; height: 16px; fill: currentColor; }
 .app-platform-android { color: #168b58; }
+.app-platform-web { color: #4054d6; }
 .app-copy h2 { margin: 0 0 12px; font-size: clamp(42px, 5vw, 66px); line-height: .94; letter-spacing: -.055em; }
 .app-copy p { max-width: 690px; margin: 0; color: #53667f; font-size: 17px; }
 .app-card-bottom { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--line); color: #71839a; font-size: 13px; }
