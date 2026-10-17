@@ -420,6 +420,7 @@ textarea.field { min-height: 125px; resize: vertical; }
 .app-platform i { width: 12px; height: 12px; background: linear-gradient(currentColor 0 0) 0 0 / 5px 5px, linear-gradient(currentColor 0 0) 7px 0 / 5px 5px, linear-gradient(currentColor 0 0) 0 7px / 5px 5px, linear-gradient(currentColor 0 0) 7px 7px / 5px 5px; background-repeat: no-repeat; }
 .app-platform svg { width: 16px; height: 16px; fill: currentColor; }
 .app-platform-android { color: #168b58; }
+.app-platform-ios { color: #1b2638; }
 .app-platform-web { color: #4054d6; }
 .app-platform-chrome { color: #1a73e8; }
 .app-copy h2 { margin: 0 0 12px; font-size: clamp(42px, 5vw, 66px); line-height: .94; letter-spacing: -.055em; }
