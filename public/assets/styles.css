@@ -339,6 +339,9 @@ textarea.field { min-height: 125px; resize: vertical; }
 .footer-links { display: grid; gap: 9px; color: #d4dfed; font-size: 14px; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); color: #7d8da4; font-size: 12px; }
 .footer-bottom a:hover, .footer-links a:hover { color: #fff; }
+.footer-instagram { display: inline-flex; align-items: center; gap: 6px; vertical-align: middle; white-space: nowrap; }
+.footer-instagram svg { width: 17px; height: 17px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.footer-instagram .instagram-dot { fill: currentColor; stroke: none; }
 
 .whatsapp-float {
   position: fixed;
@@ -360,6 +363,7 @@ textarea.field { min-height: 125px; resize: vertical; }
 .whatsapp-float:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 20px 44px rgba(18, 130, 74, .35); }
 .whatsapp-float:focus-visible { outline: 3px solid rgba(31,174,102,.35); outline-offset: 4px; }
 .whatsapp-float svg { width: 32px; height: 32px; }
+.contacts-page .whatsapp-float { display: none; }
 
 /* Business programs */
 .programs-hero {
