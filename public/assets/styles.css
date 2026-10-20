@@ -314,6 +314,12 @@ body.scrolled .nav-shell { min-height: 60px; background: rgba(249, 252, 255, .94
 .contact-methods { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .contact-chip { display: inline-flex; min-height: 44px; align-items: center; gap: 9px; padding: 0 15px; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; background: rgba(255,255,255,.11); color: #fff; font-size: 13px; font-weight: 850; transition: background .2s ease, transform .2s ease; }
 .contact-chip:hover { background: rgba(255,255,255,.2); transform: translateY(-2px); }
+.contact-socials-title { margin: 22px 0 10px; color: rgba(255,255,255,.72); font-size: 12px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.contact-socials { display: flex; flex-wrap: wrap; gap: 9px; }
+.contact-social { display: inline-flex; min-height: 42px; align-items: center; gap: 8px; padding: 0 12px; border: 1px solid rgba(255,255,255,.26); border-radius: 12px; background: rgba(255,255,255,.1); color: #fff; font-size: 13px; font-weight: 800; transition: background .2s ease, transform .2s ease; }
+.contact-social:hover { background: rgba(255,255,255,.2); transform: translateY(-2px); }
+.contact-social svg { width: 18px; height: 18px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.contact-social-tiktok svg { fill: currentColor; stroke: none; }
 .contact-form { display: grid; gap: 12px; padding: 26px; border-radius: 28px; background: rgba(9, 38, 78, .2); backdrop-filter: blur(12px); }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .field { width: 100%; min-height: 58px; padding: 15px 18px; border: 1px solid rgba(255,255,255,.23); border-radius: 16px; outline: none; background: rgba(255,255,255,.1); color: #fff; transition: border-color .2s, background .2s; }
