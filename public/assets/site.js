@@ -405,9 +405,6 @@ function initContactForm() {
     const data = new FormData(form);
     const status = form.querySelector('.form-status');
     const button = form.querySelector('button[type="submit"]');
-    const subject = encodeURIComponent(`Заявка с сайта: ${data.get('service') || 'новый проект'}`);
-    const body = encodeURIComponent(`Имя: ${data.get('name')}\nТелефон: ${data.get('contact')}\n\nЗадача:\n${data.get('message')}`);
-
     button.disabled = true;
     button.textContent = 'Отправляем…';
     status.className = 'form-status visible';
@@ -436,8 +433,9 @@ function initContactForm() {
       status.className = 'form-status visible error';
       status.textContent = `${error instanceof Error ? error.message : 'Не удалось отправить заявку.'} `;
       const fallback = document.createElement('a');
-      fallback.href = `mailto:info@webnet.kz?subject=${subject}&body=${body}`;
-      fallback.textContent = 'Отправить по email →';
+      const message = encodeURIComponent(`Заявка с сайта: ${data.get('service') || 'новый проект'}\nИмя: ${data.get('name')}\nТелефон: ${data.get('contact')}\n\nЗадача:\n${data.get('message')}`);
+      fallback.href = `https://wa.me/77078453424?text=${message}`;
+      fallback.textContent = 'Связаться через WhatsApp →';
       status.append(fallback);
     } finally {
       button.disabled = false;
