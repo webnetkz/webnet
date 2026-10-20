@@ -322,6 +322,7 @@ function createServiceCard(service, index) {
 
 function renderServices() {
   document.querySelectorAll('[data-services-grid]').forEach((grid) => {
+    if (grid.querySelector('.service-card')) return;
     const limit = Number(grid.dataset.limit || services.length);
     grid.innerHTML = services.slice(0, limit).map(createServiceCard).join('');
   });

@@ -15,14 +15,16 @@ function renderMarketingCatalog() {
   const filters = document.querySelector('[data-marketing-filters]');
   if (!grid || !window.marketingDirections) return;
 
-  grid.innerHTML = window.marketingDirections.map((item) => `
-    <a class="service-card marketing-card reveal" href="${item.slug}.html" data-marketing-category="${item.category}">
-      <div class="service-number"><span>${item.number}</span><span class="service-icon">${item.icon}</span></div>
-      <p class="marketing-card-category">${marketingCategoryLabels[item.category]}</p>
-      <h3>${item.title}</h3>
-      <p>${item.short}</p>
-      <span class="service-link">Подробнее</span>
-    </a>`).join('');
+  if (!grid.querySelector('.marketing-card')) {
+    grid.innerHTML = window.marketingDirections.map((item) => `
+      <a class="service-card marketing-card reveal" href="${item.slug}.html" data-marketing-category="${item.category}">
+        <div class="service-number"><span>${item.number}</span><span class="service-icon">${item.icon}</span></div>
+        <p class="marketing-card-category">${marketingCategoryLabels[item.category]}</p>
+        <h3>${item.title}</h3>
+        <p>${item.short}</p>
+        <span class="service-link">Подробнее</span>
+      </a>`).join('');
+  }
 
   if (!filters) return;
   const categories = ['all', ...new Set(window.marketingDirections.map((item) => item.category))];

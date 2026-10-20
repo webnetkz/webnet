@@ -19,6 +19,9 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
 
+      - name: Generate search-ready static pages and sitemap
+        run: node scripts/seo-prerender.mjs
+
       - name: Publish public directory
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
