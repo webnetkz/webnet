@@ -9,7 +9,9 @@ const origin = 'https://webnet.kz';
 const socialProfiles = [
   'https://t.me/WebNetKZ',
   'https://www.instagram.com/webnetkz/',
-  'https://www.tiktok.com/tiktokstudio'
+  'https://www.tiktok.com/tiktokstudio',
+  'https://www.youtube.com/@WebNetKZ',
+  'https://www.threads.com/@webnetkz'
 ];
 
 function walk(directory) {

@@ -315,7 +315,7 @@ body.scrolled .nav-shell { min-height: 60px; background: rgba(249, 252, 255, .94
 .contact-chip { display: inline-flex; min-height: 44px; align-items: center; gap: 9px; padding: 0 15px; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; background: rgba(255,255,255,.11); color: #fff; font-size: 13px; font-weight: 850; transition: background .2s ease, transform .2s ease; }
 .contact-chip:hover { background: rgba(255,255,255,.2); transform: translateY(-2px); }
 .contacts-social-section { background: #f7fbff; }
-.contacts-social-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.contacts-social-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .contacts-social-card { display: grid; min-width: 0; grid-template-columns: 50px minmax(0, 1fr) 18px; align-items: center; gap: 12px; padding: 16px; border: 1px solid var(--line); border-radius: 22px; background: #fff; box-shadow: 0 12px 32px rgba(32,87,156,.05); transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
 .contacts-social-card:hover { transform: translateY(-4px); border-color: rgba(47,127,247,.28); box-shadow: 0 18px 38px rgba(32,87,156,.1); }
 .contacts-social-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
@@ -325,6 +325,8 @@ body.scrolled .nav-shell { min-height: 60px; background: rgba(249, 252, 255, .94
 .contacts-social-icon.telegram { background: #e8f6fd; color: #26a5e4; }
 .contacts-social-icon.instagram { background: #fff0f4; color: #e4405f; }
 .contacts-social-icon.tiktok { background: #f1f2f4; color: #111; }
+.contacts-social-icon.youtube { background: #fff0f2; color: #f03; }
+.contacts-social-icon.threads { background: #f1f2f4; color: #111; font-size: 27px; font-weight: 900; line-height: 1; }
 .contacts-social-copy { display: grid; min-width: 0; gap: 4px; }
 .contacts-social-copy strong { overflow-wrap: anywhere; color: var(--ink); font-size: 14px; line-height: 1.2; }
 .contacts-social-copy small { overflow-wrap: anywhere; color: #78879a; font-size: 11px; line-height: 1.3; }
@@ -358,6 +360,7 @@ textarea.field { min-height: 125px; resize: vertical; }
 .footer-instagram { display: inline-flex; align-items: center; gap: 6px; vertical-align: middle; white-space: nowrap; }
 .footer-instagram svg { width: 17px; height: 17px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .footer-instagram .instagram-dot { fill: currentColor; stroke: none; }
+.footer-bottom .footer-youtube::before, .footer-bottom .footer-threads::before { margin-right: .55em; color: #51647e; content: "·"; }
 
 .whatsapp-float {
   position: fixed;
