@@ -364,7 +364,7 @@ function renderServicePage() {
     <article class="deliverable reveal"><h3>${title}</h3><p>${text}</p></article>`).join(''));
   const related = services.filter((item) => item.slug !== slug).sort((a, b) => Number(b.category === service.category) - Number(a.category === service.category)).slice(0, 3);
   set('[data-related-services]', related.map(createServiceCard).join(''));
-  document.title = `${service.title} — WebNet`;
+  if (!document.title.trim()) document.title = `${service.title} — WebNet`;
 }
 
 function initMenu() {

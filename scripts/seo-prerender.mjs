@@ -1,17 +1,26 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import {
+  faqByPath,
+  marketingSeoTitles,
+  pageSeoOverrides,
+  serviceSeoTitles
+} from './seo-content.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const publicDir = path.join(root, 'public');
 const origin = 'https://webnet.kz';
 const socialProfiles = [
   'https://t.me/WebNetKZ',
+  'https://www.facebook.com/webnetkz/',
   'https://www.instagram.com/webnetkz/',
-  'https://www.tiktok.com/tiktokstudio',
+  'https://www.tiktok.com/@webnetkz',
   'https://www.youtube.com/@WebNetKZ',
-  'https://www.threads.com/@webnetkz'
+  'https://www.threads.com/@webnetkz',
+  'https://x.com/webnetkz'
 ];
 
 function walk(directory) {
@@ -53,6 +62,65 @@ function getCanonical(file) {
   if (relative === 'index.html') return `${origin}/`;
   if (relative.endsWith('/index.html')) return `${origin}/${relative.slice(0, -'index.html'.length)}`;
   return `${origin}/${relative}`;
+}
+
+function getLastModified(file) {
+  try {
+    return execFileSync('git', ['log', '-1', '--format=%cs', '--', path.relative(root, file)], {
+      cwd: root,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore']
+    }).trim() || null;
+  } catch {
+    return null;
+  }
+}
+
+function applySeoOverride(html, override = {}) {
+  let result = html;
+  if (override.title) {
+    result = result.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(override.title)}</title>`);
+  }
+  if (override.description) {
+    result = result.replace(
+      /<meta\s+name=["']description["'][^>]*>/i,
+      `<meta name="description" content="${escapeHtml(override.description)}">`
+    );
+  }
+  return result;
+}
+
+function renderFaqSection(faq) {
+  const items = faq.map(([question, answer]) => `
+          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">${escapeHtml(question)}</button><div class="faq-answer"><p>${escapeHtml(answer)}</p></div></div>`).join('');
+  return `<!-- seo-static-faq:start -->
+    <section class="section seo-faq-section" aria-labelledby="seo-faq-title">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">Частые вопросы</p><h2 id="seo-faq-title">Что важно знать до старта</h2></div>
+          <p>Ответы на вопросы, которые помогают определить формат первого этапа и подготовиться к обсуждению задачи.</p>
+        </div>
+        <div class="faq-list">${items}
+        </div>
+      </div>
+    </section>
+    <!-- seo-static-faq:end -->`;
+}
+
+function addManagedFaq(html, faq) {
+  const startMarker = '<!-- seo-static-faq:start -->';
+  const endMarker = '<!-- seo-static-faq:end -->';
+  const start = html.indexOf(startMarker);
+  const end = html.indexOf(endMarker, start + startMarker.length);
+  if (!faq?.length) {
+    if (start >= 0 && end >= 0) return `${html.slice(0, start)}${html.slice(end + endMarker.length)}`;
+    return html;
+  }
+  const section = renderFaqSection(faq);
+  if (start >= 0 && end >= 0) {
+    return `${html.slice(0, start)}${section}${html.slice(end + endMarker.length)}`;
+  }
+  return html.replace(/<section class="section-compact">/i, `${section}\n    <section class="section-compact">`);
 }
 
 function normalizeInternalAnchors(html, pageUrl) {
@@ -202,7 +270,7 @@ function breadcrumbItems(url, title) {
   return items;
 }
 
-function addSeoMetadata(html, canonical) {
+function addSeoMetadata(html, canonical, context = {}) {
   const headMatch = html.match(/<head>([\s\S]*?)<\/head>/i);
   if (!headMatch) throw new Error(`Не найден <head> в HTML`);
   let head = headMatch[1];
@@ -217,7 +285,7 @@ function addSeoMetadata(html, canonical) {
   const cleanTitle = escapeHtml(title);
   const cleanDescription = escapeHtml(description);
   const managed = [
-    '<meta name="robots" content="index,follow,max-image-preview:large">',
+    '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
     `<link rel="canonical" href="${cleanCanonical}">`,
     `<meta property="og:type" content="website">`,
     `<meta property="og:site_name" content="WebNet">`,
@@ -240,29 +308,40 @@ function addSeoMetadata(html, canonical) {
   head = head.replace(/\s*<script\s+type=["']application\/ld\+json["']\s+data-seo-structured[^>]*>[\s\S]*?<\/script>/gi, '');
 
   const url = canonical;
-  const graph = [];
-  if (url === `${origin}/`) {
-    graph.push({
-      '@type': 'Organization',
-      '@id': `${origin}/#organization`,
-      name: 'WebNet',
-      url: `${origin}/`,
-      logo: `${origin}/assets/logo.png`,
+  const pathname = new URL(url).pathname;
+  const graph = [{
+    '@type': 'Organization',
+    '@id': `${origin}/#organization`,
+    name: 'WebNet',
+    alternateName: 'webnet.kz',
+    url: `${origin}/`,
+    logo: `${origin}/assets/logo.png`,
+    foundingDate: '2018',
+    telephone: '+77078453424',
+    areaServed: { '@type': 'Country', name: 'Kazakhstan' },
+    contactPoint: {
+      '@type': 'ContactPoint',
       telephone: '+77078453424',
-      areaServed: { '@type': 'Country', name: 'Kazakhstan' },
-      sameAs: socialProfiles
-    });
-    graph.push({
-      '@type': 'WebSite',
-      '@id': `${origin}/#website`,
-      url: `${origin}/`,
-      name: 'WebNet',
-      inLanguage: lang,
-      publisher: { '@id': `${origin}/#organization` }
-    });
-  }
-  graph.push({
-    '@type': 'WebPage',
+      contactType: 'sales',
+      availableLanguage: ['ru']
+    },
+    sameAs: socialProfiles
+  }, {
+    '@type': 'WebSite',
+    '@id': `${origin}/#website`,
+    url: `${origin}/`,
+    name: 'WebNet',
+    alternateName: 'webnet.kz',
+    inLanguage: 'ru',
+    publisher: { '@id': `${origin}/#organization` }
+  }];
+  const pageType = pathname === '/contacts/'
+    ? 'ContactPage'
+    : ['/services/', '/marketing/', '/programs/'].includes(pathname)
+      ? 'CollectionPage'
+      : 'WebPage';
+  const webPage = {
+    '@type': pageType,
     '@id': `${url}#webpage`,
     url,
     name: title,
@@ -270,7 +349,56 @@ function addSeoMetadata(html, canonical) {
     inLanguage: lang,
     isPartOf: { '@id': `${origin}/#website` },
     publisher: { '@id': `${origin}/#organization` }
-  });
+  };
+
+  const detail = context.service || context.marketingItem;
+  if (detail) {
+    const serviceId = `${url}#service`;
+    webPage.mainEntity = { '@id': serviceId };
+    graph.push({
+      '@type': 'Service',
+      '@id': serviceId,
+      name: detail.title,
+      serviceType: detail.title,
+      url,
+      description,
+      provider: { '@id': `${origin}/#organization` },
+      areaServed: { '@type': 'Country', name: 'Kazakhstan' },
+      audience: { '@type': 'BusinessAudience', audienceType: 'Бизнес' }
+    });
+  }
+
+  if (context.catalogItems?.length) {
+    const itemListId = `${url}#item-list`;
+    webPage.mainEntity = { '@id': itemListId };
+    graph.push({
+      '@type': 'ItemList',
+      '@id': itemListId,
+      name: title,
+      itemListElement: context.catalogItems.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.title,
+        url: `${origin}/${context.catalogSection}/${item.slug}.html`
+      }))
+    });
+  }
+
+  if (context.faq?.length) {
+    const faqId = `${url}#faq`;
+    webPage.hasPart = { '@id': faqId };
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': faqId,
+      mainEntity: context.faq.map(([question, answer]) => ({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer }
+      }))
+    });
+  }
+
+  graph.push(webPage);
   const crumbs = breadcrumbItems(url, title);
   if (crumbs.length > 1) {
     graph.push({
@@ -302,7 +430,10 @@ const htmlFiles = walk(publicDir).filter((file) => file.endsWith('.html'));
 for (const file of htmlFiles) {
   let html = fs.readFileSync(file, 'utf8');
   const canonical = getCanonical(file);
+  const pathname = new URL(canonical).pathname;
   const relative = path.relative(publicDir, file).split(path.sep).join('/');
+  let service = null;
+  let marketingItem = null;
 
   if (relative === 'index.html' || relative === 'services/index.html') {
     const hrefPrefix = relative === 'index.html' ? 'services/' : '';
@@ -318,7 +449,7 @@ for (const file of htmlFiles) {
 
   const serviceSlug = html.match(/<body\b[^>]*data-service=["']([^"']+)["']/i)?.[1];
   if (serviceSlug) {
-    const service = safeServices.find((item) => item.slug === serviceSlug);
+    service = safeServices.find((item) => item.slug === serviceSlug);
     if (!service) throw new Error(`Нет данных для услуги ${serviceSlug}`);
     const body = renderServiceBody(serviceLayout, service, safeServices);
     html = html.replace(/<body\b([^>]*)>[\s\S]*?<\/body>/i, `<body$1>\n${body}\n</body>`);
@@ -327,24 +458,41 @@ for (const file of htmlFiles) {
 
   const marketingSlug = html.match(/<body\b[^>]*data-marketing=["']([^"']+)["']/i)?.[1];
   if (marketingSlug) {
-    const item = safeMarketingDirections.find((entry) => entry.slug === marketingSlug);
-    if (!item) throw new Error(`Нет данных для маркетингового направления ${marketingSlug}`);
-    const body = renderMarketingBody(marketingLayout, item, safeMarketingDirections);
+    marketingItem = safeMarketingDirections.find((entry) => entry.slug === marketingSlug);
+    if (!marketingItem) throw new Error(`Нет данных для маркетингового направления ${marketingSlug}`);
+    const body = renderMarketingBody(marketingLayout, marketingItem, safeMarketingDirections);
     html = html.replace(/<body\b([^>]*)>[\s\S]*?<\/body>/i, `<body$1>\n${body}\n</body>`);
     html = html.replace(/\s*<script\s+src=["'][^"']*marketing-data\.js[^"']*["']\s+defer><\/script>/i, '');
     html = html.replace(/\s*<script\s+src=["'][^"']*marketing-layout\.js[^"']*"\s+defer><\/script>/i, '');
   }
 
-  html = html.replace(/((?:\.\.\/)*assets\/site\.js\?v=)[^"']+/g, (_, prefix) => `${prefix}20261020-seo`);
+  html = html.replace(/((?:\.\.\/)*assets\/site\.js\?v=)[^"']+/g, (_, prefix) => `${prefix}20261104-search-growth`);
   html = html.replace(/((?:\.\.\/)*assets\/marketing-catalog\.js\?v=)[^"']+/g, (_, prefix) => `${prefix}20261020-seo`);
+  html = html.replace(/((?:\.\.\/)*assets\/styles\.css\?v=)[^"']+/g, (_, prefix) => `${prefix}20261104-search-growth`);
+  const faq = faqByPath[pathname] || null;
+  html = addManagedFaq(html, faq);
+  const seoOverride = { ...(pageSeoOverrides[pathname] || {}) };
+  if (service && serviceSeoTitles[service.slug]) seoOverride.title ??= serviceSeoTitles[service.slug];
+  if (marketingItem && marketingSeoTitles[marketingItem.slug]) seoOverride.title ??= marketingSeoTitles[marketingItem.slug];
+  html = applySeoOverride(html, seoOverride);
   html = normalizeInternalAnchors(html, canonical);
-  html = addSeoMetadata(html, canonical);
+  const isServiceCatalog = pathname === '/services/';
+  const isMarketingCatalog = pathname === '/marketing/';
+  html = addSeoMetadata(html, canonical, {
+    service,
+    marketingItem,
+    faq,
+    catalogItems: isServiceCatalog ? safeServices : isMarketingCatalog ? safeMarketingDirections : null,
+    catalogSection: isServiceCatalog ? 'services' : isMarketingCatalog ? 'marketing' : null
+  });
   fs.writeFileSync(file, html);
 }
 
-const sitemapUrls = htmlFiles.map(getCanonical).sort();
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapUrls.map((url) => `  <url><loc>${url}</loc></url>`).join('\n')}\n</urlset>\n`;
+const sitemapEntries = htmlFiles
+  .map((file) => ({ url: getCanonical(file), lastmod: getLastModified(file) }))
+  .sort((a, b) => a.url.localeCompare(b.url));
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.map(({ url, lastmod }) => `  <url><loc>${url}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`).join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap);
-fs.writeFileSync(path.join(publicDir, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${origin}/sitemap.xml\n`);
+fs.writeFileSync(path.join(publicDir, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\n\nHost: webnet.kz\nSitemap: ${origin}/sitemap.xml\n`);
 
-console.log(`SEO: обработано ${htmlFiles.length} HTML-страниц, создан sitemap на ${sitemapUrls.length} URL.`);
+console.log(`SEO: обработано ${htmlFiles.length} HTML-страниц, создан sitemap на ${sitemapEntries.length} URL.`);
