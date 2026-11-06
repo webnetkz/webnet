@@ -51,6 +51,48 @@ export const pageSeoOverrides = {
   }
 };
 
+export const englishPageSeoOverrides = {
+  '/en/': { title: 'WebNet — Software Development & Business Automation' },
+  '/en/services/': { title: 'IT Services for Business in Kazakhstan | WebNet' },
+  '/en/marketing/': { title: 'Digital Marketing Services in Kazakhstan | WebNet' },
+  '/en/programs/': { title: 'WebNet Apps for Windows, macOS, iOS & Android' },
+  '/en/contacts/': { title: 'Contact WebNet — IT Company in Kazakhstan' },
+  '/en/privacy.html': { title: 'Privacy Policy | WebNet' },
+  '/en/services/software-development.html': { title: 'Custom Software Development in Kazakhstan | WebNet' },
+  '/en/services/web-development.html': { title: 'Website & Web App Development | WebNet' },
+  '/en/services/mobile-development.html': { title: 'iOS & Android App Development | WebNet' },
+  '/en/services/ui-ux-design.html': { title: 'UI/UX Design for Digital Products | WebNet' },
+  '/en/services/automation.html': { title: 'Business Process Automation | WebNet' },
+  '/en/services/ai-solutions.html': { title: 'AI Solutions for Business | WebNet' },
+  '/en/services/business-processes.html': { title: 'Business Process Consulting | WebNet' },
+  '/en/services/product-management.html': { title: 'Product Management Services | WebNet' },
+  '/en/services/crm-systems.html': { title: 'CRM Implementation & Integration | WebNet' },
+  '/en/services/cloud-telephony.html': { title: 'Cloud Telephony for Business | WebNet' },
+  '/en/services/1c-development-support.html': { title: '1C Development & Support | WebNet' },
+  '/en/services/data-analytics.html': { title: 'Data Analytics & Business Intelligence | WebNet' },
+  '/en/services/cloud-devops.html': { title: 'Cloud Infrastructure & DevOps Services | WebNet' },
+  '/en/services/qa-testing.html': { title: 'Software Testing & QA Services | WebNet' },
+  '/en/services/cybersecurity.html': { title: 'Cybersecurity Services for Business | WebNet' },
+  '/en/marketing/strategy-research.html': { title: 'Marketing Strategy & Market Research | WebNet' },
+  '/en/marketing/seo.html': { title: 'SEO Services for Google & Yandex | WebNet' },
+  '/en/marketing/contextual-advertising.html': { title: 'Google Ads & Yandex PPC Management | WebNet' },
+  '/en/marketing/targeted-advertising.html': { title: 'Paid Social Advertising Services | WebNet' },
+  '/en/marketing/smm.html': { title: 'Social Media Marketing Services | WebNet' },
+  '/en/marketing/content-marketing.html': { title: 'Content Marketing Services | WebNet' },
+  '/en/marketing/email-marketing.html': { title: 'Email Marketing Services | WebNet' },
+  '/en/marketing/crm-retention.html': { title: 'CRM & Retention Marketing | WebNet' },
+  '/en/marketing/influencer-marketing.html': { title: 'Influencer Marketing Services | WebNet' },
+  '/en/marketing/branding-creative.html': { title: 'Branding & Creative Services | WebNet' },
+  '/en/marketing/orm-serm.html': { title: 'Online Reputation Management & SERM | WebNet' },
+  '/en/marketing/marketplace-promotion.html': { title: 'Marketplace Marketing Services | WebNet' },
+  '/en/marketing/performance-marketing.html': { title: 'Performance Marketing Services | WebNet' },
+  '/en/marketing/analytics-cro.html': { title: 'Web Analytics & Conversion Optimization | WebNet' },
+  '/en/marketing/video-marketing.html': { title: 'Video Marketing Services | WebNet' },
+  '/en/marketing/app-marketing.html': { title: 'Mobile App Marketing & ASO | WebNet' },
+  '/en/marketing/pr-media.html': { title: 'PR & Media Relations Services | WebNet' },
+  '/en/marketing/partner-marketing.html': { title: 'Partnership & Affiliate Marketing | WebNet' }
+};
+
 export const serviceSeoTitles = {
   'software-development': 'Разработка ПО на заказ в Казахстане — WebNet',
   'web-development': 'Разработка сайтов и веб-сервисов — WebNet',

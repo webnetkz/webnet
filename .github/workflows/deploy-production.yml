@@ -24,6 +24,9 @@ jobs:
       - name: Generate search-ready static pages and sitemap
         run: node scripts/seo-prerender.mjs
 
+      - name: Validate multilingual pages and internal links
+        run: node scripts/validate-static.mjs
+
       - name: Publish public directory
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
