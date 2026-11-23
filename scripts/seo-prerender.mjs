@@ -105,6 +105,14 @@ function addLanguageSwitcher(html, canonical) {
   return result.replace(/(<a\b[^>]*class=["'][^"']*\bnav-phone\b)/i, `${switcher}$1`);
 }
 
+function addFooterYoutubeEmbed(html) {
+  if (!/<footer\b[^>]*\bclass=["'][^"']*\bsite-footer\b/i.test(html)) return html;
+  if (/\bdata-footer-youtube-embed\b/i.test(html)) return html;
+
+  const iframe = '<iframe data-footer-youtube-embed src="https://www.youtube.com/embed/rQaxCRRUs_I?autoplay=1&amp;mute=1&amp;controls=0&amp;playsinline=1" width="320" height="569" title="WebNet YouTube Short" frameborder="0" allow="autoplay; encrypted-media" style="display: none;"></iframe>';
+  return html.replace(/<\/footer>/i, `${iframe}\n  </footer>`);
+}
+
 function extractFaqFromHtml(html) {
   const faq = [];
   const pattern = /<button\b[^>]*class=["'][^"']*\bfaq-question\b[^"']*["'][^>]*>([\s\S]*?)<\/button>[\s\S]*?<div\b[^>]*class=["'][^"']*\bfaq-answer\b[^"']*["'][^>]*>[\s\S]*?<p>([\s\S]*?)<\/p>/gi;
@@ -558,6 +566,7 @@ function processHtmlFile(file, english = false) {
   html = applySeoOverride(html, seoOverride);
   html = normalizeInternalAnchors(html, canonical);
   html = addLanguageSwitcher(html, canonical);
+  html = addFooterYoutubeEmbed(html);
   const isServiceCatalog = pathname === '/services/' || pathname === '/en/services/';
   const isMarketingCatalog = pathname === '/marketing/' || pathname === '/en/marketing/';
   const catalogItems = isServiceCatalog
