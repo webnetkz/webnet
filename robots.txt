@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Host: webnet.kz
+Sitemap: https://webnet.kz/sitemap.xml
